@@ -1,0 +1,44 @@
+---
+import { FIT_PER_RARITY, RARITY_LABEL, formatRate, type Augment, type Rarity } from '../lib/data';
+
+interface Props {
+  fitting: Record<Rarity, Augment[]>;
+}
+
+const { fitting } = Astro.props;
+const rarities: Rarity[] = ['silver', 'gold', 'prismatic'];
+const text = { silver: 'text-silver', gold: 'text-gold', prismatic: 'text-prismatic' };
+const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prismatic' };
+---
+
+<section class="mb-8">
+  <h2 class="text-lg font-bold">相性の良いオーグメント</h2>
+  <p class="text-xs text-ink-2 mt-1 mb-3">
+    チャンピオンのタイプとオーグメントの効果文から自動で選んだ目安です（レアリティごとに最大{FIT_PER_RARITY}個、上ほど相性とピック率が高い）。
+  </p>
+  <div class="grid md:grid-cols-3 gap-4">
+    {
+      rarities.map((r) => (
+        <div class="min-w-0">
+          <h3 class={`text-sm font-semibold mb-2 ${text[r]}`}>{RARITY_LABEL[r]}</h3>
+          <ol class="space-y-1.5">
+            {fitting[r].map((a) => (
+              <li>
+                <a
+                  href={`/augments/${a.slug}/`}
+                  class="flex items-center gap-2 rounded-md border border-line bg-panel px-2 py-1.5 hover:border-accent"
+                >
+                  {a.icon && (
+                    <img src={a.icon} alt="" width="28" height="28" loading="lazy" class={`size-7 rounded ring-1 ${ring[r]} bg-panel-2 shrink-0`} />
+                  )}
+                  <span class="text-sm leading-tight flex-1 min-w-0">{a.name}</span>
+                  <span class="text-[11px] text-ink-2 tabular-nums shrink-0">{formatRate(a.pickRate)}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))
+    }
+  </div>
+</section>

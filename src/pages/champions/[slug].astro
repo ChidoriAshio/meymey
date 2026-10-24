@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
 import AugmentCard from '../../components/AugmentCard.astro';
+import FittingAugments from '../../components/FittingAugments.astro';
 import Change from '../../components/Change.astro';
-import { champions, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
+import { champions, fittingAugments, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
 
 export function getStaticPaths() {
   return champions.map((champion) => ({ params: { slug: champion.slug }, props: { champion } }));
@@ -12,6 +13,7 @@ const { champion: c } = Astro.props as { champion: Champion };
 const builds = await getBuilds();
 const build = builds.get(c.slug);
 const tier = tierOf(c, builds);
+const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
 ---
 
 <Base title={`${c.name}のビルドとオーグメント`} description={`ランダムミッド: メイヘムの${c.name}のおすすめオーグメント、アイテム、ピック率。`}>
@@ -51,12 +53,13 @@ const tier = tierOf(c, builds);
         {build.note && <p class="mb-6 rounded-lg border border-line bg-panel-2 p-4">{build.note}</p>}
         {build.augments.length > 0 && (
           <section class="mb-8">
-            <h2 class="text-lg font-bold mb-3">おすすめオーグメント</h2>
+            <h2 class="text-lg font-bold mb-3">特におすすめのオーグメント</h2>
             <div class="grid sm:grid-cols-2 gap-3">
               {build.augments.map((a) => <AugmentCard augment={a} />)}
             </div>
           </section>
         )}
+        <FittingAugments fitting={fitting} />
         {build.items.length > 0 && (
           <section class="mb-8">
             <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
@@ -72,6 +75,11 @@ const tier = tierOf(c, builds);
         )}
       </>
     ) : (
+      <FittingAugments fitting={fitting} />
+    )
+  }
+  {
+    !build && (
       <p class="text-ink-2 mb-8">
         おすすめのオーグメントとアイテムはまだ登録されていません（<code class="text-accent">src/data/builds.yaml</code> の <code>{c.slug}</code>）。
       </p>

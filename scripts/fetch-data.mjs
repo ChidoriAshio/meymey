@@ -224,6 +224,8 @@ async function main() {
         name: c.name,
         title: c.title,
         tags: c.tags,
+        // Riot's 0-10 ratings; attack vs magic tells physical from magic damage dealers.
+        info: c.info,
         icon: `${DDRAGON}/cdn/${ddVersion}/img/champion/${c.image.full}`,
         pickRate: s?.pickRate ?? null,
         pickRateRank: s?.pickRateRank ?? null,

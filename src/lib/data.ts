@@ -16,6 +16,7 @@ export interface Champion {
   name: string;
   title: string;
   tags: string[];
+  info: { attack: number; defense: number; magic: number; difficulty: number };
   icon: string;
   pickRate: number | null;
   pickRateRank: number | null;
@@ -168,6 +169,92 @@ export function tierOf(c: Champion, builds: Map<string, Build>): { tier: Tier; m
   if (manual) return { tier: manual, manual: true };
   const buzz = buzzByChampion.get(c.slug);
   return buzz && { tier: buzz.tier, manual: false };
+}
+
+// ---------- Augment fit (automatic, keyword based) ----------
+//
+// Each augment gets a set of traits read from its description (Japanese text and Riot's
+// tooltip classes); each champion type weighs those traits. The result is a rough guide.
+
+type Trait = 'ap' | 'ad' | 'attack' | 'crit' | 'ability' | 'tank' | 'ally' | 'sustain' | 'mobility';
+
+const TRAIT_PATTERNS: Record<Trait, RegExp> = {
+  ap: /魔力|tt-scaleap/,
+  ad: /攻撃力|tt-scalead/,
+  attack: /通常攻撃|攻撃速度/,
+  crit: /クリティカル/,
+  ability: /スキルヘイスト|スキルダメージ|スキル使用|スキルを使用|アルティメット/,
+  tank: /最大体力|物理防御|魔法防御|tt-scalehealth|tt-scalearmor|tt-scalemr/,
+  ally: /味方/,
+  sustain: /回復|ライフスティール|オムニヴァンプ|tt-healing|tt-lifesteal/,
+  mobility: /移動速度|ダッシュ|tt-speed/,
+};
+
+const augmentTraits = new Map<string, Set<Trait>>(
+  augments.map((a) => [
+    a.slug,
+    new Set((Object.keys(TRAIT_PATTERNS) as Trait[]).filter((t) => TRAIT_PATTERNS[t].test(a.description))),
+  ]),
+);
+
+type Weights = Partial<Record<Trait, number>>;
+const ROLE_WEIGHTS: Record<string, { ad: Weights; ap: Weights }> = {
+  Mage: {
+    ap: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5 },
+    ad: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5 },
+  },
+  Marksman: {
+    ad: { attack: 2, crit: 2, ad: 1.5, ap: -2, tank: -0.5, ally: -0.5 },
+    ap: { attack: 1.5, ap: 1.5, ability: 0.5, crit: -1, ad: -1 },
+  },
+  Fighter: {
+    ad: { ad: 1.5, tank: 1, sustain: 1, attack: 0.5, ability: 0.5, ap: -2 },
+    ap: { ap: 1.5, tank: 1, sustain: 1, ability: 0.5, ad: -1.5, crit: -2 },
+  },
+  Assassin: {
+    ad: { ad: 2, ability: 1, mobility: 1, ap: -2, tank: -0.5, ally: -0.5 },
+    ap: { ap: 2, ability: 1, mobility: 1, ad: -2, crit: -2, tank: -0.5, ally: -0.5 },
+  },
+  Tank: {
+    ad: { tank: 2, ally: 0.5, ability: 0.5, sustain: 0.5, ap: -0.5, crit: -2, attack: -0.5 },
+    ap: { tank: 2, ally: 0.5, ability: 0.5, sustain: 0.5, ad: -1, crit: -2, attack: -0.5 },
+  },
+  Support: {
+    ad: { ally: 2, ability: 1, ap: 0.5, tank: 0.3, crit: -1.5 },
+    ap: { ally: 2, ap: 1, ability: 1, tank: 0.3, ad: -2, crit: -2, attack: -1 },
+  },
+};
+
+function championWeights(c: Champion): Weights {
+  const dmg = c.info.magic > c.info.attack ? 'ap' : 'ad';
+  const out: Weights = {};
+  c.tags.slice(0, 2).forEach((tag, i) => {
+    for (const [t, w] of Object.entries(ROLE_WEIGHTS[tag]?.[dmg] ?? {}) as [Trait, number][]) {
+      out[t] = (out[t] ?? 0) + w * (i === 0 ? 1 : 0.5);
+    }
+  });
+  return out;
+}
+
+export const FIT_PER_RARITY = 10;
+
+// Up to FIT_PER_RARITY augments per rarity that suit the champion, best first.
+// An augment with no matching traits can still rank on popularity; one that clashes with the
+// champion's type (e.g. crit for a mage) is left out.
+export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Record<Rarity, Augment[]> {
+  const w = championWeights(c);
+  const scored = augments
+    .filter((a) => !exclude.has(a.slug))
+    .map((a) => {
+      const traits = [...(augmentTraits.get(a.slug) ?? [])];
+      const fit = traits.reduce((sum, t) => sum + (w[t] ?? 0), 0);
+      const clash = traits.some((t) => (w[t] ?? 0) <= -1.5);
+      return { a, fit, clash, score: fit + (a.pickRate ?? 0) * 0.03 };
+    })
+    .filter((x) => !x.clash && x.fit >= 0)
+    .sort((x, y) => y.score - x.score);
+  const pick = (r: Rarity) => scored.filter((x) => x.a.rarity === r).slice(0, FIT_PER_RARITY).map((x) => x.a);
+  return { silver: pick('silver'), gold: pick('gold'), prismatic: pick('prismatic') };
 }
 
 export const formatRate = (n: number | null) => (n == null ? '—' : `${n.toFixed(2)}%`);
