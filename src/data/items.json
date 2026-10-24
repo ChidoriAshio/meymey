@@ -1928,6 +1928,20 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3006.png"
   },
   {
+    "id": "3008",
+    "name": "グラトナス ブーツ",
+    "plaintext": "最大マナを基に攻撃力が上昇",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalesv.png\" alt=\"\" width=\"14\" height=\"14\">オムニヴァンプ<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">撃破</span><br>チャンピオンのキルまたはアシストでオムニヴァンプを0.6%獲得する。この効果は10回までスタックする。</span>",
+    "gold": 1100,
+    "tags": [
+      "LifeSteal",
+      "SpellVamp",
+      "Boots"
+    ],
+    "finished": true,
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3008.png"
+  },
+  {
     "id": "3020",
     "name": "ソーサラー シューズ",
     "plaintext": "移動速度と魔法ダメージが上昇",

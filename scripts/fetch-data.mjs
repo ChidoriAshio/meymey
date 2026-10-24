@@ -308,7 +308,9 @@ async function main() {
   const mayhemItemIds = new Set((amItems?.rows ?? []).map((r) => r.gameItemId).filter(Boolean));
   const items = Object.entries(itemJson.data)
     .filter(([, it]) => it.maps?.['12'] && it.gold?.purchasable && !it.hideFromAll && !it.requiredAlly)
-    .filter(([id]) => !mayhemItemIds.size || mayhemItemIds.has(id))
+    // Boots are kept even when missing there: グラトナス ブーツ (3008) is sold in ARAM but not on that
+    // list. Only base ids, since other modes add their own copies (77xxxx).
+    .filter(([id, it]) => !mayhemItemIds.size || mayhemItemIds.has(id) || (id.length === 4 && (it.tags ?? []).includes('Boots')))
     .map(([id, it]) => ({
       id,
       name: it.name,
