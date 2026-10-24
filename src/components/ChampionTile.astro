@@ -4,20 +4,18 @@ import { formatRate, type Champion } from '../lib/data';
 interface Props {
   champion: Champion;
   showRate?: boolean;
+  // Shown as a small badge on the portrait.
+  tier?: string;
 }
 
-const { champion: c, showRate = true } = Astro.props;
+const { champion: c, showRate = true, tier } = Astro.props;
 ---
 
 <a href={`/champions/${c.slug}/`} class="group flex flex-col items-center gap-1 text-center">
-  <img
-    src={c.icon}
-    alt=""
-    width="64"
-    height="64"
-    loading="lazy"
-    class="champ-tile size-16 rounded-lg"
-  />
+  <span class="relative">
+    <img src={c.icon} alt="" width="64" height="64" loading="lazy" class="champ-tile size-16 rounded-lg" />
+    {tier && <span class="tile-tier" title={`注目度 ${tier}`}>{tier}</span>}
+  </span>
   <span class="text-xs leading-tight group-hover:text-accent">{c.name}</span>
   {showRate && <span class="text-[11px] text-ink-2">{formatRate(c.pickRate)}</span>}
 </a>
@@ -32,5 +30,22 @@ const { champion: c, showRate = true } = Astro.props;
     border-color: var(--color-accent);
     transform: translateY(-2px) scale(1.04);
     box-shadow: 0 0 0 2px rgb(1 10 19 / 0.9), 0 0 16px rgb(200 170 110 / 0.45);
+  }
+  .tile-tier {
+    position: absolute;
+    right: -0.35rem;
+    top: -0.35rem;
+    min-width: 1.35rem;
+    height: 1.35rem;
+    padding: 0 0.2rem;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    background: linear-gradient(180deg, #1e2328, #0a1428);
+    border: 1px solid var(--color-accent);
+    border-radius: 9999px;
   }
 </style>

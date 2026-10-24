@@ -317,7 +317,8 @@ async function main() {
       description: toSafeHtml(addItemStatIcons(it.description ?? '')).replace(/(<br>)+(?=(<\/span>)*$)/, ''),
       gold: it.gold.total,
       tags: it.tags ?? [],
-      finished: !it.into?.length,
+      // Tier-2 boots upgrade further in some modes but are what players actually finish on.
+      finished: !it.into?.length || ((it.tags ?? []).includes('Boots') && it.gold.total > 300),
       icon: `${DDRAGON}/cdn/${ddVersion}/img/item/${it.image.full}`,
     }))
     .sort((a, b) => b.gold - a.gold);

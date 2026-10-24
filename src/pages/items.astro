@@ -3,7 +3,8 @@ import Base from '../layouts/Base.astro';
 import ListFilter from '../components/ListFilter.astro';
 import { items } from '../lib/data';
 
-const finished = items.filter((i) => i.finished);
+// Consumables like ステータスボーナス (6032) aren't build items.
+const finished = items.filter((i) => i.finished && !i.tags.includes('Consumable'));
 const TAG_LABEL: Record<string, string> = {
   Damage: '攻撃力',
   SpellDamage: '魔力',

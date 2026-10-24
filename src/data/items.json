@@ -1790,7 +1790,7 @@
       "SpellBlock",
       "Tenacity"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3111.png"
   },
   {
@@ -1829,7 +1829,7 @@
       "Armor",
       "Boots"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3047.png"
   },
   {
@@ -1924,7 +1924,7 @@
       "AttackSpeed",
       "Boots"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3006.png"
   },
   {
@@ -1937,7 +1937,7 @@
       "Boots",
       "MagicPenetration"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3020.png"
   },
   {
@@ -2002,7 +2002,7 @@
     "tags": [
       "Boots"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3009.png"
   },
   {
@@ -2177,7 +2177,7 @@
       "Boots",
       "CooldownReduction"
     ],
-    "finished": false,
+    "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3158.png"
   },
   {

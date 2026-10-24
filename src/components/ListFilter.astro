@@ -1,12 +1,15 @@
 ---
 // Search box + tag buttons that hide items of the following [data-filter-list].
 // Each item needs data-search="<lowercased words>" and data-tags="<space separated tags>".
+// Optional sorts: items carry data-sort-<value> (a number, higher first); the first sort is the
+// original order.
 interface Props {
   placeholder: string;
   tags: { value: string; label: string }[];
+  sorts?: { value: string; label: string }[];
 }
 
-const { placeholder, tags } = Astro.props;
+const { placeholder, tags, sorts = [] } = Astro.props;
 ---
 
 <div data-filter class="flex flex-col sm:flex-row gap-3 mb-4">
@@ -26,6 +29,15 @@ const { placeholder, tags } = Astro.props;
       ))
     }
   </div>
+  {
+    sorts.length > 0 && (
+      <select data-filter-sort aria-label="並び順" class="rounded-md border border-line bg-panel px-2 py-1.5 text-sm self-start sm:self-center">
+        {sorts.map((o) => (
+          <option value={o.value}>{o.label}</option>
+        ))}
+      </select>
+    )
+  }
   <span data-filter-count class="text-xs text-ink-2 self-center sm:ml-auto"></span>
 </div>
 
@@ -58,7 +70,8 @@ const { placeholder, tags } = Astro.props;
       ? root.nextElementSibling
       : root.parentElement?.querySelector('[data-filter-list]');
     if (!list) continue;
-    const items = [...list.querySelectorAll<HTMLElement>('[data-search]')].map((el) => ({
+    const items = [...list.querySelectorAll<HTMLElement>('[data-search]')].map((el, index) => ({
+      index,
       el,
       text: fold(el.dataset.search ?? ''),
       tags: (el.dataset.tags ?? '').split(' '),
@@ -78,6 +91,14 @@ const { placeholder, tags } = Astro.props;
       }
       count.textContent = `${shown} / ${items.length} 件`;
     };
+
+    const sort = root.querySelector<HTMLSelectElement>('[data-filter-sort]');
+    sort?.addEventListener('change', () => {
+      const key = sort.value;
+      const value = (el: HTMLElement) => Number(el.dataset[`sort${key[0].toUpperCase()}${key.slice(1)}`] ?? -Infinity);
+      const sorted = sort.selectedIndex === 0 ? [...items] : [...items].sort((a, b) => value(b.el) - value(a.el));
+      for (const it of sorted) list.appendChild(it.el);
+    });
 
     input.addEventListener('input', apply);
     for (const b of buttons) {
