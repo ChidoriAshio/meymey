@@ -1,11 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import ListFilter from '../components/ListFilter.astro';
+import ChampionTable from '../components/ChampionTable.astro';
 import ChampionTile from '../components/ChampionTile.astro';
-import { champions, getBuilds, meta, ROLE_LABEL, tierOf } from '../lib/data';
+import { champions, getBuilds, meta, tierOf } from '../lib/data';
 
 const builds = await getBuilds();
-const roles = Object.entries(ROLE_LABEL).map(([value, label]) => ({ value, label }));
 const topChampions = [...champions]
   .filter((c) => c.pickRate != null)
   .sort((a, b) => b.pickRate! - a.pickRate!)
@@ -37,23 +36,7 @@ const topChampions = [...champions]
   </section>
 
   <h2 class="text-lg font-bold mb-3">すべてのチャンピオン</h2>
-  <ListFilter
-    placeholder="チャンピオン名で検索（例: あーり、Ahri）"
-    tags={roles}
-    sorts={[
-      { value: 'name', label: '名前順' },
-      { value: 'pick', label: 'ピック率順' },
-    ]}
-  />
-  <div data-filter-list class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-4">
-    {
-      champions.map((c) => (
-        <div data-search={`${c.name} ${c.id} ${c.title}`} data-tags={c.tags.join(' ')} data-sort-pick={c.pickRate ?? -1}>
-          <ChampionTile champion={c} />
-        </div>
-      ))
-    }
-  </div>
+  <ChampionTable />
 </Base>
 
 <style>

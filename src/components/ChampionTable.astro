@@ -1,0 +1,84 @@
+---
+// Every champion as one row: name, tier, pick rate. Searchable and sortable with ListFilter.
+import ListFilter from './ListFilter.astro';
+import Change from './Change.astro';
+import { champions, formatRate, getBuilds, ROLE_LABEL, tierOf, TIERS } from '../lib/data';
+
+const builds = await getBuilds();
+const roles = Object.entries(ROLE_LABEL).map(([value, label]) => ({ value, label }));
+const tierRank = (t?: string) => (t ? TIERS.length - TIERS.indexOf(t as (typeof TIERS)[number]) : 0);
+---
+
+<ListFilter
+  placeholder="チャンピオン名で検索（例: あーり、Ahri）"
+  tags={roles}
+  sorts={[
+    { value: 'name', label: '名前順' },
+    { value: 'tier', label: 'ティア順' },
+    { value: 'pick', label: 'ピック率順' },
+  ]}
+/>
+<div class="champ-table rounded-lg border border-line overflow-hidden">
+  <div class="champ-row text-xs text-ink-2 bg-panel-2 border-b border-line">
+    <span>チャンピオン</span>
+    <span class="text-center">ティア</span>
+    <span class="text-right">ピック率</span>
+  </div>
+  <div data-filter-list>
+    {
+      champions.map((c) => {
+        const tier = tierOf(c, builds)?.tier;
+        return (
+          <a
+            href={`/champions/${c.slug}/`}
+            class="champ-row bg-panel hover:bg-panel-2"
+            data-search={`${c.name} ${c.id} ${c.title}`}
+            data-tags={c.tags.join(' ')}
+            data-sort-pick={c.pickRate ?? -1}
+            data-sort-tier={tierRank(tier) * 1000 + (c.pickRate ?? 0)}
+          >
+            <span class="flex items-center gap-3 min-w-0">
+              <img src={c.icon} alt="" width="36" height="36" loading="lazy" class="size-9 rounded border border-line shrink-0" />
+              <span class="min-w-0">
+                <span class="block font-semibold leading-tight truncate">{c.name}</span>
+                <span class="block text-[11px] text-ink-2 truncate">{c.tags.map((t) => ROLE_LABEL[t] ?? t).join(' / ')}</span>
+              </span>
+            </span>
+            <span class="text-center">{tier && <span class="tier-chip">{tier}</span>}</span>
+            <span class="text-right tabular-nums text-sm">
+              {formatRate(c.pickRate)}
+              <span class="block text-[11px]">
+                <Change value={c.pickRateChange} />
+              </span>
+            </span>
+          </a>
+        );
+      })
+    }
+  </div>
+</div>
+
+<style>
+  .champ-row {
+    display: grid;
+    grid-template-columns: 1fr 3.5rem 5.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+  [data-filter-list] > .champ-row + .champ-row {
+    border-top: 1px solid rgb(120 90 40 / 0.25);
+  }
+  .tier-chip {
+    display: inline-grid;
+    place-items: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 9999px;
+    background: linear-gradient(180deg, #1e2328, #0a1428);
+  }
+</style>
