@@ -176,36 +176,43 @@ export function tierOf(c: Champion, builds: Map<string, Build>): { tier: Tier; m
 // Each augment gets a set of traits read from its description (Japanese text and Riot's
 // tooltip classes); each champion type weighs those traits. The result is a rough guide.
 
-type Trait = 'ap' | 'ad' | 'attack' | 'crit' | 'ability' | 'tank' | 'ally' | 'sustain' | 'mobility';
+type Trait = 'ap' | 'ad' | 'attack' | 'crit' | 'ability' | 'tank' | 'ally' | 'sustain' | 'mobility' | 'noAttack';
 
 const TRAIT_PATTERNS: Record<Trait, RegExp> = {
   ap: /魔力|tt-scaleap/,
   ad: /攻撃力|tt-scalead/,
   attack: /通常攻撃|攻撃速度/,
   crit: /クリティカル/,
-  ability: /スキルヘイスト|スキルダメージ|スキル使用|スキルを使用|アルティメット/,
-  tank: /最大体力|物理防御|魔法防御|tt-scalehealth|tt-scalearmor|tt-scalemr/,
+  ability: /スキルヘイスト|スキルダメージ|スキル使用|スキルを使用|スキルのクールダウン|アルティメット/,
+  // "敵の最大体力の…" and "物理防御貫通" are damage, not tankiness.
+  tank: /自身の最大体力|最大体力が|最大体力を|物理防御(?!貫通)|魔法防御(?!貫通)|クリティカル防御|tt-scalehealth|tt-scalearmor|tt-scalemr/,
   ally: /味方/,
   sustain: /回復|ライフスティール|オムニヴァンプ|tt-healing|tt-lifesteal/,
   mobility: /移動速度|ダッシュ|tt-speed/,
+  // Trades basic-attack power away, e.g. attack speed converted to ability haste.
+  noAttack: /攻撃速度.{0,20}(スキルヘイスト|魔力)に変換/,
 };
 
 const augmentTraits = new Map<string, Set<Trait>>(
   augments.map((a) => [
     a.slug,
-    new Set((Object.keys(TRAIT_PATTERNS) as Trait[]).filter((t) => TRAIT_PATTERNS[t].test(a.description))),
+    new Set(
+      (Object.keys(TRAIT_PATTERNS) as Trait[]).filter(
+        (t) => TRAIT_PATTERNS[t].test(a.description) && !(t === 'attack' && TRAIT_PATTERNS.noAttack.test(a.description)),
+      ),
+    ),
   ]),
 );
 
 type Weights = Partial<Record<Trait, number>>;
 const ROLE_WEIGHTS: Record<string, { ad: Weights; ap: Weights }> = {
   Mage: {
-    ap: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5 },
-    ad: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5 },
+    ap: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5, noAttack: 1 },
+    ad: { ap: 2, ability: 1.5, ad: -2, attack: -1.5, crit: -2, tank: -0.5, noAttack: 1 },
   },
   Marksman: {
-    ad: { attack: 2, crit: 2, ad: 1.5, ap: -2, tank: -0.5, ally: -0.5 },
-    ap: { attack: 1.5, ap: 1.5, ability: 0.5, crit: -1, ad: -1 },
+    ad: { attack: 2, crit: 2, ad: 1.5, ap: -2, tank: -1.5, ally: -0.5, noAttack: -3 },
+    ap: { attack: 1.5, ap: 1.5, ability: 0.5, crit: -1, ad: -1, tank: -1, noAttack: -3 },
   },
   Fighter: {
     ad: { ad: 1.5, tank: 1, sustain: 1, attack: 0.5, ability: 0.5, ap: -2 },
