@@ -12,11 +12,20 @@ const topChampions = [...champions]
 ---
 
 <Base title="">
-  <section class="mb-5">
-    <h1 class="text-xl sm:text-2xl font-bold">ランダムミッド: メイヘム 攻略データ</h1>
-    <p class="text-sm text-ink-2 mt-1">
-      使うチャンピオンを選ぶと、おすすめのオーグメントとアイテムが見られます（パッチ {meta.patch}）。
-    </p>
+  <section class="home-hero relative -mx-4 sm:mx-0 mb-8 overflow-hidden sm:rounded-lg sm:border border-line">
+    <img
+      src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${topChampions[0].id}_0.jpg`}
+      alt=""
+      class="absolute inset-0 size-full object-cover object-[center_25%] opacity-40"
+      fetchpriority="high"
+    />
+    <div class="relative px-4 py-10 sm:px-8 sm:py-14">
+      <p class="text-xs tracking-[0.3em] text-hextech">ARAM: MAYHEM</p>
+      <h1 class="text-2xl sm:text-4xl font-bold mt-1">ランダムミッド: メイヘム 攻略データ</h1>
+      <p class="text-sm text-ink-2 mt-2 max-w-xl">
+        使うチャンピオンを選ぶと、おすすめのオーグメントとアイテムが見られます（パッチ {meta.patch}）。
+      </p>
+    </div>
   </section>
 
   <section class="mb-8">
@@ -38,3 +47,17 @@ const topChampions = [...champions]
     }
   </div>
 </Base>
+
+<style>
+  .home-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgb(1 10 19 / 0.95) 0%, rgb(1 10 19 / 0.6) 60%, rgb(1 10 19 / 0.2)),
+      linear-gradient(180deg, transparent 60%, var(--color-bg));
+    pointer-events: none;
+  }
+  .home-hero > div {
+    z-index: 1;
+  }
+</style>

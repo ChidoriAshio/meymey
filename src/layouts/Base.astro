@@ -25,11 +25,14 @@ const nav = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
   </head>
   <body class="min-h-screen flex flex-col">
-    <header class="border-b border-line bg-panel/80 backdrop-blur sticky top-0 z-10">
+    <header class="site-header sticky top-0 z-10 backdrop-blur">
       <div class="mx-auto max-w-6xl px-4 h-14 flex items-center gap-4 sm:gap-6">
-        <a href="/" class="font-bold text-accent text-lg shrink-0">メイメイ</a>
+        <a href="/" class="logo shrink-0">メイメイ</a>
         <nav class="flex gap-3 sm:gap-4 text-sm overflow-x-auto">
           {
             nav.map((n) => (
@@ -53,7 +56,7 @@ const nav = [
       <slot />
     </main>
 
-    <footer class="border-t border-line text-xs text-ink-2">
+    <footer class="site-footer text-xs text-ink-2">
       <div class="mx-auto max-w-6xl px-4 py-6 space-y-2">
         <p>
           ピック率と、おすすめオーグメントの叩き台（コンボ）の<a class="underline hover:text-accent" href={meta.stats.source}>データ出典: arammayhem.com</a>（<a
@@ -75,3 +78,25 @@ const nav = [
     </footer>
   </body>
 </html>
+
+<style>
+  .site-header {
+    background: linear-gradient(180deg, rgb(1 10 19 / 0.95), rgb(10 20 40 / 0.85));
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--color-accent-2) 20%, var(--color-accent) 50%, var(--color-accent-2) 80%, transparent) 1;
+  }
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
+    background: linear-gradient(180deg, #f0e6d2, #c8aa6e 60%, #785a28);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .site-footer {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--color-accent-2), transparent) 1;
+  }
+</style>

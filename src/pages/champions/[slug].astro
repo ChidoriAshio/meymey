@@ -21,31 +21,39 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
 <Base title={`${c.name}のビルドとオーグメント`} description={`ランダムミッド: メイヘムの${c.name}のおすすめオーグメント、アイテム、ピック率。`}>
   <a href="/" class="text-sm text-ink-2 hover:text-accent">← チャンピオン一覧</a>
 
-  <header class="flex items-center gap-4 mt-3 mb-6">
-    <img src={c.icon} alt="" width="80" height="80" class="size-20 rounded-xl border border-line" />
-    <div>
-      <p class="text-sm text-ink-2">{c.title}</p>
-      <h1 class="text-2xl font-bold">{c.name}</h1>
-      <p class="text-xs text-ink-2 mt-1">{c.tags.map((t) => ROLE_LABEL[t] ?? t).join(' / ')}</p>
+  <header class="champ-hero relative -mx-4 sm:mx-0 mt-3 mb-6 overflow-hidden sm:rounded-lg sm:border border-line">
+    <img
+      src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${c.id}_0.jpg`}
+      alt=""
+      class="absolute inset-0 size-full object-cover object-[center_20%] opacity-70"
+      fetchpriority="high"
+    />
+    <div class="relative flex items-end gap-4 px-4 pt-28 pb-4 sm:px-6 sm:pt-40">
+      <img src={c.icon} alt="" width="80" height="80" class="champ-portrait size-20 rounded-full shrink-0" />
+      <div class="min-w-0">
+        <p class="text-sm text-ink-2">{c.title}</p>
+        <h1 class="text-3xl font-bold leading-tight">{c.name}</h1>
+        <p class="text-xs text-ink-2 mt-1">{c.tags.map((t) => ROLE_LABEL[t] ?? t).join(' / ')}</p>
+      </div>
+      {
+        tier && (
+          <a href="/tier-list/" class="tier-badge ml-auto text-center shrink-0">
+            <div class="text-[10px] text-ink-2">{tier.manual ? 'ティア' : '注目度'}</div>
+            <div class="text-3xl font-bold">{tier.tier}</div>
+          </a>
+        )
+      }
     </div>
-    {
-      tier && (
-        <a href="/tier-list/" class="ml-auto text-center">
-          <div class="text-xs text-ink-2">{tier.manual ? 'ティア' : '注目度'}</div>
-          <div class="text-3xl font-bold text-accent">{tier.tier}</div>
-        </a>
-      )
-    }
   </header>
 
-  <section class="grid sm:grid-cols-2 gap-3 mb-8">
-    <div class="rounded-lg border border-line bg-panel p-4">
+  <section class="grid grid-cols-2 gap-3 mb-8">
+    <div class="rounded-lg border border-line bg-panel p-3 sm:p-4">
       <div class="text-xs text-ink-2">ピック率（パッチ {meta.stats.patch}）</div>
-      <div class="text-2xl font-bold tabular-nums mt-1">{formatRate(c.pickRate)} <Change value={c.pickRateChange} /></div>
+      <div class="text-xl sm:text-2xl font-bold tabular-nums mt-1">{formatRate(c.pickRate)} <Change value={c.pickRateChange} /></div>
     </div>
-    <div class="rounded-lg border border-line bg-panel p-4">
+    <div class="rounded-lg border border-line bg-panel p-3 sm:p-4">
       <div class="text-xs text-ink-2">ピック率の順位</div>
-      <div class="text-2xl font-bold tabular-nums mt-1">{c.pickRateRank ? `${c.pickRateRank}位` : '—'} <span class="text-sm text-ink-2 font-normal">/ {champions.length}体</span></div>
+      <div class="text-xl sm:text-2xl font-bold tabular-nums mt-1">{c.pickRateRank ? `${c.pickRateRank}位` : '—'} <span class="text-sm text-ink-2 font-normal">/ {champions.length}体</span></div>
     </div>
   </section>
 
@@ -108,3 +116,29 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
     )
   }
 </Base>
+
+<style>
+  .champ-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(1 10 19 / 0) 30%, rgb(1 10 19 / 0.85) 75%, var(--color-bg));
+    pointer-events: none;
+  }
+  .champ-hero > div {
+    z-index: 1;
+  }
+  .champ-portrait {
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 0 3px rgb(1 10 19 / 0.8), 0 0 18px rgb(200 170 110 / 0.35);
+  }
+  .tier-badge {
+    font-family: var(--font-display);
+    min-width: 3.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--color-accent);
+    background: linear-gradient(180deg, rgb(30 35 40 / 0.9), rgb(10 20 40 / 0.9));
+    color: var(--color-accent);
+    clip-path: polygon(10% 0, 90% 0, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0 85%, 0 15%);
+  }
+</style>
