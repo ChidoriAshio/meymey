@@ -33,7 +33,8 @@ const tierRank = (t?: string) => (t ? TIERS.length - TIERS.indexOf(t as (typeof 
           <a
             href={`/champions/${c.slug}/`}
             class="champ-row bg-panel hover:bg-panel-2"
-            data-search={`${c.name} ${c.id} ${c.title}`}
+            data-search={c.name}
+            data-search-en={`${c.id} ${c.slug}`}
             data-tags={c.tags.join(' ')}
             data-sort-pick={c.pickRate ?? -1}
             data-sort-tier={tierRank(tier) * 1000 + (c.pickRate ?? 0)}

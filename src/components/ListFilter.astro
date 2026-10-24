@@ -1,6 +1,8 @@
 ---
 // Search box + tag buttons that hide items of the following [data-filter-list].
 // Each item needs data-search="<lowercased words>" and data-tags="<space separated tags>".
+// With data-search-en as well, a query in Latin letters is matched only against it, and any other
+// query only against data-search, so "a" doesn't find every English name and "あ" no English one.
 // Optional sorts: items carry data-sort-<value> (a number, higher first); the first sort is the
 // original order.
 interface Props {
@@ -83,6 +85,7 @@ const { placeholder, tags, sorts = [], defaultSort } = Astro.props;
       index,
       el,
       text: fold(el.dataset.search ?? ''),
+      en: el.dataset.searchEn === undefined ? null : fold(el.dataset.searchEn),
       tags: (el.dataset.tags ?? '').split(' '),
     }));
     const input = root.querySelector<HTMLInputElement>('[data-filter-search]')!;
@@ -92,9 +95,11 @@ const { placeholder, tags, sorts = [], defaultSort } = Astro.props;
 
     const apply = () => {
       const q = fold(input.value);
+      const latin = /^[\x00-\x7f]+$/.test(q);
       let shown = 0;
       for (const it of items) {
-        const ok = (!q || it.text.includes(q)) && (!tag || it.tags.includes(tag));
+        const haystack = it.en !== null && latin ? it.en : it.text;
+        const ok = (!q || haystack.includes(q)) && (!tag || it.tags.includes(tag));
         it.el.hidden = !ok;
         if (ok) shown++;
       }
