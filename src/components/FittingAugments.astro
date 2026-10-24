@@ -1,5 +1,5 @@
 ---
-import { FIT_PER_RARITY, RARITY_LABEL, championPickShare, championPlays, formatRate, type Augment, type Champion, type Rarity } from '../lib/data';
+import { FIT_PER_RARITY, RARITY_LABEL, championPickShare, championPlays, cnStats, formatRate, hasPickShares, type Augment, type Champion, type Rarity } from '../lib/data';
 
 interface Props {
   champion: Champion;
@@ -8,6 +8,7 @@ interface Props {
 
 const { champion, fitting } = Astro.props;
 const plays = championPlays(champion);
+const shares = hasPickShares(champion);
 const rarities: Rarity[] = ['silver', 'gold', 'prismatic'];
 const text = { silver: 'text-silver', gold: 'text-gold', prismatic: 'text-prismatic' };
 const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prismatic' };
@@ -17,8 +18,8 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
   <h2 class="text-lg font-bold">相性の良いオーグメント</h2>
   <p class="text-xs text-ink-2 mt-1 mb-3">
     {
-      plays > 0
-        ? `集めた試合で${champion.name}が実際に取ったオーグメント（${plays}試合分）と、タイプ・効果文からの相性を合わせた目安です。数字は${champion.name}の試合で選ばれた割合です。`
+      shares
+        ? `${champion.name}の試合で実際に選ばれた割合（中国サーバー約${Math.round(cnStats.matches / 10000)}万試合の集計${plays > 0 ? `＋集めた試合${plays}件` : ''}）を中心に、タイプ・効果文からの相性も加えた目安です。数字は${champion.name}の試合で選ばれた割合です。`
         : 'チャンピオンのタイプとオーグメントの効果文から自動で選んだ目安です。数字は全体のピック率です。'
     }
     （レアリティごとに最大{FIT_PER_RARITY}個、上ほどおすすめ）
@@ -39,7 +40,7 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
                     <img src={a.icon} alt="" width="28" height="28" loading="lazy" class={`size-7 rounded ring-1 ${ring[r]} bg-panel-2 shrink-0`} />
                   )}
                   <span class="text-sm leading-tight flex-1 min-w-0">{a.name}</span>
-                  <span class="text-[11px] text-ink-2 tabular-nums shrink-0">{formatRate(plays > 0 ? championPickShare(champion, a)! * 100 || null : a.pickRate)}</span>
+                  <span class="text-[11px] text-ink-2 tabular-nums shrink-0">{formatRate(shares ? championPickShare(champion, a)! * 100 || null : a.pickRate)}</span>
                 </a>
               </li>
             ))}

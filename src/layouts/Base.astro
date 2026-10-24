@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { meta } from '../lib/data';
+import { cnStats, meta } from '../lib/data';
 
 interface Props {
   title: string;
@@ -60,6 +60,12 @@ const nav = [
             class="underline hover:text-accent"
             href={meta.stats.licenseUrl}>{meta.stats.license}</a
           >、パッチ {meta.stats.patch}、集計日 {meta.stats.statsDate}）。限られたサンプルの集計で、全サーバーの値ではありません。
+        </p>
+        <p>
+          チャンピオン別のオーグメント採用率の出典: <a class="underline hover:text-accent" href="https://github.com/czgreat/aramhex-data"
+            >海克斯大乱斗统计数据（github.com/czgreat/aramhex-data）</a
+          >、<a class="underline hover:text-accent" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a
+          >。中国サーバーの集計（パッチ {cnStats.patch}）から試合数だけを使い、選ばれた割合に加工しています。
         </p>
         <p>ゲームデータ: Data Dragon {meta.gameVersion}、CommunityDragon。</p>
         <p>

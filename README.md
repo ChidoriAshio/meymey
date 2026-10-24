@@ -62,3 +62,9 @@ npm run build
 - 結果は `src/data/champion-augments.json` に追記されます。試合はゲームIDのハッシュで重複を除くので、同じファイルを何度取り込んでも二重に数えません。
 - 書き出すのはチャンピオンとオーグメントの組み合わせだけで、プレイヤー名・puuid・勝敗は含めません（Riot の方針に合わせ、勝率は公開しません）。
 - `matches.db` 自体はリポジトリに入れないでください。
+
+## 中国サーバーの採用率（aramhex-data）
+
+`fetch-data` は [aramhex-data](https://github.com/czgreat/aramhex-data)（CC BY-NC 4.0）の最新版から、チャンピオン × オーグメントの試合数を `src/data/champion-augments-cn.json` に書き出します。勝率は使いません。チャンピオンページの「相性の良いオーグメント」はこの採用率を中心に並び、Mayhem Tracker で集めた試合が増えると最大半分までそちらも混ぜます。
+
+**ライセンスが非営利（NC）なので、このデータを使う間はサイトを商用（広告・有料化など）にしないでください。** 出典表示はフッターにあります。

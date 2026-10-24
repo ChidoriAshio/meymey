@@ -58,6 +58,8 @@ const DDRAGON = 'https://ddragon.leagueoflegends.com';
 const CDRAGON = 'https://raw.communitydragon.org/latest';
 const CDRAGON_GAME_DATA = `${CDRAGON}/plugins/rcp-be-lol-game-data/global`;
 const ARAMMAYHEM = 'https://arammayhem.com/data/v1/latest';
+// China-server Mayhem stats per champion x augment (CC BY-NC 4.0). Only game counts are used, not win rates.
+const ARAMHEX = 'https://raw.githubusercontent.com/czgreat/aramhex-data/main';
 const TEXT_ICONS = `${CDRAGON}/plugins/rcp-be-lol-game-data/global/default/assets/ux/fonts/texticons/lol`;
 
 const RARITY = { kSilver: 'silver', kGold: 'gold', kPrismatic: 'prismatic' };
@@ -440,6 +442,33 @@ async function main() {
   await writeFile(path.join(DATA_DIR, 'champions.json'), JSON.stringify(champions, null, 2) + '\n');
   await writeFile(path.join(DATA_DIR, 'augments.json'), JSON.stringify(augments, null, 2) + '\n');
   await writeFile(path.join(DATA_DIR, 'items.json'), JSON.stringify(items, null, 2) + '\n');
+
+  console.log('Fetching China-server champion x augment counts…');
+  try {
+    const latest = await getJson(`${ARAMHEX}/latest.json`);
+    const [heroes, heroAugments] = await Promise.all([
+      getJson(`${ARAMHEX}/${latest.path}/heroes.json`),
+      getJson(`${ARAMHEX}/${latest.path}/hero_augments.json`),
+    ]);
+    const champByKey = new Map(champions.map((c) => [c.key, c.slug]));
+    const augByPlatformId = new Map(augments.map((a) => [String(a.platformId), a.slug]));
+    const out = {};
+    for (const [heroId, h] of Object.entries(heroes)) {
+      const slug = champByKey.get(heroId);
+      if (!slug) continue;
+      const picks = {};
+      for (const [augId, v] of Object.entries(heroAugments[heroId] ?? {})) {
+        const aug = augByPlatformId.get(augId);
+        if (aug) picks[aug] = v.games;
+      }
+      out[slug] = { games: h.games, picks };
+    }
+    const cn = { patch: latest.patch, matches: latest.matches, snapshotAt: latest.snapshot_at, champions: out };
+    await writeFile(path.join(DATA_DIR, 'champion-augments-cn.json'), JSON.stringify(cn) + '\n');
+  } catch (e) {
+    // Keep the previous file: the site still builds and uses the last good counts.
+    console.warn(`China-server counts skipped: ${e.message}`);
+  }
 
   console.log(
     `Done: ${items.length} items, ${champions.length} champions (${champions.filter((c) => c.pickRate != null).length} with stats), ` +

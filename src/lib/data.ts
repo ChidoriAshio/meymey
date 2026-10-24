@@ -7,6 +7,7 @@ import augmentsJson from '../data/augments.json';
 import itemsJson from '../data/items.json';
 import metaJson from '../data/meta.json';
 import trackerJson from '../data/champion-augments.json';
+import cnJson from '../data/champion-augments-cn.json';
 
 export type Rarity = 'silver' | 'gold' | 'prismatic';
 
@@ -261,19 +262,42 @@ for (const [, champ, aug] of tracker.picks) {
   trackerPicks.set(champ, m);
 }
 
+// China-server counts (aramhex-data): a large sample, but a different server.
+const cn = cnJson as { patch: string; matches: number; snapshotAt: string; champions: Record<string, { games: number; picks: Record<string, number> }> };
+export const cnStats = { patch: cn.patch, matches: cn.matches, snapshotAt: cn.snapshotAt };
+
 export function championPlays(c: Champion) {
   return trackerPlays.get(c.slug) ?? 0;
 }
 
-// Share of this champion's tracked games in which the augment was taken, or null without data.
+// Share of this champion's games in which the augment was taken, or null without data.
+// China-server counts are the base; our own tracked (Japanese) games weigh in as they reach
+// TRACKER_FULL_TRUST, up to half.
 export function championPickShare(c: Champion, a: Augment): number | null {
+  const cnChamp = cn.champions[c.slug];
+  const cnShare = cnChamp?.games ? (cnChamp.picks[a.slug] ?? 0) / cnChamp.games : null;
   const plays = championPlays(c);
-  return plays ? (trackerPicks.get(c.slug)?.get(a.slug) ?? 0) / plays : null;
+  const ownShare = plays ? (trackerPicks.get(c.slug)?.get(a.slug) ?? 0) / plays : null;
+  if (cnShare == null) return ownShare;
+  if (ownShare == null) return cnShare;
+  const w = 0.5 * Math.min(1, plays / TRACKER_FULL_TRUST);
+  return cnShare * (1 - w) + ownShare * w;
+}
+
+// How much the pick shares can be trusted for this champion, 0 to 1.
+function pickShareTrust(c: Champion) {
+  return cn.champions[c.slug]?.games ? 1 : Math.min(1, championPlays(c) / TRACKER_FULL_TRUST);
+}
+
+export function hasPickShares(c: Champion) {
+  return pickShareTrust(c) > 0;
 }
 
 // Plays needed before tracked picks fully count; fewer are blended with the text-based guess.
 const TRACKER_FULL_TRUST = 30;
-const TRACKER_WEIGHT = 40;
+// With real pick shares the text-based guess only breaks ties (share is 0-1, so ×100 = percent points).
+const SHARE_WEIGHT = 100;
+const GUESS_WEIGHT_WITH_SHARES = 0.3;
 
 export const FIT_PER_RARITY = 10;
 
@@ -283,7 +307,7 @@ export const FIT_PER_RARITY = 10;
 // that clashes with the champion's type (e.g. crit for a mage) is left out unless players take it.
 export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Record<Rarity, Augment[]> {
   const w = championWeights(c);
-  const trust = Math.min(1, championPlays(c) / TRACKER_FULL_TRUST);
+  const trust = pickShareTrust(c);
   const scored = augments
     .filter((a) => !exclude.has(a.slug))
     .map((a) => {
@@ -295,7 +319,7 @@ export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): 
       return {
         a,
         keep: played || (!clash && fit >= 0),
-        score: fit + (a.pickRate ?? 0) * 0.03 + share * TRACKER_WEIGHT * trust,
+        score: fit * (1 - (1 - GUESS_WEIGHT_WITH_SHARES) * trust) + (a.pickRate ?? 0) * 0.03 + share * SHARE_WEIGHT * trust,
       };
     })
     .filter((x) => x.keep)
