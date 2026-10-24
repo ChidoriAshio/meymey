@@ -10,13 +10,6 @@ const byTier = TIERS.map((tier) => ({
 }));
 const manualCount = champions.filter((c) => tierOf(c, builds)?.manual).length;
 const popular = [...champions].filter((c) => c.pickRate != null).sort((a, b) => b.pickRate! - a.pickRate!);
-const tierColor: Record<string, string> = {
-  S: 'text-[#ff8a7a]',
-  A: 'text-[#ffb366]',
-  B: 'text-[#f0d36b]',
-  C: 'text-[#7fdc95]',
-  D: 'text-[#8cc8ff]',
-};
 ---
 
 <Base title="注目度ティア">
@@ -36,7 +29,7 @@ const tierColor: Record<string, string> = {
       <div class="space-y-2 mb-10">
         {byTier.map(({ tier, list }) => (
           <div class="flex rounded-lg border border-line overflow-hidden">
-            <div class={`tier-label ${tierColor[tier]} font-bold text-3xl w-14 shrink-0 flex items-center justify-center`}>{tier}</div>
+            <div class="tier-label font-bold text-3xl w-14 shrink-0 flex items-center justify-center" data-tier={tier}>{tier}</div>
             <div class="flex flex-wrap gap-3 p-3 bg-panel flex-1 min-h-20">
               {list.map((c) => <ChampionTile champion={c} showRate={false} />)}
             </div>
@@ -66,7 +59,7 @@ const tierColor: Record<string, string> = {
   .tier-label {
     font-family: var(--font-display);
     background: linear-gradient(180deg, #1e2328, #0a1428);
-    border-right: 1px solid rgb(120 90 40 / 0.6);
+    border-right: 1px solid;
     text-shadow: 0 0 12px currentColor;
   }
 </style>

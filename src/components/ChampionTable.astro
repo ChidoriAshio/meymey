@@ -45,7 +45,7 @@ const tierRank = (t?: string) => (t ? TIERS.length - TIERS.indexOf(t as (typeof 
                 <span class="block text-[11px] text-ink-2 truncate">{c.tags.map((t) => ROLE_LABEL[t] ?? t).join(' / ')}</span>
               </span>
             </span>
-            <span class="text-center">{tier && <span class="tier-chip">{tier}</span>}</span>
+            <span class="text-center">{tier && <span class="tier-chip" data-tier={tier}>{tier}</span>}</span>
             <span class="text-right tabular-nums text-sm">
               {formatRate(c.pickRate)}
               <span class="block text-[11px]">
@@ -77,9 +77,9 @@ const tierRank = (t?: string) => (t ? TIERS.length - TIERS.indexOf(t as (typeof 
     height: 1.8rem;
     font-family: var(--font-display);
     font-weight: 700;
-    color: var(--color-accent);
-    border: 1px solid var(--color-accent);
+    border: 1px solid;
     border-radius: 9999px;
+    text-shadow: 0 0 8px var(--tier-color);
     background: linear-gradient(180deg, #1e2328, #0a1428);
   }
 </style>

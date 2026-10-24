@@ -37,7 +37,7 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
       </div>
       {
         tier && (
-          <a href="/tier-list/" class="tier-badge ml-auto text-center shrink-0">
+          <a href="/tier-list/" class="tier-badge ml-auto text-center shrink-0" data-tier={tier.tier}>
             <div class="text-[10px] text-ink-2">{tier.manual ? 'ティア' : '注目度'}</div>
             <div class="text-3xl font-bold">{tier.tier}</div>
           </a>
@@ -136,9 +136,8 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
     font-family: var(--font-display);
     min-width: 3.5rem;
     padding: 0.25rem 0.5rem;
-    border: 1px solid var(--color-accent);
+    border: 1px solid;
     background: linear-gradient(180deg, rgb(30 35 40 / 0.9), rgb(10 20 40 / 0.9));
-    color: var(--color-accent);
     clip-path: polygon(10% 0, 90% 0, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0 85%, 0 15%);
   }
 </style>

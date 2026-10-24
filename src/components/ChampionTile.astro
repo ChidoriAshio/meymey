@@ -14,7 +14,7 @@ const { champion: c, showRate = true, tier } = Astro.props;
 <a href={`/champions/${c.slug}/`} class="group flex flex-col items-center gap-1 text-center">
   <span class="relative">
     <img src={c.icon} alt="" width="64" height="64" loading="lazy" class="champ-tile size-16 rounded-lg" />
-    {tier && <span class="tile-tier" title={`注目度 ${tier}`}>{tier}</span>}
+    {tier && <span class="tile-tier" data-tier={tier} title={`注目度 ${tier}`}>{tier}</span>}
   </span>
   <span class="text-xs leading-tight group-hover:text-accent">{c.name}</span>
   {showRate && <span class="text-[11px] text-ink-2">{formatRate(c.pickRate)}</span>}
@@ -43,9 +43,8 @@ const { champion: c, showRate = true, tier } = Astro.props;
     font-family: var(--font-display);
     font-weight: 700;
     font-size: 0.8rem;
-    color: var(--color-accent);
     background: linear-gradient(180deg, #1e2328, #0a1428);
-    border: 1px solid var(--color-accent);
+    border: 1px solid;
     border-radius: 9999px;
   }
 </style>

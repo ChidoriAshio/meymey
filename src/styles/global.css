@@ -86,6 +86,17 @@ a.rounded-md.border:hover {
 .ring-gold { box-shadow: 0 0 10px rgb(229 185 78 / 0.45); }
 .ring-prismatic { box-shadow: 0 0 12px rgb(199 156 255 / 0.55); }
 
+/* One colour per tier, shared by every tier badge (data-tier="S" etc.). */
+[data-tier='S'] { --tier-color: #ff5c7a; }
+[data-tier='A'] { --tier-color: #ffa94d; }
+[data-tier='B'] { --tier-color: #f0d36b; }
+[data-tier='C'] { --tier-color: #6fdc8c; }
+[data-tier='D'] { --tier-color: #74b9ff; }
+[data-tier] {
+  color: var(--tier-color);
+  border-color: var(--tier-color) !important;
+}
+
 /* Gold call-to-action, like the client's Play button. */
 .btn-hex {
   display: inline-flex;

@@ -300,13 +300,15 @@ const TRACKER_FULL_TRUST = 30;
 const SHARE_WEIGHT = 100;
 const GUESS_WEIGHT_WITH_SHARES = 0.3;
 
-export const FIT_PER_RARITY = 10;
+export const FIT_PER_RARITY = 15;
+// How many show at once when several rarities are picked.
+export const FIT_SHOWN = 30;
 
-// Up to FIT_PER_RARITY augments per rarity that suit the champion, best first.
+// Up to FIT_PER_RARITY augments of each rarity that suit the champion, all together best first.
 // The guess from champion type and augment text is topped up by how often players of this champion
 // actually took the augment (tracker data), which counts for more as games accumulate. An augment
 // that clashes with the champion's type (e.g. crit for a mage) is left out unless players take it.
-export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Record<Rarity, Augment[]> {
+export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Augment[] {
   const w = championWeights(c);
   const trust = pickShareTrust(c);
   const scored = augments
@@ -325,8 +327,8 @@ export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): 
     })
     .filter((x) => x.keep)
     .sort((x, y) => y.score - x.score);
-  const pick = (r: Rarity) => scored.filter((x) => x.a.rarity === r).slice(0, FIT_PER_RARITY).map((x) => x.a);
-  return { silver: pick('silver'), gold: pick('gold'), prismatic: pick('prismatic') };
+  const taken: Record<Rarity, number> = { silver: 0, gold: 0, prismatic: 0 };
+  return scored.filter((x) => taken[x.a.rarity]++ < FIT_PER_RARITY).map((x) => x.a);
 }
 
 // Item builds from normal ARAM games (scripts/collect-aram.mjs + build-aram-builds.mjs).
