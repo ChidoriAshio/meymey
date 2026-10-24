@@ -44,7 +44,7 @@ Riot API（match-v5）はメイヘムの試合データを返さないため使�
 
 ## 公開
 
-`npm run build` で `dist/` に出力される静的サイトなので、Cloudflare Pages や Vercel などにそのまま置けます（ビルドコマンド `npm run build`、出力ディレクトリ `dist`）。
+Cloudflare Workers（静的アセット）で公開しています。Cloudflare 側の設定はビルドコマンド `npm run build`、デプロイコマンド `npx wrangler deploy` で、`wrangler.jsonc` が `dist/` をそのまま配信します。main が更新されるたびに Cloudflare が自動でビルドします。
 
 ## 注意
 

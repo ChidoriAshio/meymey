@@ -1,0 +1,8 @@
+// Cloudflare Workers deploy settings: serves the static site in dist/ (built by `npm run build`).
+{
+  "name": "meymey",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
