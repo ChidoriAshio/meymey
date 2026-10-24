@@ -44,6 +44,8 @@ export interface Item {
   id: string;
   name: string;
   plaintext: string;
+  // Safe HTML built from Riot's tooltip markup.
+  description: string;
   gold: number;
   tags: string[];
   finished: boolean;

@@ -63,11 +63,17 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
         {build.items.length > 0 && (
           <section class="mb-8">
             <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
-            <ol class="flex flex-wrap gap-4">
+            <ol class="grid sm:grid-cols-2 gap-3">
               {build.items.map((it, i) => (
-                <li class="flex flex-col items-center w-20 text-center">
-                  <img src={it.icon} alt="" width="48" height="48" loading="lazy" class="size-12 rounded border border-line" />
-                  <span class="text-xs mt-1 leading-tight">{i + 1}. {it.name}</span>
+                <li class="flex gap-3 rounded-lg border border-line bg-panel p-3">
+                  <img src={it.icon} alt="" width="40" height="40" loading="lazy" class="size-10 rounded border border-line shrink-0" />
+                  <div class="min-w-0">
+                    <div class="font-semibold leading-tight">
+                      {i + 1}. {it.name}
+                      <span class="text-xs font-normal text-ink-2 ml-1">{it.gold}G</span>
+                    </div>
+                    {it.description && <p class="tooltip-text text-xs text-ink-2 mt-1 leading-relaxed" set:html={it.description} />}
+                  </div>
                 </li>
               ))}
             </ol>

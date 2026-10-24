@@ -248,6 +248,8 @@ async function main() {
       id,
       name: it.name,
       plaintext: it.plaintext ?? '',
+      // Tooltips end in <br><br>, which would leave a blank gap under each item.
+      description: toSafeHtml(it.description ?? '').replace(/(<br>)+(?=(<\/span>)*$)/, ''),
       gold: it.gold.total,
       tags: it.tags ?? [],
       finished: !it.into?.length,

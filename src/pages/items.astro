@@ -33,7 +33,7 @@ const tags = Object.entries(TAG_LABEL).map(([value, label]) => ({ value, label }
             <div class="text-xs text-ink-2 mt-1">
               {it.gold}G · ID {it.id}
             </div>
-            {it.plaintext && <p class="text-xs text-ink-2 mt-1">{it.plaintext}</p>}
+            {it.description && <p class="tooltip-text text-xs text-ink-2 mt-2 leading-relaxed" set:html={it.description} />}
           </div>
         </div>
       ))
