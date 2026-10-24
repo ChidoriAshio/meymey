@@ -224,9 +224,13 @@ async function main() {
 
   console.log('Fetching items…');
   const itemJson = await getJson(`${DDRAGON}/cdn/${ddVersion}/data/ja_JP/item.json`);
-  // Items you can buy on the ARAM map (12), finished or not, without Ornn upgrades or hidden items.
+  // The ARAM map (12) also lists Arena copies of items under other ids, so keep only the ids
+  // arammayhem.com lists as Mayhem items when that list is available.
+  const amItems = await getJson(`${ARAMMAYHEM}/items.json`).catch(() => null);
+  const mayhemItemIds = new Set((amItems?.rows ?? []).map((r) => r.gameItemId).filter(Boolean));
   const items = Object.entries(itemJson.data)
     .filter(([, it]) => it.maps?.['12'] && it.gold?.purchasable && !it.hideFromAll && !it.requiredAlly)
+    .filter(([id]) => !mayhemItemIds.size || mayhemItemIds.has(id))
     .map(([id, it]) => ({
       id,
       name: it.name,

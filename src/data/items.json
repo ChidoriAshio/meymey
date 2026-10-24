@@ -1,36 +1,5 @@
 [
   {
-    "id": "223069",
-    "name": "ヴォイドの猛火",
-    "plaintext": "",
-    "gold": 6000,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "HealthRegen",
-      "Armor",
-      "Aura",
-      "CooldownReduction",
-      "MagicResist",
-      "AbilityHaste"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/223069.png"
-  },
-  {
-    "id": "226668",
-    "name": "ウルトラ ハイドラ",
-    "plaintext": "",
-    "gold": 6000,
-    "tags": [
-      "Damage",
-      "LifeSteal",
-      "AbilityHaste"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/226668.png"
-  },
-  {
     "id": "228002",
     "name": "ウーグレット ウィッチキャップ",
     "plaintext": "",
@@ -42,64 +11,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/228002.png"
-  },
-  {
-    "id": "773031",
-    "name": "インフィニティ エッジ",
-    "plaintext": "",
-    "gold": 3800,
-    "tags": [
-      "Damage",
-      "CriticalStrike"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773031.png"
-  },
-  {
-    "id": "773109",
-    "name": "マッドレッドの血爪",
-    "plaintext": "",
-    "gold": 3800,
-    "tags": [
-      "Armor",
-      "Damage",
-      "AttackSpeed",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773109.png"
-  },
-  {
-    "id": "773139",
-    "name": "マーキュリアル シミター",
-    "plaintext": "",
-    "gold": 3700,
-    "tags": [
-      "SpellBlock",
-      "Damage",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773139.png"
-  },
-  {
-    "id": "773078",
-    "name": "トリニティ フォース",
-    "plaintext": "",
-    "gold": 3628,
-    "tags": [
-      "Health",
-      "Damage",
-      "CriticalStrike",
-      "AttackSpeed",
-      "SpellDamage",
-      "Mana",
-      "NonbootsMovement",
-      "OnHit",
-      "Slow"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773078.png"
   },
   {
     "id": "3031",
@@ -135,21 +46,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3072.png"
-  },
-  {
-    "id": "773146",
-    "name": "ヘクステック ガンブレード",
-    "plaintext": "",
-    "gold": 3400,
-    "tags": [
-      "Damage",
-      "LifeSteal",
-      "SpellDamage",
-      "Slow",
-      "SpellVamp"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773146.png"
   },
   {
     "id": "3078",
@@ -250,57 +146,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6631.png"
   },
   {
-    "id": "773022",
-    "name": "フローズン マレット",
-    "plaintext": "",
-    "gold": 3300,
-    "tags": [
-      "Health",
-      "Damage",
-      "OnHit",
-      "Slow"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773022.png"
-  },
-  {
-    "id": "773074",
-    "name": "ラヴァナス ハイドラ",
-    "plaintext": "",
-    "gold": 3300,
-    "tags": [
-      "HealthRegen",
-      "Damage",
-      "LifeSteal",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773074.png"
-  },
-  {
-    "id": "773089",
-    "name": "ラバドン デスキャップ",
-    "plaintext": "",
-    "gold": 3300,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773089.png"
-  },
-  {
-    "id": "773157",
-    "name": "ゾーニャの砂時計",
-    "plaintext": "",
-    "gold": 3260,
-    "tags": [
-      "Armor",
-      "SpellDamage"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773157.png"
-  },
-  {
     "id": "3157",
     "name": "ゾーニャの砂時計",
     "plaintext": "発動ですべての行動が不可になるが、一定時間無敵になる",
@@ -314,21 +159,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3157.png"
   },
   {
-    "id": "773025",
-    "name": "アイスボーン ガントレット",
-    "plaintext": "",
-    "gold": 3250,
-    "tags": [
-      "Armor",
-      "SpellDamage",
-      "Mana",
-      "CooldownReduction",
-      "Slow"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773025.png"
-  },
-  {
     "id": "3053",
     "name": "ステラックの篭手",
     "plaintext": "大ダメージから身を守る",
@@ -340,20 +170,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3053.png"
-  },
-  {
-    "id": "3095",
-    "name": "ストームレイザー",
-    "plaintext": "他のエネルギー充填状態の効果を大幅に強化する",
-    "gold": 3200,
-    "tags": [
-      "Damage",
-      "CriticalStrike",
-      "AttackSpeed",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3095.png"
   },
   {
     "id": "3139",
@@ -411,56 +227,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6665.png"
-  },
-  {
-    "id": "773072",
-    "name": "ブラッドサースター",
-    "plaintext": "",
-    "gold": 3200,
-    "tags": [
-      "Damage",
-      "LifeSteal"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773072.png"
-  },
-  {
-    "id": "773153",
-    "name": "ルインドキング ブレード",
-    "plaintext": "",
-    "gold": 3200,
-    "tags": [
-      "Damage",
-      "AttackSpeed",
-      "LifeSteal",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773153.png"
-  },
-  {
-    "id": "773156",
-    "name": "マルモティウスの胃袋",
-    "plaintext": "",
-    "gold": 3200,
-    "tags": [
-      "SpellBlock",
-      "Damage"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773156.png"
-  },
-  {
-    "id": "773143",
-    "name": "ランデュイン オーメン",
-    "plaintext": "",
-    "gold": 3125,
-    "tags": [
-      "Health",
-      "Armor"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773143.png"
   },
   {
     "id": "2510",
@@ -559,18 +325,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6610.png"
-  },
-  {
-    "id": "773128",
-    "name": "デスファイア グラスプ",
-    "plaintext": "",
-    "gold": 3100,
-    "tags": [
-      "SpellDamage",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773128.png"
   },
   {
     "id": "3508",
@@ -904,59 +658,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/123430.png"
   },
   {
-    "id": "773071",
-    "name": "ブラック クリーバー",
-    "plaintext": "",
-    "gold": 3000,
-    "tags": [
-      "Health",
-      "Damage",
-      "OnHit",
-      "CooldownReduction",
-      "ArmorPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773071.png"
-  },
-  {
-    "id": "773083",
-    "name": "ワーモグ アーマー",
-    "plaintext": "",
-    "gold": 3000,
-    "tags": [
-      "Health",
-      "HealthRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773083.png"
-  },
-  {
-    "id": "773100",
-    "name": "リッチ ベイン",
-    "plaintext": "",
-    "gold": 3000,
-    "tags": [
-      "SpellDamage",
-      "Mana",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773100.png"
-  },
-  {
-    "id": "773516",
-    "name": "パーフェクト ヘクス コア",
-    "plaintext": "",
-    "gold": 3000,
-    "tags": [
-      "Damage",
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773516.png"
-  },
-  {
     "id": "126697",
     "name": "ヒュブリス",
     "plaintext": "",
@@ -970,21 +671,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/126697.png"
-  },
-  {
-    "id": "773107",
-    "name": "ルーン ブルワーク",
-    "plaintext": "",
-    "gold": 2950,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "HealthRegen",
-      "Armor",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773107.png"
   },
   {
     "id": "2504",
@@ -1125,46 +811,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/8010.png"
   },
   {
-    "id": "773110",
-    "name": "フローズン ハート",
-    "plaintext": "",
-    "gold": 2900,
-    "tags": [
-      "Armor",
-      "Mana",
-      "CooldownReduction",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773110.png"
-  },
-  {
-    "id": "773116",
-    "name": "リーライ クリスタル セプター",
-    "plaintext": "",
-    "gold": 2900,
-    "tags": [
-      "Health",
-      "SpellDamage",
-      "Slow"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773116.png"
-  },
-  {
-    "id": "773151",
-    "name": "ライアンドリーの仮面",
-    "plaintext": "",
-    "gold": 2900,
-    "tags": [
-      "Health",
-      "SpellDamage",
-      "MagicPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773151.png"
-  },
-  {
     "id": "3165",
     "name": "モレロノミコン",
     "plaintext": "魔法ダメージが増加",
@@ -1192,35 +838,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6698.png"
-  },
-  {
-    "id": "773172",
-    "name": "ゼファー",
-    "plaintext": "",
-    "gold": 2850,
-    "tags": [
-      "Damage",
-      "AttackSpeed",
-      "NonbootsMovement",
-      "CooldownReduction",
-      "Tenacity"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773172.png"
-  },
-  {
-    "id": "773056",
-    "name": "オームレッカー",
-    "plaintext": "",
-    "gold": 2835,
-    "tags": [
-      "Health",
-      "HealthRegen",
-      "SpellDamage",
-      "ManaRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773056.png"
   },
   {
     "id": "2502",
@@ -1389,32 +1006,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6664.png"
   },
   {
-    "id": "773027",
-    "name": "ロッド オブ エイジス",
-    "plaintext": "",
-    "gold": 2800,
-    "tags": [
-      "Health",
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773027.png"
-  },
-  {
-    "id": "773046",
-    "name": "ファントム ダンサー",
-    "plaintext": "",
-    "gold": 2800,
-    "tags": [
-      "CriticalStrike",
-      "AttackSpeed",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773046.png"
-  },
-  {
     "id": "6655",
     "name": "ルーデン エコー",
     "plaintext": "バーストダメージが大幅に増加、耐久力の低い敵に効果的",
@@ -1440,45 +1031,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6696.png"
-  },
-  {
-    "id": "773026",
-    "name": "ガーディアン エンジェル",
-    "plaintext": "",
-    "gold": 2750,
-    "tags": [
-      "SpellBlock",
-      "Armor"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773026.png"
-  },
-  {
-    "id": "773065",
-    "name": "スピリット ビサージュ",
-    "plaintext": "",
-    "gold": 2750,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "HealthRegen",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773065.png"
-  },
-  {
-    "id": "773102",
-    "name": "バンシー ヴェール",
-    "plaintext": "",
-    "gold": 2750,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "HealthRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773102.png"
   },
   {
     "id": "3065",
@@ -1533,50 +1085,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/4628.png"
-  },
-  {
-    "id": "773003",
-    "name": "アークエンジェル スタッフ",
-    "plaintext": "",
-    "gold": 2700,
-    "tags": [
-      "SpellDamage",
-      "Mana",
-      "ManaRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773003.png"
-  },
-  {
-    "id": "773142",
-    "name": "妖夢の霊剣",
-    "plaintext": "",
-    "gold": 2700,
-    "tags": [
-      "Damage",
-      "CriticalStrike",
-      "AttackSpeed",
-      "NonbootsMovement",
-      "CooldownReduction",
-      "ArmorPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773142.png"
-  },
-  {
-    "id": "773512",
-    "name": "ジ＝ロット ポータル",
-    "plaintext": "",
-    "gold": 2700,
-    "tags": [
-      "SpellBlock",
-      "HealthRegen",
-      "Armor",
-      "Active",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773512.png"
   },
   {
     "id": "2512",
@@ -1677,31 +1185,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/8020.png"
   },
   {
-    "id": "773068",
-    "name": "サンファイア ケープ",
-    "plaintext": "",
-    "gold": 2650,
-    "tags": [
-      "Health",
-      "Armor"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773068.png"
-  },
-  {
-    "id": "773064",
-    "name": "自然の力",
-    "plaintext": "",
-    "gold": 2610,
-    "tags": [
-      "SpellBlock",
-      "HealthRegen",
-      "NonbootsMovement"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773064.png"
-  },
-  {
     "id": "2525",
     "name": "プロトプラズム ハーネス",
     "plaintext": "",
@@ -1744,77 +1227,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6657.png"
   },
   {
-    "id": "773124",
-    "name": "グインソー レイジブレード",
-    "plaintext": "",
-    "gold": 2600,
-    "tags": [
-      "Damage",
-      "AttackSpeed",
-      "LifeSteal",
-      "SpellDamage",
-      "OnHit",
-      "SpellVamp"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773124.png"
-  },
-  {
-    "id": "773174",
-    "name": "Shusheiのマナジョッキ",
-    "plaintext": "",
-    "gold": 2600,
-    "tags": [
-      "SpellBlock",
-      "SpellDamage",
-      "ManaRegen",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773174.png"
-  },
-  {
-    "id": "773001",
-    "name": "アビサルセプター",
-    "plaintext": "",
-    "gold": 2560,
-    "tags": [
-      "SpellBlock",
-      "SpellDamage",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773001.png"
-  },
-  {
-    "id": "773050",
-    "name": "スタークの熱情",
-    "plaintext": "",
-    "gold": 2550,
-    "tags": [
-      "Health",
-      "Damage",
-      "LifeSteal",
-      "CooldownReduction",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773050.png"
-  },
-  {
-    "id": "773152",
-    "name": "ウィル・オブ・ザ・エンシェント",
-    "plaintext": "",
-    "gold": 2550,
-    "tags": [
-      "SpellDamage",
-      "Aura",
-      "SpellVamp"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773152.png"
-  },
-  {
     "id": "3110",
     "name": "フローズン ハート",
     "plaintext": "物理防御がかなり上昇し、敵の攻撃速度を低下させる",
@@ -1852,57 +1264,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6695.png"
-  },
-  {
-    "id": "223084",
-    "name": "心の鋼",
-    "plaintext": "",
-    "gold": 2500,
-    "tags": [
-      "Health"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/223084.png"
-  },
-  {
-    "id": "773087",
-    "name": "スタティック シヴ",
-    "plaintext": "",
-    "gold": 2500,
-    "tags": [
-      "CriticalStrike",
-      "AttackSpeed",
-      "NonbootsMovement",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773087.png"
-  },
-  {
-    "id": "773115",
-    "name": "ナッシャー トゥース",
-    "plaintext": "",
-    "gold": 2500,
-    "tags": [
-      "AttackSpeed",
-      "SpellDamage",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773115.png"
-  },
-  {
-    "id": "773222",
-    "name": "ミカエルのるつぼ",
-    "plaintext": "",
-    "gold": 2500,
-    "tags": [
-      "SpellBlock",
-      "HealthRegen",
-      "ManaRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773222.png"
   },
   {
     "id": "994403",
@@ -1965,33 +1326,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/4005.png"
-  },
-  {
-    "id": "773085",
-    "name": "ルナーン ハリケーン",
-    "plaintext": "",
-    "gold": 2400,
-    "tags": [
-      "AttackSpeed",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773085.png"
-  },
-  {
-    "id": "773060",
-    "name": "統率の旗",
-    "plaintext": "",
-    "gold": 2360,
-    "tags": [
-      "HealthRegen",
-      "Armor",
-      "SpellDamage",
-      "CooldownReduction",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773060.png"
   },
   {
     "id": "124011",
@@ -2072,57 +1406,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3222.png"
   },
   {
-    "id": "773005",
-    "name": "貫く者アトマ",
-    "plaintext": "",
-    "gold": 2300,
-    "tags": [
-      "Armor",
-      "Damage",
-      "CriticalStrike"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773005.png"
-  },
-  {
-    "id": "773035",
-    "name": "ラスト ウィスパー",
-    "plaintext": "",
-    "gold": 2300,
-    "tags": [
-      "Damage",
-      "ArmorPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773035.png"
-  },
-  {
-    "id": "773135",
-    "name": "ヴォイド スタッフ",
-    "plaintext": "",
-    "gold": 2295,
-    "tags": [
-      "SpellDamage",
-      "MagicPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773135.png"
-  },
-  {
-    "id": "773063",
-    "name": "魂の屍衣",
-    "plaintext": "",
-    "gold": 2285,
-    "tags": [
-      "Health",
-      "ManaRegen",
-      "Aura",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773063.png"
-  },
-  {
     "id": "2526",
     "name": "囁きのサークレット",
     "plaintext": "",
@@ -2148,46 +1431,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6616.png"
-  },
-  {
-    "id": "773084",
-    "name": "心身統御のペンダント",
-    "plaintext": "",
-    "gold": 2250,
-    "tags": [
-      "Health",
-      "Damage",
-      "Mana"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773084.png"
-  },
-  {
-    "id": "773515",
-    "name": "ヘクス コアMK-2",
-    "plaintext": "",
-    "gold": 2250,
-    "tags": [
-      "Damage",
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773515.png"
-  },
-  {
-    "id": "773190",
-    "name": "ソラリのロケット",
-    "plaintext": "",
-    "gold": 2225,
-    "tags": [
-      "Health",
-      "HealthRegen",
-      "Armor",
-      "Aura"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773190.png"
   },
   {
     "id": "2065",
@@ -2281,243 +1524,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6620.png"
   },
   {
-    "id": "773075",
-    "name": "ソーンメイル",
-    "plaintext": "",
-    "gold": 2200,
-    "tags": [
-      "Armor"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773075.png"
-  },
-  {
-    "id": "773165",
-    "name": "モレロノミコン",
-    "plaintext": "",
-    "gold": 2200,
-    "tags": [
-      "SpellDamage",
-      "ManaRegen",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773165.png"
-  },
-  {
-    "id": "773504",
-    "name": "アーデント センサー",
-    "plaintext": "",
-    "gold": 2200,
-    "tags": [
-      "AttackSpeed",
-      "SpellDamage",
-      "ManaRegen",
-      "NonbootsMovement",
-      "AbilityHaste"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773504.png"
-  },
-  {
-    "id": "773091",
-    "name": "ウィッツ エンド",
-    "plaintext": "",
-    "gold": 2150,
-    "tags": [
-      "SpellBlock",
-      "AttackSpeed",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773091.png"
-  },
-  {
-    "id": "773105",
-    "name": "イージスの盾",
-    "plaintext": "",
-    "gold": 2150,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "Armor",
-      "Aura"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773105.png"
-  },
-  {
-    "id": "773131",
-    "name": "天帝の剣",
-    "plaintext": "",
-    "gold": 2150,
-    "tags": [
-      "CriticalStrike",
-      "AttackSpeed"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773131.png"
-  },
-  {
-    "id": "773004",
-    "name": "マナムネ",
-    "plaintext": "",
-    "gold": 2100,
-    "tags": [
-      "Damage",
-      "Mana",
-      "ManaRegen",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773004.png"
-  },
-  {
-    "id": "773069",
-    "name": "シュレリアの思念",
-    "plaintext": "",
-    "gold": 2100,
-    "tags": [
-      "Health",
-      "HealthRegen",
-      "ManaRegen",
-      "NonbootsMovement",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773069.png"
-  },
-  {
-    "id": "773114",
-    "name": "病魔",
-    "plaintext": "",
-    "gold": 2035,
-    "tags": [
-      "AttackSpeed",
-      "SpellDamage",
-      "OnHit",
-      "MagicPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773114.png"
-  },
-  {
-    "id": "773154",
-    "name": "リグルのランタン",
-    "plaintext": "",
-    "gold": 2000,
-    "tags": [
-      "Armor",
-      "Damage",
-      "LifeSteal",
-      "Vision",
-      "Active",
-      "OnHit",
-      "Jungle"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773154.png"
-  },
-  {
-    "id": "773206",
-    "name": "亡霊の幽魂",
-    "plaintext": "",
-    "gold": 2000,
-    "tags": [
-      "SpellDamage",
-      "ManaRegen",
-      "OnHit",
-      "CooldownReduction",
-      "SpellVamp"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773206.png"
-  },
-  {
-    "id": "773207",
-    "name": "エンシェントゴーレムの魂",
-    "plaintext": "",
-    "gold": 2000,
-    "tags": [
-      "Health",
-      "HealthRegen",
-      "ManaRegen",
-      "OnHit",
-      "CooldownReduction",
-      "Tenacity"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773207.png"
-  },
-  {
-    "id": "773209",
-    "name": "エルダーリザードの魂",
-    "plaintext": "",
-    "gold": 2000,
-    "tags": [
-      "HealthRegen",
-      "Damage",
-      "ManaRegen",
-      "OnHit",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773209.png"
-  },
-  {
-    "id": "773178",
-    "name": "アイオニック スパーク",
-    "plaintext": "",
-    "gold": 1950,
-    "tags": [
-      "Health",
-      "AttackSpeed",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773178.png"
-  },
-  {
-    "id": "773023",
-    "name": "ツイン シャドウ",
-    "plaintext": "",
-    "gold": 1900,
-    "tags": [
-      "SpellBlock",
-      "SpellDamage",
-      "NonbootsMovement",
-      "Slow"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773023.png"
-  },
-  {
-    "id": "773077",
-    "name": "ティアマット",
-    "plaintext": "",
-    "gold": 1900,
-    "tags": [
-      "HealthRegen",
-      "Damage",
-      "OnHit"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773077.png"
-  },
-  {
-    "id": "773123",
-    "name": "エクスキューショナー コーリング",
-    "plaintext": "",
-    "gold": 1900,
-    "tags": [
-      "Damage",
-      "CriticalStrike",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773123.png"
-  },
-  {
     "id": "2420",
     "name": "シーカー アームガード",
     "plaintext": "発動ですべての行動が不可になるが、一定時間無敵になる",
@@ -2556,80 +1562,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/4632.png"
   },
   {
-    "id": "771058",
-    "name": "ムダニ デカイ ロッド",
-    "plaintext": "",
-    "gold": 1600,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771058.png"
-  },
-  {
-    "id": "773092",
-    "name": "真なる氷のかけら",
-    "plaintext": "",
-    "gold": 1600,
-    "tags": [
-      "SpellDamage",
-      "ManaRegen",
-      "Aura",
-      "Slow",
-      "GoldPer"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773092.png"
-  },
-  {
-    "id": "771038",
-    "name": "B. F. ソード",
-    "plaintext": "",
-    "gold": 1550,
-    "tags": [
-      "Damage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771038.png"
-  },
-  {
-    "id": "773140",
-    "name": "クイックシルバー サッシュ",
-    "plaintext": "",
-    "gold": 1550,
-    "tags": [
-      "SpellBlock"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773140.png"
-  },
-  {
-    "id": "773514",
-    "name": "ヘクス コアMK-1",
-    "plaintext": "",
-    "gold": 1500,
-    "tags": [
-      "Damage",
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773514.png"
-  },
-  {
-    "id": "773136",
-    "name": "悲愴な仮面",
-    "plaintext": "",
-    "gold": 1485,
-    "tags": [
-      "Health",
-      "SpellDamage",
-      "MagicPenetration"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773136.png"
-  },
-  {
     "id": "3035",
     "name": "ラスト ウィスパー",
     "plaintext": "物理防御の高い敵を打倒する",
@@ -2640,57 +1572,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3035.png"
-  },
-  {
-    "id": "773144",
-    "name": "ビルジウォーター カトラス",
-    "plaintext": "",
-    "gold": 1400,
-    "tags": [
-      "Damage",
-      "LifeSteal",
-      "Slow"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773144.png"
-  },
-  {
-    "id": "773211",
-    "name": "スペクター カウル",
-    "plaintext": "",
-    "gold": 1400,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "HealthRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773211.png"
-  },
-  {
-    "id": "773024",
-    "name": "グレイシャル シュラウド",
-    "plaintext": "",
-    "gold": 1350,
-    "tags": [
-      "Armor",
-      "Mana",
-      "CooldownReduction"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773024.png"
-  },
-  {
-    "id": "773155",
-    "name": "ヘクスドリンカー",
-    "plaintext": "",
-    "gold": 1350,
-    "tags": [
-      "SpellBlock",
-      "Damage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773155.png"
   },
   {
     "id": "2020",
@@ -2704,19 +1585,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/2020.png"
-  },
-  {
-    "id": "773134",
-    "name": "ブルータライザー",
-    "plaintext": "",
-    "gold": 1337,
-    "tags": [
-      "Damage",
-      "CooldownReduction",
-      "ArmorPenetration"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773134.png"
   },
   {
     "id": "1038",
@@ -2792,17 +1660,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6670.png"
   },
   {
-    "id": "773138",
-    "name": "リヴァイアサン",
-    "plaintext": "",
-    "gold": 1275,
-    "tags": [
-      "Health"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773138.png"
-  },
-  {
     "id": "3111",
     "name": "マーキュリー ブーツ",
     "plaintext": "移動速度が上昇し、行動阻害の効果時間を短縮",
@@ -2827,42 +1684,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3211.png"
-  },
-  {
-    "id": "773044",
-    "name": "ファージ",
-    "plaintext": "",
-    "gold": 1250,
-    "tags": [
-      "Health",
-      "Damage",
-      "OnHit"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773044.png"
-  },
-  {
-    "id": "773101",
-    "name": "スティンガー",
-    "plaintext": "",
-    "gold": 1250,
-    "tags": [
-      "AttackSpeed",
-      "CooldownReduction"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773101.png"
-  },
-  {
-    "id": "773041",
-    "name": "メジャイ ソウルスティーラー",
-    "plaintext": "",
-    "gold": 1235,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773041.png"
   },
   {
     "id": "1058",
@@ -2940,91 +1761,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3802.png"
   },
   {
-    "id": "773010",
-    "name": "カタリストプロテクター",
-    "plaintext": "",
-    "gold": 1200,
-    "tags": [
-      "Health",
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773010.png"
-  },
-  {
-    "id": "773057",
-    "name": "シーン",
-    "plaintext": "",
-    "gold": 1200,
-    "tags": [
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773057.png"
-  },
-  {
-    "id": "773111",
-    "name": "マーキュリー ブーツ",
-    "plaintext": "",
-    "gold": 1200,
-    "tags": [
-      "SpellBlock",
-      "Boots",
-      "Tenacity"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773111.png"
-  },
-  {
-    "id": "773141",
-    "name": "オカルト ソード",
-    "plaintext": "",
-    "gold": 1200,
-    "tags": [
-      "Damage"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773141.png"
-  },
-  {
-    "id": "773145",
-    "name": "ヘクステック リボルバー",
-    "plaintext": "",
-    "gold": 1200,
-    "tags": [
-      "SpellDamage",
-      "SpellVamp"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773145.png"
-  },
-  {
-    "id": "773086",
-    "name": "ジール",
-    "plaintext": "",
-    "gold": 1175,
-    "tags": [
-      "CriticalStrike",
-      "AttackSpeed",
-      "NonbootsMovement"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773086.png"
-  },
-  {
-    "id": "773191",
-    "name": "シーカー アームガード",
-    "plaintext": "",
-    "gold": 1160,
-    "tags": [
-      "Armor",
-      "SpellDamage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773191.png"
-  },
-  {
     "id": "2021",
     "name": "トンネル掘り",
     "plaintext": "",
@@ -3059,19 +1795,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3006.png"
-  },
-  {
-    "id": "3008",
-    "name": "グラトナス ブーツ",
-    "plaintext": "最大マナを基に攻撃力が上昇",
-    "gold": 1100,
-    "tags": [
-      "LifeSteal",
-      "SpellVamp",
-      "Boots"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3008.png"
   },
   {
     "id": "3020",
@@ -3122,30 +1845,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/4630.png"
   },
   {
-    "id": "773020",
-    "name": "ソーサラー シューズ",
-    "plaintext": "",
-    "gold": 1100,
-    "tags": [
-      "Boots",
-      "MagicPenetration"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773020.png"
-  },
-  {
-    "id": "773173",
-    "name": "エリーサの奇跡",
-    "plaintext": "",
-    "gold": 1100,
-    "tags": [
-      "HealthRegen",
-      "ManaRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773173.png"
-  },
-  {
     "id": "3133",
     "name": "コールフィールド ウォーハンマー",
     "plaintext": "攻撃力が上昇し、クールダウンを短縮",
@@ -3191,75 +1890,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3134.png"
-  },
-  {
-    "id": "771011",
-    "name": "ジャイアント ベルト",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Health"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771011.png"
-  },
-  {
-    "id": "773009",
-    "name": "スイフトネス ブーツ",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Boots"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773009.png"
-  },
-  {
-    "id": "773047",
-    "name": "忍者足袋",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Armor",
-      "Boots"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773047.png"
-  },
-  {
-    "id": "773082",
-    "name": "ワーデン メイル",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Armor",
-      "Slow"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773082.png"
-  },
-  {
-    "id": "773117",
-    "name": "モビリティ ブーツ",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Boots"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773117.png"
-  },
-  {
-    "id": "773158",
-    "name": "アイオニア ブーツ",
-    "plaintext": "",
-    "gold": 1000,
-    "tags": [
-      "Boots",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773158.png"
   },
   {
     "id": "2051",
@@ -3427,41 +2057,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6660.png"
   },
   {
-    "id": "771043",
-    "name": "リカーブ ボウ",
-    "plaintext": "",
-    "gold": 900,
-    "tags": [
-      "AttackSpeed"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771043.png"
-  },
-  {
-    "id": "773006",
-    "name": "バーサーカー ブーツ",
-    "plaintext": "",
-    "gold": 900,
-    "tags": [
-      "AttackSpeed",
-      "Boots"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773006.png"
-  },
-  {
-    "id": "773028",
-    "name": "調和の聖杯",
-    "plaintext": "",
-    "gold": 880,
-    "tags": [
-      "SpellBlock",
-      "ManaRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773028.png"
-  },
-  {
     "id": "1037",
     "name": "ピッケル",
     "plaintext": "攻撃力がやや上昇",
@@ -3471,28 +2066,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1037.png"
-  },
-  {
-    "id": "771037",
-    "name": "ピッケル",
-    "plaintext": "",
-    "gold": 875,
-    "tags": [
-      "Damage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771037.png"
-  },
-  {
-    "id": "771026",
-    "name": "ブラスティング ワンド",
-    "plaintext": "",
-    "gold": 860,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771026.png"
   },
   {
     "id": "1026",
@@ -3528,42 +2101,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3108.png"
-  },
-  {
-    "id": "773067",
-    "name": "キンドルジェム",
-    "plaintext": "",
-    "gold": 850,
-    "tags": [
-      "Health",
-      "CooldownReduction"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773067.png"
-  },
-  {
-    "id": "773132",
-    "name": "黄金の心",
-    "plaintext": "",
-    "gold": 825,
-    "tags": [
-      "Health",
-      "GoldPer"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773132.png"
-  },
-  {
-    "id": "773108",
-    "name": "フィンディッシュの古書",
-    "plaintext": "",
-    "gold": 820,
-    "tags": [
-      "SpellDamage",
-      "CooldownReduction"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773108.png"
   },
   {
     "id": "1031",
@@ -3647,30 +2184,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3916.png"
   },
   {
-    "id": "771053",
-    "name": "ヴァンパイア セプター",
-    "plaintext": "",
-    "gold": 800,
-    "tags": [
-      "Damage",
-      "LifeSteal"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771053.png"
-  },
-  {
-    "id": "773093",
-    "name": "アバライス ブレード",
-    "plaintext": "",
-    "gold": 800,
-    "tags": [
-      "CriticalStrike",
-      "GoldPer"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773093.png"
-  },
-  {
     "id": "6690",
     "name": "レクトリクス",
     "plaintext": "",
@@ -3681,17 +2194,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6690.png"
-  },
-  {
-    "id": "773098",
-    "name": "幸運のピック",
-    "plaintext": "",
-    "gold": 765,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773098.png"
   },
   {
     "id": "6032",
@@ -3721,52 +2223,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/6032.png"
   },
   {
-    "id": "773513",
-    "name": "プロトタイプ ヘクス コア",
-    "plaintext": "",
-    "gold": 750,
-    "tags": [
-      "Damage",
-      "SpellDamage",
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773513.png"
-  },
-  {
-    "id": "771018",
-    "name": "アジリティ クローク",
-    "plaintext": "",
-    "gold": 730,
-    "tags": [
-      "CriticalStrike"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771018.png"
-  },
-  {
-    "id": "771031",
-    "name": "チェイン ベスト",
-    "plaintext": "",
-    "gold": 720,
-    "tags": [
-      "Armor"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771031.png"
-  },
-  {
-    "id": "771057",
-    "name": "ネガトロン クローク",
-    "plaintext": "",
-    "gold": 720,
-    "tags": [
-      "SpellBlock"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771057.png"
-  },
-  {
     "id": "1043",
     "name": "リカーブ ボウ",
     "plaintext": "攻撃速度が大幅に上昇",
@@ -3777,69 +2233,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1043.png"
-  },
-  {
-    "id": "771080",
-    "name": "精霊石",
-    "plaintext": "",
-    "gold": 700,
-    "tags": [
-      "HealthRegen",
-      "ManaRegen",
-      "OnHit"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771080.png"
-  },
-  {
-    "id": "773070",
-    "name": "女神の涙",
-    "plaintext": "",
-    "gold": 700,
-    "tags": [
-      "Mana",
-      "ManaRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773070.png"
-  },
-  {
-    "id": "773096",
-    "name": "賢者の石",
-    "plaintext": "",
-    "gold": 700,
-    "tags": [
-      "HealthRegen",
-      "ManaRegen",
-      "GoldPer"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773096.png"
-  },
-  {
-    "id": "773106",
-    "name": "マッドレッドの鉤爪",
-    "plaintext": "",
-    "gold": 700,
-    "tags": [
-      "Armor",
-      "OnHit",
-      "Jungle"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773106.png"
-  },
-  {
-    "id": "773052",
-    "name": "勇躍の紋章",
-    "plaintext": "",
-    "gold": 650,
-    "tags": [
-      "Health",
-      "Armor"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773052.png"
   },
   {
     "id": "1018",
@@ -3916,31 +2309,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/2140.png"
   },
   {
-    "id": "771028",
-    "name": "ルビー クリスタル",
-    "plaintext": "",
-    "gold": 475,
-    "tags": [
-      "Health"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771028.png"
-  },
-  {
-    "id": "771055",
-    "name": "ドラン ブレード",
-    "plaintext": "",
-    "gold": 475,
-    "tags": [
-      "Health",
-      "Damage",
-      "LifeSteal",
-      "OnHit"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771055.png"
-  },
-  {
     "id": "1054",
     "name": "ドラン シールド",
     "plaintext": "防御強化向けの初期アイテム",
@@ -3967,43 +2335,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1055.png"
-  },
-  {
-    "id": "1120",
-    "name": "ドラン ヘルム",
-    "plaintext": "",
-    "gold": 450,
-    "tags": [
-      "Health",
-      "SpellBlock",
-      "Armor",
-      "Lane"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1120.png"
-  },
-  {
-    "id": "771054",
-    "name": "ドラン シールド",
-    "plaintext": "",
-    "gold": 440,
-    "tags": [
-      "Health",
-      "HealthRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771054.png"
-  },
-  {
-    "id": "771052",
-    "name": "増魔の書",
-    "plaintext": "",
-    "gold": 435,
-    "tags": [
-      "SpellDamage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771052.png"
   },
   {
     "id": "1028",
@@ -4053,20 +2384,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1056.png"
   },
   {
-    "id": "1086",
-    "name": "ドラン ボウ",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "Damage",
-      "AttackSpeed",
-      "SpellVamp",
-      "Lane"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1086.png"
-  },
-  {
     "id": "3070",
     "name": "女神の涙",
     "plaintext": "マナ消費時に最大マナが上昇",
@@ -4079,87 +2396,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3070.png"
   },
   {
-    "id": "771027",
-    "name": "サファイア クリスタル",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "Mana"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771027.png"
-  },
-  {
-    "id": "771033",
-    "name": "ヌルマジック マント",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "SpellBlock"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771033.png"
-  },
-  {
-    "id": "771036",
-    "name": "ロング ソード",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "Damage"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771036.png"
-  },
-  {
-    "id": "771042",
-    "name": "ダガー",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "AttackSpeed"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771042.png"
-  },
-  {
-    "id": "771051",
-    "name": "喧嘩屋のグローブ",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "CriticalStrike"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771051.png"
-  },
-  {
-    "id": "771056",
-    "name": "ドラン リング",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "Health",
-      "SpellDamage",
-      "ManaRegen"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771056.png"
-  },
-  {
-    "id": "772042",
-    "name": "オラクル エリクサー",
-    "plaintext": "",
-    "gold": 400,
-    "tags": [
-      "Consumable",
-      "Vision",
-      "Stealth"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772042.png"
-  },
-  {
     "id": "1036",
     "name": "ロング ソード",
     "plaintext": "攻撃力がわずかに上昇",
@@ -4170,45 +2406,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1036.png"
-  },
-  {
-    "id": "772037",
-    "name": "不屈のエリクサー",
-    "plaintext": "",
-    "gold": 350,
-    "tags": [
-      "Health",
-      "Damage",
-      "Consumable"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772037.png"
-  },
-  {
-    "id": "772041",
-    "name": "クリスタル フラスコ",
-    "plaintext": "",
-    "gold": 345,
-    "tags": [
-      "HealthRegen",
-      "ManaRegen",
-      "Consumable",
-      "Lane",
-      "Jungle"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772041.png"
-  },
-  {
-    "id": "771001",
-    "name": "ブーツ",
-    "plaintext": "",
-    "gold": 325,
-    "tags": [
-      "Boots"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771001.png"
   },
   {
     "id": "1001",
@@ -4267,41 +2464,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/2141.png"
   },
   {
-    "id": "771029",
-    "name": "クロース アーマー",
-    "plaintext": "",
-    "gold": 300,
-    "tags": [
-      "Armor"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771029.png"
-  },
-  {
-    "id": "771039",
-    "name": "ハンター マチェット",
-    "plaintext": "",
-    "gold": 300,
-    "tags": [
-      "Damage",
-      "OnHit"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771039.png"
-  },
-  {
-    "id": "773037",
-    "name": "マナ操作の宝珠",
-    "plaintext": "",
-    "gold": 300,
-    "tags": [
-      "ManaRegen",
-      "Aura"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773037.png"
-  },
-  {
     "id": "1042",
     "name": "ダガー",
     "plaintext": "攻撃速度がわずかに上昇",
@@ -4324,32 +2486,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/2022.png"
   },
   {
-    "id": "772038",
-    "name": "敏捷のエリクサー",
-    "plaintext": "",
-    "gold": 250,
-    "tags": [
-      "CriticalStrike",
-      "AttackSpeed",
-      "Consumable"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772038.png"
-  },
-  {
-    "id": "772039",
-    "name": "賢明のエリクサー",
-    "plaintext": "",
-    "gold": 250,
-    "tags": [
-      "SpellDamage",
-      "Consumable",
-      "CooldownReduction"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772039.png"
-  },
-  {
     "id": "1004",
     "name": "フェアリー チャーム",
     "plaintext": "マナ自動回復がわずかに上昇",
@@ -4359,28 +2495,6 @@
     ],
     "finished": false,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1004.png"
-  },
-  {
-    "id": "771004",
-    "name": "フェアリー チャーム",
-    "plaintext": "",
-    "gold": 180,
-    "tags": [
-      "ManaRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771004.png"
-  },
-  {
-    "id": "771006",
-    "name": "再生の珠",
-    "plaintext": "",
-    "gold": 180,
-    "tags": [
-      "HealthRegen"
-    ],
-    "finished": false,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/771006.png"
   },
   {
     "id": "2031",
@@ -4412,31 +2526,6 @@
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/2003.png"
   },
   {
-    "id": "772004",
-    "name": "マナ ポーション",
-    "plaintext": "",
-    "gold": 35,
-    "tags": [
-      "Consumable"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/772004.png"
-  },
-  {
-    "id": "773521",
-    "name": "体力ポーション",
-    "plaintext": "",
-    "gold": 35,
-    "tags": [
-      "HealthRegen",
-      "Consumable",
-      "Lane",
-      "Jungle"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/773521.png"
-  },
-  {
     "id": "3330",
     "name": "身代わり人形",
     "plaintext": "一定時間ごとにステルス ワードを設置可能",
@@ -4463,17 +2552,6 @@
     ],
     "finished": true,
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3363.png"
-  },
-  {
-    "id": "3599",
-    "name": "カリスタの復讐の黒槍",
-    "plaintext": "味方と魂盟を結ぶカリスタの槍",
-    "gold": 0,
-    "tags": [
-      "Consumable"
-    ],
-    "finished": true,
-    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/3599.png"
   },
   {
     "id": "3600",
