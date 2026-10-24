@@ -14,11 +14,51 @@ import { xxhash3 } from 'hash-wasm';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DATA_DIR = path.join(ROOT, 'src/data');
 const ICON_DIR = path.join(ROOT, 'public/img/augments');
+const STAT_ICON_DIR = path.join(ROOT, 'public/img/stats');
+
+// Inline tooltip icons (%i:scaleAD% in Riot text), as the game draws them next to stats.
+const STAT_ICONS = Object.fromEntries([
+  ...'onhit scalead scaleadaptiveforce scaleah scaleap scaleapen scalearmor scaleas scalecooldown scalecrit scalecritmult scaleda scaledr scalehealshield scalehealth scalehpregen scalelevel scalels scalemana scalemanaregen scalempen scalemr scalems scalerange scalesize scalesv scaletenacity'
+    .split(' ')
+    .map((n) => [n, `statsicon/${n}.png`]),
+  ...'activeeffect cooldown goldcoins'.split(' ').map((n) => [n, `gameplay/${n}.png`]),
+]);
+// Item stat names -> the icon the game shows beside them. Longest names first so 魔法防御貫通 beats 魔法防御.
+const ITEM_STAT_ICONS = [
+  ['クリティカルダメージ', 'scalecritmult'], ['クリティカル率', 'scalecrit'], ['物理防御貫通', 'scaleapen'],
+  ['魔法防御貫通', 'scalempen'], ['基本体力自動回復', 'scalehpregen'], ['基本マナ自動回復', 'scalemanaregen'],
+  ['回復効果およびシールド量', 'scalehealshield'], ['行動妨害耐性', 'scaletenacity'], ['ライフスティール', 'scalels'],
+  ['オムニヴァンプ', 'scalesv'], ['スキルヘイスト', 'scaleah'], ['攻撃速度', 'scaleas'], ['移動速度', 'scalems'],
+  ['物理防御', 'scalearmor'], ['魔法防御', 'scalemr'], ['攻撃力', 'scalead'], ['脅威', 'scaleapen'], ['魔力', 'scaleap'],
+  ['体力', 'scalehealth'], ['マナ', 'scalemana'],
+];
+// Simplified skill descriptions come without Riot's colour tags, so tag the usual keywords ourselves.
+const SPELL_KEYWORDS = [
+  [/物理ダメージ/g, 'physicalDamage'], [/魔法ダメージ/g, 'magicDamage'], [/確定ダメージ/g, 'trueDamage'],
+  [/通常攻撃時効果/g, 'OnHit'], [/(?:体力を)?回復/g, 'healing'], [/シールド/g, 'shield'], [/移動速度/g, 'speed'],
+  [/攻撃速度/g, 'attackSpeed'],
+  [/スタン(?!ガン)|スロウ|ノックアップ|ノックバック|サイレンス|スネア|移動不能|釘付け|挑発|恐怖|魅了|サプレッション|ブラインド|打ち上げ|引き寄せ/g, 'status'],
+];
+const tagSpellKeywords = (text) =>
+  /<(?!br)[a-zA-Z]/.test(text) ? text : SPELL_KEYWORDS.reduce((t, [re, tag]) => t.replace(re, (m) => `<${tag}>${m}</${tag}>`), text);
+function addItemStatIcons(text) {
+  return text.replace(/<stats>([\s\S]*?)<\/stats>/, (_, body) =>
+    `<stats>${body
+      .split('<br>')
+      .map((line) => {
+        const hit = ITEM_STAT_ICONS.find(([label]) => line.replace(/<[^>]+>/g, '').trimStart().startsWith(label));
+        return hit ? iconMark(hit[1]) + line : line;
+      })
+      .join('<br>')}</stats>`,
+  );
+}
+const iconMark = (name) => (STAT_ICONS[name] ? `\u0001${name}\u0002` : '');
 
 const DDRAGON = 'https://ddragon.leagueoflegends.com';
 const CDRAGON = 'https://raw.communitydragon.org/latest';
 const CDRAGON_GAME_DATA = `${CDRAGON}/plugins/rcp-be-lol-game-data/global`;
 const ARAMMAYHEM = 'https://arammayhem.com/data/v1/latest';
+const TEXT_ICONS = `${CDRAGON}/plugins/rcp-be-lol-game-data/global/default/assets/ux/fonts/texticons/lol`;
 
 const RARITY = { kSilver: 'silver', kGold: 'gold', kPrismatic: 'prismatic' };
 
@@ -154,7 +194,7 @@ const escapeHtml = (s) => s.replace(/&(?!nbsp;)/g, '&amp;').replace(/"/g, '&quot
 
 // Riot tooltip markup -> safe HTML: <br> stays, every other tag becomes a span with a class.
 function toSafeHtml(text) {
-  text = text.replace(/%i:[A-Za-z0-9_]+%/g, '');
+  text = text.replace(/%i:([A-Za-z0-9_]+)%/g, (_, n) => iconMark(n.toLowerCase()));
   const out = [];
   const re = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)[^>]*>|([^<]+)|(<)/g;
   let m;
@@ -166,7 +206,9 @@ function toSafeHtml(text) {
     else out.push(closing ? '</span>' : `<span class="tt-${tag.toLowerCase()}">`);
   }
   // Close anything left open so one bad tooltip can't break the page.
-  const html = out.join('');
+  const html = out
+    .join('')
+    .replace(/\u0001(\w+)\u0002/g, (_, n) => `<img class="tt-icon" src="/img/stats/${n}.png" alt="" width="14" height="14">`);
   const open = (html.match(/<span/g) ?? []).length - (html.match(/<\/span>/g) ?? []).length;
   return html + '</span>'.repeat(Math.max(0, open));
 }
@@ -243,11 +285,11 @@ async function main() {
         const d = (await getJson(`${DDRAGON}/cdn/${ddVersion}/data/ja_JP/champion/${c.id}.json`)).data[c.id];
         const img = (group, file) => `${DDRAGON}/cdn/${ddVersion}/img/${group}/${file}`;
         c.spells = [
-          { key: 'P', name: d.passive.name, description: toSafeHtml(d.passive.description), icon: img('passive', d.passive.image.full) },
+          { key: 'P', name: d.passive.name, description: toSafeHtml(tagSpellKeywords(d.passive.description)), icon: img('passive', d.passive.image.full) },
           ...d.spells.map((sp, i) => ({
             key: 'QWER'[i],
             name: sp.name,
-            description: toSafeHtml(sp.description),
+            description: toSafeHtml(tagSpellKeywords(sp.description)),
             icon: img('spell', sp.image.full),
             cooldown: sp.cooldownBurn,
           })),
@@ -270,7 +312,7 @@ async function main() {
       name: it.name,
       plaintext: it.plaintext ?? '',
       // Tooltips end in <br><br>, which would leave a blank gap under each item.
-      description: toSafeHtml(it.description ?? '').replace(/(<br>)+(?=(<\/span>)*$)/, ''),
+      description: toSafeHtml(addItemStatIcons(it.description ?? '')).replace(/(<br>)+(?=(<\/span>)*$)/, ''),
       gold: it.gold.total,
       tags: it.tags ?? [],
       finished: !it.into?.length,
@@ -342,6 +384,13 @@ async function main() {
     });
   }
   augments.sort((x, y) => (y.pickRate ?? -1) - (x.pickRate ?? -1) || x.name.localeCompare(y.name, 'ja'));
+
+  console.log('Downloading stat icons…');
+  await mkdir(STAT_ICON_DIR, { recursive: true });
+  for (const [name, src] of Object.entries(STAT_ICONS)) {
+    const file = path.join(STAT_ICON_DIR, `${name}.png`);
+    if (!existsSync(file)) await writeFile(file, await getBuffer(`${TEXT_ICONS}/${src}`));
+  }
 
   console.log(`Downloading ${augments.length} augment icons…`);
   const wanted = new Set(augments.map((a) => `${a.slug}.png`));

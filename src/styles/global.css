@@ -47,6 +47,9 @@ body {
 .tt-passive, .tt-active, .tt-unique { color: var(--color-ink); font-weight: 600; }
 .tt-attention, .tt-ornnbonus { font-weight: 600; }
 .tt-flavortext { display: none; }
+.tt-onhit { color: #ffb86b; }
+.tt-attackspeed { color: #ffcf70; }
+.tt-icon { display: inline-block; width: 1.05em; height: 1.05em; vertical-align: -0.2em; margin-right: 0.15em; }
 .tt-rules { display: block; margin-top: 0.5rem; color: var(--color-ink-2); font-weight: 400 !important; font-style: italic; }
 .tt-evolve, .tt-gold { color: var(--color-gold); }
 .tt-silver { color: var(--color-silver); }

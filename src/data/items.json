@@ -3,7 +3,7 @@
     "id": "228002",
     "name": "ウーグレット ウィッチキャップ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-ornnbonus\">300</span><br>物理防御<span class=\"tt-ornnbonus\">50</span><br>スキルヘイスト<span class=\"tt-ornnbonus\">20</span></span><br><br><span class=\"tt-passive\">マジカルオーパス:</span><br>合計<span class=\"tt-scaleap\">魔力を50%(0)</span>増加させる。<br><br><span class=\"tt-active\">時間停止</span><br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-ornnbonus\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御<span class=\"tt-ornnbonus\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-ornnbonus\">20</span></span><br><br><span class=\"tt-passive\">マジカルオーパス:</span><br>合計<span class=\"tt-scaleap\">魔力を50%(0)</span>増加させる。<br><br><span class=\"tt-active\">時間停止</span><br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
     "gold": 6000,
     "tags": [
       "Armor",
@@ -17,7 +17,7 @@
     "id": "3031",
     "name": "インフィニティ エッジ",
     "plaintext": "クリティカルが大きく強化",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">75</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>クリティカルダメージ<span class=\"tt-attention\">30%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">75</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecritmult.png\" alt=\"\" width=\"14\" height=\"14\">クリティカルダメージ<span class=\"tt-attention\">30%</span></span></span>",
     "gold": 3500,
     "tags": [
       "CriticalStrike",
@@ -30,7 +30,7 @@
     "id": "3089",
     "name": "ラバドン デスキャップ",
     "plaintext": "魔力が大きく上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">130</span></span><br><br><span class=\"tt-passive\">マジカルオーパス</span><br>合計<span class=\"tt-scaleap\">魔力を30%</span>増加させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">130</span></span><br><br><span class=\"tt-passive\">マジカルオーパス</span><br>合計<span class=\"tt-scaleap\">魔力を30%</span>増加させる。</span>",
     "gold": 3500,
     "tags": [
       "SpellDamage"
@@ -42,7 +42,7 @@
     "id": "3072",
     "name": "ブラッドサースター",
     "plaintext": "攻撃力、ライフ スティールが上昇。ライフ スティールで最大体力を超えて回復が可能。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">80</span><br>ライフ スティール<span class=\"tt-attention\">15%</span></span><br><br><span class=\"tt-passive\">イコルシールド</span><br>ライフスティールで得た余剰の体力が<span class=\"tt-shield\">シールド</span>に変換される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">80</span><br>ライフ スティール<span class=\"tt-attention\">15%</span></span><br><br><span class=\"tt-passive\">イコルシールド</span><br>ライフスティールで得た余剰の体力が<span class=\"tt-shield\">シールド</span>に変換される。</span>",
     "gold": 3400,
     "tags": [
       "Damage",
@@ -55,7 +55,7 @@
     "id": "3078",
     "name": "トリニティ フォース",
     "plaintext": "圧倒的ダメージ",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">36</span><br>攻撃速度<span class=\"tt-attention\">30%</span><br>体力<span class=\"tt-attention\">333</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">加速</span><br>通常攻撃で2秒間、<span class=\"tt-speed\">移動速度が20</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">36</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">30%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">333</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">加速</span><br>通常攻撃で2秒間、<span class=\"tt-speed\">移動速度が20</span>増加する。</span>",
     "gold": 3333,
     "tags": [
       "Health",
@@ -73,7 +73,7 @@
     "id": "2501",
     "name": "覇王のブラッドメイル",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">30</span><br>体力<span class=\"tt-attention\">550</span></span><br><br><span class=\"tt-passive\">暴君</span><br><span class=\"tt-healing\">増加体力</span>の2.5%を<span class=\"tt-scalead\">攻撃力</span>として獲得する。<br><br><span class=\"tt-passive\">報復</span><br>減少体力の割合に応じて、<span class=\"tt-scalead\">攻撃力</span>が最大12%まで増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">550</span></span><br><br><span class=\"tt-passive\">暴君</span><br><span class=\"tt-healing\">増加体力</span>の2.5%を<span class=\"tt-scalead\">攻撃力</span>として獲得する。<br><br><span class=\"tt-passive\">報復</span><br>減少体力の割合に応じて、<span class=\"tt-scalead\">攻撃力</span>が最大12%まで増加する。 </span>",
     "gold": 3300,
     "tags": [
       "Health",
@@ -86,7 +86,7 @@
     "id": "3036",
     "name": "ドミニク リガード",
     "plaintext": "体力と物理防御の高い敵を打倒する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">35</span><br>物理防御貫通<span class=\"tt-attention\">35%</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ジャイアント スレイヤー</span><br>対象チャンピオンの増加体力に応じて、最大15%の追加ダメージを与える。このダメージは増加体力が1500のときに最大になる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">物理防御貫通<span class=\"tt-attention\">35%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ジャイアント スレイヤー</span><br>対象チャンピオンの増加体力に応じて、最大15%の追加ダメージを与える。このダメージは増加体力が1500のときに最大になる。</span>",
     "gold": 3300,
     "tags": [
       "Damage",
@@ -100,7 +100,7 @@
     "id": "3074",
     "name": "ラヴァナス ハイドラ",
     "plaintext": "近接攻撃で周囲の敵にダメージを与え、体力が回復",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">65</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>ライフ スティール<span class=\"tt-attention\">12%</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<span class=\"tt-active\">貪欲な三日月</span><br>周囲の敵に<span class=\"tt-physicaldamage\">の物理ダメージ</span>を与える。<br>自身のライフスティールは、このダメージに適用される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">65</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br>ライフ スティール<span class=\"tt-attention\">12%</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<span class=\"tt-active\">貪欲な三日月</span><br>周囲の敵に<span class=\"tt-physicaldamage\">の物理ダメージ</span>を与える。<br>自身のライフスティールは、このダメージに適用される。</span>",
     "gold": 3300,
     "tags": [
       "Damage",
@@ -116,7 +116,7 @@
     "id": "3748",
     "name": "タイタン ハイドラ",
     "plaintext": "所持者の体力に応じた範囲効果ダメージを与える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>体力<span class=\"tt-attention\">600</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃時に通常攻撃時効果で対象の背後にいる敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">巨大な三日月</span><br>次の<span class=\"tt-passive\">「なぎ払い」</span>が強化されて<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与え、対象の背後にいる敵に<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">600</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃時に通常攻撃時効果で対象の背後にいる敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">巨大な三日月</span><br>次の<span class=\"tt-passive\">「なぎ払い」</span>が強化されて<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与え、対象の背後にいる敵に<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。</span>",
     "gold": 3300,
     "tags": [
       "Health",
@@ -131,7 +131,7 @@
     "id": "6333",
     "name": "デス ダンス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">60</span><br>物理防御 <span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">強行突破</span><br>受けたダメージの一定割合を3秒かけて受けるようになる。<br><br><span class=\"tt-passive\">拒絶</span><br>直前の3秒以内にダメージを与えていたチャンピオンが倒されると、<span class=\"tt-passive\">「強行突破」</span>の残りダメージが除去されて、2秒かけて<span class=\"tt-healing\">体力</span>を回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">強行突破</span><br>受けたダメージの一定割合を3秒かけて受けるようになる。<br><br><span class=\"tt-passive\">拒絶</span><br>直前の3秒以内にダメージを与えていたチャンピオンが倒されると、<span class=\"tt-passive\">「強行突破」</span>の残りダメージが除去されて、2秒かけて<span class=\"tt-healing\">体力</span>を回復する。</span>",
     "gold": 3300,
     "tags": [
       "Armor",
@@ -145,7 +145,7 @@
     "id": "6631",
     "name": "ストライドブレイカー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>攻撃速度<span class=\"tt-attention\">25%</span><br>体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">破壊の衝撃波</span><br>周囲の敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>と35%の<span class=\"tt-status\">スロウ効果</span>を与える。<br>命中したチャンピオン1体につき<span class=\"tt-speed\">35%の増加移動速度</span>を得る。この増加移動速度は3秒間かけて減衰する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">破壊の衝撃波</span><br>周囲の敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>と35%の<span class=\"tt-status\">スロウ効果</span>を与える。<br>命中したチャンピオン1体につき<span class=\"tt-speed\">35%の増加移動速度</span>を得る。この増加移動速度は3秒間かけて減衰する。</span>",
     "gold": 3300,
     "tags": [
       "Health",
@@ -160,7 +160,7 @@
     "id": "3157",
     "name": "ゾーニャの砂時計",
     "plaintext": "発動ですべての行動が不可になるが、一定時間無敵になる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">105</span><br>物理防御 <span class=\"tt-attention\">50</span></span><br><br><br><br><span class=\"tt-active\">時間停止</span><br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">105</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">50</span></span><br><br><br><br><span class=\"tt-active\">時間停止</span><br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
     "gold": 3250,
     "tags": [
       "Armor",
@@ -174,7 +174,7 @@
     "id": "3053",
     "name": "ステラックの篭手",
     "plaintext": "大ダメージから身を守る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">獲物を狙う爪</span><br><span class=\"tt-scalead\">攻撃力</span>が増加する。<br><br><span class=\"tt-passive\">ライフライン</span><br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、<span class=\"tt-shield\">シールド</span>を得る。このシールドは4.5秒かけて徐々に減少する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scaletenacity.png\" alt=\"\" width=\"14\" height=\"14\">行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">獲物を狙う爪</span><br><span class=\"tt-scalead\">攻撃力</span>が増加する。<br><br><span class=\"tt-passive\">ライフライン</span><br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、<span class=\"tt-shield\">シールド</span>を得る。このシールドは4.5秒かけて徐々に減少する。</span>",
     "gold": 3200,
     "tags": [
       "Health",
@@ -188,7 +188,7 @@
     "id": "3139",
     "name": "マーキュリアル シミター",
     "plaintext": "発動で行動妨害系のデバフを無効化し、移動速度がかなり増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>魔法防御<span class=\"tt-attention\">35</span><br>ライフ スティール<span class=\"tt-attention\">10%</span></span><br><br><br><br><span class=\"tt-active\">発動効果</span><br><span class=\"tt-active\">水銀</span><br>すべての行動妨害系デバフ(<span class=\"tt-keyword\">ノックアップ</span>を除く)を除去し、移動速度が増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">35</span><br>ライフ スティール<span class=\"tt-attention\">10%</span></span><br><br><br><br><span class=\"tt-active\">発動効果</span><br><span class=\"tt-active\">水銀</span><br>すべての行動妨害系デバフ(<span class=\"tt-keyword\">ノックアップ</span>を除く)を除去し、移動速度が増加する。</span>",
     "gold": 3200,
     "tags": [
       "SpellBlock",
@@ -205,7 +205,7 @@
     "id": "3153",
     "name": "ルインドキング ブレード",
     "plaintext": "対象の体力を元にしたダメージを与え、移動速度を吸収",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>攻撃速度<span class=\"tt-attention\">25%</span><br>ライフ スティール<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-passive\">ミストエッジ</span><br>通常攻撃が敵の現在体力の<span class=\"tt-physicaldamage\">一定割合</span>にあたる<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">引き裂く影</span><br>チャンピオンに3回通常攻撃を行うと、対象に1秒間、30%の<span class=\"tt-status\">スロウ効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">25%</span><br>ライフ スティール<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-passive\">ミストエッジ</span><br>通常攻撃が敵の現在体力の<span class=\"tt-physicaldamage\">一定割合</span>にあたる<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">引き裂く影</span><br>チャンピオンに3回通常攻撃を行うと、対象に1秒間、30%の<span class=\"tt-status\">スロウ効果</span>を与える。</span>",
     "gold": 3200,
     "tags": [
       "Damage",
@@ -221,7 +221,7 @@
     "id": "4645",
     "name": "シャドウフレイム",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">110</span><br>魔法防御貫通<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">シンダーブルーム</span><br><span class=\"tt-magicdamage\">体力が40%未満の敵に対する魔法ダメージ</span>および<span class=\"tt-truedamage\">確定ダメージ</span>が<span class=\"tt-attention\">クリティカル</span>となり、ダメージが20%増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">110</span><br><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">シンダーブルーム</span><br><span class=\"tt-magicdamage\">体力が40%未満の敵に対する魔法ダメージ</span>および<span class=\"tt-truedamage\">確定ダメージ</span>が<span class=\"tt-attention\">クリティカル</span>となり、ダメージが20%増加する。 </span>",
     "gold": 3200,
     "tags": [
       "SpellDamage",
@@ -234,7 +234,7 @@
     "id": "6665",
     "name": "変幻自在のジャック＝ショー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span><br>物理防御 <span class=\"tt-attention\">45</span><br>魔法防御<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">強靭なるヴォイドの子ら</span><br>チャンピオンとの戦闘を開始してから5秒後に、戦闘終了まで<span class=\"tt-scalearmor\">物理防御</span>と<span class=\"tt-scalemr\">魔法防御</span>が30%増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">強靭なるヴォイドの子ら</span><br>チャンピオンとの戦闘を開始してから5秒後に、戦闘終了まで<span class=\"tt-scalearmor\">物理防御</span>と<span class=\"tt-scalemr\">魔法防御</span>が30%増加する。</span>",
     "gold": 3200,
     "tags": [
       "Health",
@@ -249,7 +249,7 @@
     "id": "2510",
     "name": "黄昏と暁",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">300</span><br>魔力<span class=\"tt-attention\">60</span><br>スキルヘイスト<span class=\"tt-attention\">20</span><br>攻撃速度<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">追撃</span> (0秒)<br>スキル使用後、次の通常攻撃で<span class=\"tt-magicdamage\">0の追加魔法ダメージ</span>を与え、<span class=\"tt-healing\">体力を0</span><span class=\"tt-onhit\">通常攻撃時効果</span>回復し、1回追加で<span class=\"tt-onhit\">通常攻撃時効果</span>を適用する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">追撃</span> (0秒)<br>スキル使用後、次の通常攻撃で<span class=\"tt-magicdamage\">0の追加魔法ダメージ</span>を与え、<span class=\"tt-healing\">体力を0</span><span class=\"tt-onhit\">通常攻撃時効果</span>回復し、1回追加で<span class=\"tt-onhit\">通常攻撃時効果</span>を適用する。</span>",
     "gold": 3100,
     "tags": [
       "Health",
@@ -265,7 +265,7 @@
     "id": "2517",
     "name": "終わりなき飢え",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">65</span><br>オムニヴァンプ<span class=\"tt-attention\">5%</span><br>行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">大飢饉</span><br>増加攻撃力に応じてスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">宴</span><br>直前にダメージを与えていたチャンピオンが倒されると、しばらくの間オムニヴァンプが増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">65</span><br><img class=\"tt-icon\" src=\"/img/stats/scalesv.png\" alt=\"\" width=\"14\" height=\"14\">オムニヴァンプ<span class=\"tt-attention\">5%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaletenacity.png\" alt=\"\" width=\"14\" height=\"14\">行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">大飢饉</span><br>増加攻撃力に応じてスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">宴</span><br>直前にダメージを与えていたチャンピオンが倒されると、しばらくの間オムニヴァンプが増加する。 </span>",
     "gold": 3100,
     "tags": [
       "Damage",
@@ -281,7 +281,7 @@
     "id": "3083",
     "name": "ワーモグ アーマー",
     "plaintext": "大量の体力と体力自動回復を付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">1000</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">ワーモグの心臓</span> <br>自身の増加体力が2000以上で、8秒間ダメージを受けずにいると、毎秒<span class=\"tt-healing\">0</span>の体力を回復する。<br><br><span class=\"tt-passive\">ワーモグの活力</span><br>自身のアイテム体力の12%にあたる追加体力を獲得する(<span class=\"tt-healing\">0</span>)。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">1000</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">ワーモグの心臓</span> <br>自身の増加体力が2000以上で、8秒間ダメージを受けずにいると、毎秒<span class=\"tt-healing\">0</span>の体力を回復する。<br><br><span class=\"tt-passive\">ワーモグの活力</span><br>自身のアイテム体力の12%にあたる追加体力を獲得する(<span class=\"tt-healing\">0</span>)。</span>",
     "gold": 3100,
     "tags": [
       "Health",
@@ -294,7 +294,7 @@
     "id": "3156",
     "name": "マルモティウスの胃袋",
     "plaintext": "体力低下時に追加物理ダメージを付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">60</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>魔法防御<span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>魔法ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、3秒間<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を得て、戦闘終了まで<span class=\"tt-lifesteal\">オムニヴァンプが10%</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>魔法ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、3秒間<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を得て、戦闘終了まで<span class=\"tt-lifesteal\">オムニヴァンプが10%</span>増加する。</span>",
     "gold": 3100,
     "tags": [
       "SpellBlock",
@@ -310,7 +310,7 @@
     "id": "3161",
     "name": "ショウジンの矛",
     "plaintext": "敵チャンピオンからの被ダメージを一定量軽減する。周囲に複数の敵チャンピオンがいると短時間だけ効果がさらに増加する。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">ドラゴンフォース</span> <br>通常スキルヘイストが25増加する。<br><br><span class=\"tt-passive\">研ぎ澄ました意志</span> <br>スキルでダメージを与えると6秒間、チャンピオンスキルおよび自動効果で与えるダメージが3%増加する(4回スタック)。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">ドラゴンフォース</span> <br>通常スキルヘイストが25増加する。<br><br><span class=\"tt-passive\">研ぎ澄ました意志</span> <br>スキルでダメージを与えると6秒間、チャンピオンスキルおよび自動効果で与えるダメージが3%増加する(4回スタック)。</span>",
     "gold": 3100,
     "tags": [
       "Health",
@@ -324,7 +324,7 @@
     "id": "4633",
     "name": "リフトメーカー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">70</span><br>体力<span class=\"tt-attention\">350</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">ヴォイドの邪念</span><br>敵チャンピオンとの戦闘中、自身の与えるダメージが毎秒2%増加する(最大8%)。効果が最大になっている間は<span class=\"tt-omnivamp\">オムニヴァンプ</span>が増加する。<br><br><span class=\"tt-passive\">ヴォイドの浸食</span><br><span class=\"tt-scalehealth\">増加体力</span>の2%にあたる<span class=\"tt-scaleap\">魔力</span>を獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">70</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">ヴォイドの邪念</span><br>敵チャンピオンとの戦闘中、自身の与えるダメージが毎秒2%増加する(最大8%)。効果が最大になっている間は<span class=\"tt-omnivamp\">オムニヴァンプ</span>が増加する。<br><br><span class=\"tt-passive\">ヴォイドの浸食</span><br><span class=\"tt-scalehealth\">増加体力</span>の2%にあたる<span class=\"tt-scaleap\">魔力</span>を獲得する。</span>",
     "gold": 3100,
     "tags": [
       "Health",
@@ -339,7 +339,7 @@
     "id": "6610",
     "name": "サンダード スカイ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>体力<span class=\"tt-attention\">400</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">ライトシールドストライク</span><br>チャンピオンに対する最初の通常攻撃が<span class=\"tt-attention\">クリティカル</span>になり、<span class=\"tt-healing\">体力を回復</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">ライトシールドストライク</span><br>チャンピオンに対する最初の通常攻撃が<span class=\"tt-attention\">クリティカル</span>になり、<span class=\"tt-healing\">体力を回復</span>する。</span>",
     "gold": 3100,
     "tags": [
       "Health",
@@ -354,7 +354,7 @@
     "id": "3508",
     "name": "エッセンス リーバー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">20</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与え、<span class=\"tt-scalemana\">マナ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与え、<span class=\"tt-scalemana\">マナ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を回復する。</span>",
     "gold": 3050,
     "tags": [
       "Damage",
@@ -371,7 +371,7 @@
     "id": "3032",
     "name": "ユン・タル ワイルドアロー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>攻撃速度<span class=\"tt-attention\">45%</span><br>クリティカル率<span class=\"tt-attention\">0%</span></span><br><br><span class=\"tt-passive\">訓練を積めば脅威となる</span><br>通常攻撃時にクリティカル率が恒久的に増加する(最大25%まで)。<br><br><span class=\"tt-passive\">疾風</span><br>敵チャンピオンに通常攻撃を行うと、6秒間、攻撃速度が30%増加する(クールダウン30秒)。<br>通常攻撃でこのクールダウンが1秒短縮され、クリティカルの場合は2秒短縮される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">45%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">0%</span></span><br><br><span class=\"tt-passive\">訓練を積めば脅威となる</span><br>通常攻撃時にクリティカル率が恒久的に増加する(最大25%まで)。<br><br><span class=\"tt-passive\">疾風</span><br>敵チャンピオンに通常攻撃を行うと、6秒間、攻撃速度が30%増加する(クールダウン30秒)。<br>通常攻撃でこのクールダウンが1秒短縮され、クリティカルの場合は2秒短縮される。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -385,7 +385,7 @@
     "id": "3033",
     "name": "モータル リマインダー",
     "plaintext": "体力回復と物理防御の高い敵を打倒する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">35</span><br>物理防御貫通<span class=\"tt-attention\">30%</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">重傷</span><br>敵チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">物理防御貫通<span class=\"tt-attention\">30%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">重傷</span><br>敵チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -399,7 +399,7 @@
     "id": "3071",
     "name": "ブラック クリーバー",
     "plaintext": "敵チャンピオンに物理ダメージを与えると、その対象の物理防御が低下",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>体力<span class=\"tt-attention\">400</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">カーブ</span><br>チャンピオンに<span class=\"tt-physicaldamage\">物理ダメージ</span>を与えると、6秒間、対象の<span class=\"tt-scalearmor\">物理防御を6%</span>低下させる(5回スタック可能)。<br><br><span class=\"tt-passive\">熱情</span><br><span class=\"tt-physicaldamage\">物理ダメージ</span>を与えると、2秒間、<span class=\"tt-speed\">移動速度が0</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">カーブ</span><br>チャンピオンに<span class=\"tt-physicaldamage\">物理ダメージ</span>を与えると、6秒間、対象の<span class=\"tt-scalearmor\">物理防御を6%</span>低下させる(5回スタック可能)。<br><br><span class=\"tt-passive\">熱情</span><br><span class=\"tt-physicaldamage\">物理ダメージ</span>を与えると、2秒間、<span class=\"tt-speed\">移動速度が0</span>増加する。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -417,7 +417,7 @@
     "id": "3073",
     "name": "実験的ヘクスプレート",
     "plaintext": "マナ消費時に最大マナが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>攻撃速度<span class=\"tt-attention\">20%</span><br>体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">ヘクスチャージ</span><br>アルティメットスキルヘイストが30増加する。<br><br><span class=\"tt-passive\">オーバードライブ</span><br>アルティメットスキル発動から8秒間、<span class=\"tt-attackspeed\">攻撃速度が0%</span>、<span class=\"tt-speed\">移動速度が0%</span>増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">20%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">450</span></span><br><br><span class=\"tt-passive\">ヘクスチャージ</span><br>アルティメットスキルヘイストが30増加する。<br><br><span class=\"tt-passive\">オーバードライブ</span><br>アルティメットスキル発動から8秒間、<span class=\"tt-attackspeed\">攻撃速度が0%</span>、<span class=\"tt-speed\">移動速度が0%</span>増加する。 </span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -434,7 +434,7 @@
     "id": "3084",
     "name": "心の鋼",
     "plaintext": "キルまたはアシスト時に体力を回復",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">900</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">巨人の食欲</span> 対象ごとに(0秒)<br>数秒間、敵チャンピオンの近くにいると、その対象に行う次の通常攻撃が<span class=\"tt-physicaldamage\">70 + 最大体力の6%</span>の<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与え、自身は<span class=\"tt-scalehealth\">最大体力</span>がそのダメージの<span class=\"tt-scalehealth\">10%</span>増加する。<br><br><span class=\"tt-passive\">ゴライアス</span><br><span class=\"tt-scalehealth\">最大体力1000</span>ごとに、サイズが3%増加する(最大30%)。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">900</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">巨人の食欲</span> 対象ごとに(0秒)<br>数秒間、敵チャンピオンの近くにいると、その対象に行う次の通常攻撃が<span class=\"tt-physicaldamage\">70 + 最大体力の6%</span>の<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与え、自身は<span class=\"tt-scalehealth\">最大体力</span>がそのダメージの<span class=\"tt-scalehealth\">10%</span>増加する。<br><br><span class=\"tt-passive\">ゴライアス</span><br><span class=\"tt-scalehealth\">最大体力1000</span>ごとに、サイズが3%増加する(最大30%)。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -447,7 +447,7 @@
     "id": "3087",
     "name": "スタティック シヴ",
     "plaintext": "移動によってチャージし、通常攻撃でチャージした雷撃を放つ",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>魔力<span class=\"tt-attention\">45</span><br>攻撃速度<span class=\"tt-attention\">30%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">エレクトロスパーク</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>で連鎖する電撃を放ち、周囲の対象に<span class=\"tt-onhit\">通常攻撃時効果</span>を付与し、<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">エレクトロショック</span> <br>通常攻撃時に<span class=\"tt-keyword\">エネルギー充填</span>のスタックが追加で増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">30%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">エレクトロスパーク</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>で連鎖する電撃を放ち、周囲の対象に<span class=\"tt-onhit\">通常攻撃時効果</span>を付与し、<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">エレクトロショック</span> <br>通常攻撃時に<span class=\"tt-keyword\">エネルギー充填</span>のスタックが追加で増加する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -463,7 +463,7 @@
     "id": "3102",
     "name": "バンシー ヴェール",
     "plaintext": "一定時間ごとに敵のスキルを無効化する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">105</span><br>魔法防御<span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">105</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
     "gold": 3000,
     "tags": [
       "SpellBlock",
@@ -476,7 +476,7 @@
     "id": "3124",
     "name": "グインソー レイジブレード",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">30</span><br>魔力<span class=\"tt-attention\">30</span><br>攻撃速度<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">激憤</span><br>通常攻撃が<span class=\"tt-magicdamage\">30の追加魔法ダメージ<span class=\"tt-onhit\">通常攻撃時効果</span></span>を与える。<br><br><span class=\"tt-passive\">シージングストライク</span><br>通常攻撃を行うと4秒間、<span class=\"tt-attackspeed\">攻撃速度が8%</span>増加する(最大4回スタック)。<br>スタックが最大の間は、通常攻撃3回ごとに<span class=\"tt-onhit\">通常攻撃時効果</span>を2回適用する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">激憤</span><br>通常攻撃が<span class=\"tt-magicdamage\">30の追加魔法ダメージ<span class=\"tt-onhit\">通常攻撃時効果</span></span>を与える。<br><br><span class=\"tt-passive\">シージングストライク</span><br>通常攻撃を行うと4秒間、<span class=\"tt-attackspeed\">攻撃速度が8%</span>増加する(最大4回スタック)。<br>スタックが最大の間は、通常攻撃3回ごとに<span class=\"tt-onhit\">通常攻撃時効果</span>を2回適用する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -491,7 +491,7 @@
     "id": "3135",
     "name": "ヴォイド スタッフ",
     "plaintext": "魔法ダメージが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">95</span><br>魔法防御貫通<span class=\"tt-attention\">40%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">95</span><br><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">40%</span></span></span>",
     "gold": 3000,
     "tags": [
       "MagicPenetration",
@@ -504,7 +504,7 @@
     "id": "3137",
     "name": "クリプトブルーム",
     "plaintext": "発動ですべてのデバフを無効化し、移動速度がかなり増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">75</span><br>魔法防御貫通<span class=\"tt-attention\">30%</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">死から命へ</span><br>自身がダメージを与えたチャンピオンが3秒以内に倒されると、その残骸から新星が発生する。この新星は<span class=\"tt-healing\">体力を回復</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">75</span><br><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">30%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">死から命へ</span><br>自身がダメージを与えたチャンピオンが3秒以内に倒されると、その残骸から新星が発生する。この新星は<span class=\"tt-healing\">体力を回復</span>する。</span>",
     "gold": 3000,
     "tags": [
       "SpellDamage",
@@ -518,7 +518,7 @@
     "id": "3146",
     "name": "ヘクステック ガンブレード",
     "plaintext": "攻撃力と魔力が上昇し、発動で対象にスロウを付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">80</span><br>攻撃力<span class=\"tt-attention\">40</span><br>オムニヴァンプ<span class=\"tt-attention\">10%</span></span><br><br><br><br><span class=\"tt-active\">発動効果</span>(0秒)<br><span class=\"tt-active\">ライトニングボルト</span><br>対象の敵チャンピオンに電撃を浴びせて0の魔法ダメージを与え、1.5秒間25%のスロウ効果を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">80</span><br><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalesv.png\" alt=\"\" width=\"14\" height=\"14\">オムニヴァンプ<span class=\"tt-attention\">10%</span></span><br><br><br><br><span class=\"tt-active\">発動効果</span>(0秒)<br><span class=\"tt-active\">ライトニングボルト</span><br>対象の敵チャンピオンに電撃を浴びせて0の魔法ダメージを与え、1.5秒間25%のスロウ効果を付与する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -534,7 +534,7 @@
     "id": "3181",
     "name": "ハルブレイカー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span><br>体力<span class=\"tt-attention\">500</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">艦長</span><br>チャンピオンまたはエピックモンスターに対する通常攻撃5回ごとに<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。対象が建造物の場合はこのダメージが増加する。<br><br><span class=\"tt-passive\">乗船部隊</span><br>周囲にいる味方の砲撃ミニオンおよびスーパーミニオンの<span class=\"tt-scalearmor\">物理防御</span>と<span class=\"tt-scalemr\">魔法防御</span>が増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">500</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">艦長</span><br>チャンピオンまたはエピックモンスターに対する通常攻撃5回ごとに<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。対象が建造物の場合はこのダメージが増加する。<br><br><span class=\"tt-passive\">乗船部隊</span><br>周囲にいる味方の砲撃ミニオンおよびスーパーミニオンの<span class=\"tt-scalearmor\">物理防御</span>と<span class=\"tt-scalemr\">魔法防御</span>が増加する。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -548,7 +548,7 @@
     "id": "3302",
     "name": "テルミヌス",
     "plaintext": "一定時間ごとに、ミニオンをキルした時に周辺の仲間を回復し、ゴールドを付与する効果を発生させる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">30</span><br>攻撃速度<span class=\"tt-attention\">35%</span></span><br><br><span class=\"tt-passive\">シャドウ</span><br>通常攻撃が<span class=\"tt-magicdamage\">0の追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">ジャクスタポジション</span><br>チャンピオンに対する通常攻撃時に、通常攻撃時効果を<span class=\"tt-keywordmajor\">「ライト」</span>と<span class=\"tt-keywordmajor\">「ダーク」</span>の間で切り替える。<span class=\"tt-li\"><span class=\"tt-keywordmajor\">「ライト」</span>の通常攻撃は物理防御<span class=\"tt-scalearmor\">と<span class=\"tt-scalemr\">魔法防御</span>を5秒間</span>増加させる。<span class=\"tt-li\"><span class=\"tt-keywordmajor\">「ダーク」</span>の通常攻撃は、<span class=\"tt-scalearmor\">物理防御貫通</span>と<span class=\"tt-scalemr\">魔法防御貫通</span>を5秒間10%増加させる。 </span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">35%</span></span><br><br><span class=\"tt-passive\">シャドウ</span><br>通常攻撃が<span class=\"tt-magicdamage\">0の追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。<br><br><span class=\"tt-passive\">ジャクスタポジション</span><br>チャンピオンに対する通常攻撃時に、通常攻撃時効果を<span class=\"tt-keywordmajor\">「ライト」</span>と<span class=\"tt-keywordmajor\">「ダーク」</span>の間で切り替える。<span class=\"tt-li\"><span class=\"tt-keywordmajor\">「ライト」</span>の通常攻撃は物理防御<span class=\"tt-scalearmor\">と<span class=\"tt-scalemr\">魔法防御</span>を5秒間</span>増加させる。<span class=\"tt-li\"><span class=\"tt-keywordmajor\">「ダーク」</span>の通常攻撃は、<span class=\"tt-scalearmor\">物理防御貫通</span>と<span class=\"tt-scalemr\">魔法防御貫通</span>を5秒間10%増加させる。 </span></span></span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -564,7 +564,7 @@
     "id": "3814",
     "name": "ナイト エッジ",
     "plaintext": "一定時間ごとに敵のスキルを無効化する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>脅威<span class=\"tt-attention\">15</span><br>体力<span class=\"tt-attention\">250</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">250</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -578,7 +578,7 @@
     "id": "4629",
     "name": "コズミック ドライブ",
     "plaintext": "大量のクールダウン短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">70</span><br>体力<span class=\"tt-attention\">350</span><br>スキルヘイスト<span class=\"tt-attention\">25</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">スペルダンス</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>または<span class=\"tt-truedamage\">確定ダメージ</span>を与えると、4秒間<span class=\"tt-speed\">移動速度が</span>増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">70</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">スペルダンス</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>または<span class=\"tt-truedamage\">確定ダメージ</span>を与えると、4秒間<span class=\"tt-speed\">移動速度が</span>増加する。 </span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -593,7 +593,7 @@
     "id": "6609",
     "name": "ケミパンク チェーンソード",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>体力<span class=\"tt-attention\">450</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">両断</span><br>敵チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">450</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">両断</span><br>敵チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -608,7 +608,7 @@
     "id": "6653",
     "name": "ライアンドリーの仮面",
     "plaintext": "戦闘でチャージされ、特に耐久力の高い敵に対して高い継続ダメージを与える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">60</span><br>体力<span class=\"tt-attention\">300</span></span><br><br><span class=\"tt-passive\">苦悶</span><br>ダメージスキルが敵を燃やし、3秒間、<span class=\"tt-magicdamage\">最大体力の2%の魔法ダメージ</span>を毎秒与える。<br><br><span class=\"tt-passive\">重苦</span><br>敵チャンピオンと戦闘状態の間、与えるダメージが毎秒2%(最大6%)増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">300</span></span><br><br><span class=\"tt-passive\">苦悶</span><br>ダメージスキルが敵を燃やし、3秒間、<span class=\"tt-magicdamage\">最大体力の2%の魔法ダメージ</span>を毎秒与える。<br><br><span class=\"tt-passive\">重苦</span><br>敵チャンピオンと戦闘状態の間、与えるダメージが毎秒2%(最大6%)増加する。</span>",
     "gold": 3000,
     "tags": [
       "Health",
@@ -621,7 +621,7 @@
     "id": "6672",
     "name": "クラーケン スレイヤー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>攻撃速度<span class=\"tt-attention\">40%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">打倒</span><br>通常攻撃が3回ごとに<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。このダメージは減少体力に応じて増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">40%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">打倒</span><br>通常攻撃が3回ごとに<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。このダメージは減少体力に応じて増加する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -636,7 +636,7 @@
     "id": "6673",
     "name": "イモータル シールドボウ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、3秒間<span class=\"tt-shield\">シールド</span>を得る。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、3秒間<span class=\"tt-shield\">シールド</span>を得る。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -649,7 +649,7 @@
     "id": "6676",
     "name": "コレクター",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>脅威<span class=\"tt-attention\">10</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">死</span><br>体力が5%未満のチャンピオンにとどめを刺す。<br><br><span class=\"tt-passive\">税金</span><br>チャンピオンをキルした際、<span class=\"tt-gold\">25の追加ゴールド</span>を獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">死</span><br>体力が5%未満のチャンピオンにとどめを刺す。<br><br><span class=\"tt-passive\">税金</span><br>チャンピオンをキルした際、<span class=\"tt-gold\">25の追加ゴールド</span>を獲得する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -663,7 +663,7 @@
     "id": "6694",
     "name": "セリルダの怨恨",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">45</span><br>物理防御貫通<span class=\"tt-attention\">35%</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">厳寒</span><br>攻撃スキルが、体力50%未満の敵に1秒間30%の<span class=\"tt-status\">スロウ効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">物理防御貫通<span class=\"tt-attention\">35%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">厳寒</span><br>攻撃スキルが、体力50%未満の敵に1秒間30%の<span class=\"tt-status\">スロウ効果</span>を与える。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -678,7 +678,7 @@
     "id": "6699",
     "name": "ボルテイク サイクロソード",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">10</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">刺激</span><br>スキルで敵チャンピオンにダメージを与えると、準備が完了していれば<span class=\"tt-keyword\">エネルギー充填効果</span>が発動する。<br><br><span class=\"tt-passive\">ファーマメント</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>が<span class=\"tt-physicaldamage\">対象の現在体力の一定割合にあたる追加物理ダメージ</span>を与え、4秒間、<span class=\"tt-scalelethality\">脅威</span>が増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">刺激</span><br>スキルで敵チャンピオンにダメージを与えると、準備が完了していれば<span class=\"tt-keyword\">エネルギー充填効果</span>が発動する。<br><br><span class=\"tt-passive\">ファーマメント</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>が<span class=\"tt-physicaldamage\">対象の現在体力の一定割合にあたる追加物理ダメージ</span>を与え、4秒間、<span class=\"tt-scalelethality\">脅威</span>が増加する。</span>",
     "gold": 3000,
     "tags": [
       "Damage",
@@ -694,7 +694,7 @@
     "id": "123430",
     "name": "破滅の儀式",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">55</span><br>スキルヘイスト<span class=\"tt-attention\">10</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">憤怒と荒廃</span><br>スキルを発動すると6秒間、<span class=\"tt-attention\">クリティカル率が2.5%</span>増加する。この効果は20%までスタックする。<br><br><span class=\"tt-passive\">残骸回収</span><br>スキルが<span class=\"tt-attention\">クリティカル率</span>と同じ確率で、自身または対象の味方に3秒間、<span class=\"tt-shield\">耐久値0のシールド</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">憤怒と荒廃</span><br>スキルを発動すると6秒間、<span class=\"tt-attention\">クリティカル率が2.5%</span>増加する。この効果は20%までスタックする。<br><br><span class=\"tt-passive\">残骸回収</span><br>スキルが<span class=\"tt-attention\">クリティカル率</span>と同じ確率で、自身または対象の味方に3秒間、<span class=\"tt-shield\">耐久値0のシールド</span>を付与する。</span>",
     "gold": 3000,
     "tags": [
       "CriticalStrike",
@@ -709,7 +709,7 @@
     "id": "126697",
     "name": "ヒュブリス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">18</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">エミネンス</span><br>キルを獲得すると、キルしたチャンピオンの数に応じて一時的に攻撃力が増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">エミネンス</span><br>キルを獲得すると、キルしたチャンピオンの数に応じて一時的に攻撃力が増加する。</span>",
     "gold": 2950,
     "tags": [
       "Damage",
@@ -725,7 +725,7 @@
     "id": "2504",
     "name": "ケイニック ルーケルン",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>魔法防御<span class=\"tt-attention\">80</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">メイジベイン</span><br>15秒間魔法ダメージを受けずにいると、<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を獲得する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">80</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">メイジベイン</span><br>15秒間魔法ダメージを受けずにいると、<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を獲得する。 </span>",
     "gold": 2900,
     "tags": [
       "Health",
@@ -739,7 +739,7 @@
     "id": "3003",
     "name": "アークエンジェル スタッフ",
     "plaintext": "最大マナを基に魔力が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">70</span><br>マナ<span class=\"tt-attention\">600</span><br>スキルヘイスト<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">畏怖</span><br><span class=\"tt-scalemana\">増加マナの1%</span>にあたる魔力を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大5チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが5</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「セラフ エンブレイス」</span>に変化する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">70</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">600</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">畏怖</span><br><span class=\"tt-scalemana\">増加マナの1%</span>にあたる魔力を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大5チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが5</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「セラフ エンブレイス」</span>に変化する。</span>",
     "gold": 2900,
     "tags": [
       "SpellDamage",
@@ -753,7 +753,7 @@
     "id": "3004",
     "name": "マナムネ",
     "plaintext": "最大マナを基に攻撃力が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">35</span><br>マナ<span class=\"tt-attention\">500</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">畏怖</span><br>追加で<span class=\"tt-scalead\">0の攻撃力</span>を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>通常攻撃とスキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「ムラマナ」</span>に変化する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">500</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">畏怖</span><br>追加で<span class=\"tt-scalead\">0の攻撃力</span>を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>通常攻撃とスキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「ムラマナ」</span>に変化する。</span>",
     "gold": 2900,
     "tags": [
       "Damage",
@@ -769,7 +769,7 @@
     "id": "3039",
     "name": "アトマの報い",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">700</span><br>クリティカル率<span class=\"tt-attention\">20%</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">巨手</span><br><span class=\"tt-scalehealth\">増加体力</span>に応じてクリティカル率が0-30%増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">700</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">20%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">巨手</span><br><span class=\"tt-scalehealth\">増加体力</span>に応じてクリティカル率が0-30%増加する。</span>",
     "gold": 2900,
     "tags": [
       "Health",
@@ -782,7 +782,7 @@
     "id": "3100",
     "name": "リッチ ベイン",
     "plaintext": "スキル使用後の次の攻撃に追加ダメージ付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">100</span><br>移動速度<span class=\"tt-attention\">6%</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">100</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">6%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 2900,
     "tags": [
       "SpellDamage",
@@ -797,7 +797,7 @@
     "id": "3115",
     "name": "ナッシャー トゥース",
     "plaintext": "攻撃速度、魔力が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">80</span><br>攻撃速度<span class=\"tt-attention\">50%</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">イカシアの牙</span><br>通常攻撃が<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">80</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">50%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">イカシアの牙</span><br>通常攻撃が<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 2900,
     "tags": [
       "AttackSpeed",
@@ -812,7 +812,7 @@
     "id": "3742",
     "name": "デッド マン プレート",
     "plaintext": "移動によって「熾烈」をためて敵を攻撃する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span><br>物理防御 <span class=\"tt-attention\">55</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">シップレッカー</span><br>移動中に最大で<span class=\"tt-speed\">20の増加移動速度</span>を獲得する。次の通常攻撃が増加した移動速度のエネルギーを放出して<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。<br><br><span class=\"tt-passive\">不沈</span><br><span class=\"tt-keyword\">スロウ効果</span>が15%軽減される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">シップレッカー</span><br>移動中に最大で<span class=\"tt-speed\">20の増加移動速度</span>を獲得する。次の通常攻撃が増加した移動速度のエネルギーを放出して<span class=\"tt-physicaldamage\">追加物理ダメージ</span>を与える。<br><br><span class=\"tt-passive\">不沈</span><br><span class=\"tt-keyword\">スロウ効果</span>が15%軽減される。</span>",
     "gold": 2900,
     "tags": [
       "Health",
@@ -827,7 +827,7 @@
     "id": "6662",
     "name": "アイスボーン ガントレット",
     "plaintext": "魔法防御が大幅に増加。自動効果で周囲の敵にスロウ効果を付与。周囲でスキルが使用されると、エネルギー波を放ってダメージとスロウ効果を付与。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">300</span><br>物理防御 <span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃が<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与え、2秒間、<span class=\"tt-status\">スロウ効果</span>を与える凍てつくゾーンを発生させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃が<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与え、2秒間、<span class=\"tt-status\">スロウ効果</span>を与える凍てつくゾーンを発生させる。</span>",
     "gold": 2900,
     "tags": [
       "Health",
@@ -844,7 +844,7 @@
     "id": "6692",
     "name": "赤月の刃",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">60</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">沈まぬ月</span><br>2秒以内に2つの異なる通常攻撃またはスキルをチャンピオンに命中させると2秒間、<span class=\"tt-shield\">シールド</span>を獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">沈まぬ月</span><br>2秒以内に2つの異なる通常攻撃またはスキルをチャンピオンに命中させると2秒間、<span class=\"tt-shield\">シールド</span>を獲得する。</span>",
     "gold": 2900,
     "tags": [
       "Damage",
@@ -858,7 +858,7 @@
     "id": "8010",
     "name": "ブラッドレターの呪い",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">65</span><br>体力<span class=\"tt-attention\">400</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">邪悪な腐敗</span><br>スキルや固有スキルでチャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、6秒間、対象の<span class=\"tt-scalemr\">魔法防御を7.5%</span>低下させる(4回スタック可能)。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">65</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">邪悪な腐敗</span><br>スキルや固有スキルでチャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、6秒間、対象の<span class=\"tt-scalemr\">魔法防御を7.5%</span>低下させる(4回スタック可能)。</span>",
     "gold": 2900,
     "tags": [
       "Health",
@@ -873,7 +873,7 @@
     "id": "3165",
     "name": "モレロノミコン",
     "plaintext": "魔法ダメージが増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">75</span><br>体力<span class=\"tt-attention\">350</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">75</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 2850,
     "tags": [
       "Health",
@@ -888,7 +888,7 @@
     "id": "6698",
     "name": "プロフェイン ハイドラ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">18</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">異端の斬撃</span><br>周囲に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">異端の斬撃</span><br>周囲に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。</span>",
     "gold": 2850,
     "tags": [
       "Damage",
@@ -904,7 +904,7 @@
     "id": "2502",
     "name": "終わりなき絶望",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>物理防御 <span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">苦辛</span><br>チャンピオンとの戦闘中は、4秒ごとに周囲の敵チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与え、与えたダメージの<span class=\"tt-healing\">250%にあたる体力</span>を回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">苦辛</span><br>チャンピオンとの戦闘中は、4秒ごとに周囲の敵チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与え、与えたダメージの<span class=\"tt-healing\">250%にあたる体力</span>を回復する。</span>",
     "gold": 2800,
     "tags": [
       "Health",
@@ -919,7 +919,7 @@
     "id": "2503",
     "name": "黒炎のトーチ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">80</span><br>マナ<span class=\"tt-attention\">600</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">悪意の炎</span><br>ダメージスキルが3秒間、<span class=\"tt-magicdamage\">の追加魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">黒炎</span><br><span class=\"tt-passive\">「悪意の炎」</span>の影響を受けた敵チャンピオン、エピックモンスター、大型モンスター1体ごとに、<span class=\"tt-scaleap\">魔力が4%</span>増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">80</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">600</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">悪意の炎</span><br>ダメージスキルが3秒間、<span class=\"tt-magicdamage\">の追加魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">黒炎</span><br><span class=\"tt-passive\">「悪意の炎」</span>の影響を受けた敵チャンピオン、エピックモンスター、大型モンスター1体ごとに、<span class=\"tt-scaleap\">魔力が4%</span>増加する。 </span>",
     "gold": 2800,
     "tags": [
       "SpellDamage",
@@ -934,7 +934,7 @@
     "id": "2522",
     "name": "アクチュアライザー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">90</span><br>マナ<span class=\"tt-attention\">300</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">本気のマナ</span> (0秒)<br>8秒間、自身のマナが強化される。強化中は、スキルのマナコストが100%増加し、スキルダメージ、シールド量、体力回復量が0増加し、通常スキルのクールダウンの進行が30%加速する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">90</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">本気のマナ</span> (0秒)<br>8秒間、自身のマナが強化される。強化中は、スキルのマナコストが100%増加し、スキルダメージ、シールド量、体力回復量が0増加し、通常スキルのクールダウンの進行が30%加速する。</span>",
     "gold": 2800,
     "tags": [
       "SpellDamage",
@@ -948,7 +948,7 @@
     "id": "2523",
     "name": "ヘクスオプティックC44",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ズーム</span><br>敵との距離に応じて、通常攻撃が与えるダメージが最大10%増加する(射程500で最大ダメージ)。<br><br><span class=\"tt-passive\">アーケインエイム</span><br>直前の3秒以内にダメージを与えていたチャンピオンが倒されると、8秒間、射程が100増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span></span><br><br><span class=\"tt-passive\">ズーム</span><br>敵との距離に応じて、通常攻撃が与えるダメージが最大10%増加する(射程500で最大ダメージ)。<br><br><span class=\"tt-passive\">アーケインエイム</span><br>直前の3秒以内にダメージを与えていたチャンピオンが倒されると、8秒間、射程が100増加する。 </span>",
     "gold": 2800,
     "tags": [
       "Damage",
@@ -961,7 +961,7 @@
     "id": "3068",
     "name": "サンファイア イージス",
     "plaintext": "物理防御が大幅に増加。周囲の敵に常にダメージを与える。敵に移動不能効果を与えると、波状の炎を放ってダメージを与える。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span><br>物理防御 <span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与える。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与える。 </span>",
     "gold": 2800,
     "tags": [
       "Health",
@@ -976,7 +976,7 @@
     "id": "3091",
     "name": "ウィッツ エンド",
     "plaintext": "魔法ダメージから身を守り、死の淵から生還させる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">50%</span><br>魔法防御<span class=\"tt-attention\">45</span><br>行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">フレイ</span><br>通常攻撃が<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">50%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaletenacity.png\" alt=\"\" width=\"14\" height=\"14\">行動妨害耐性<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">フレイ</span><br>通常攻撃が<span class=\"tt-magicdamage\">追加魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 2800,
     "tags": [
       "SpellBlock",
@@ -991,7 +991,7 @@
     "id": "3142",
     "name": "妖夢の霊剣",
     "plaintext": "発動で移動速度が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">18</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">幽鬼</span> <br>非戦闘時に<span class=\"tt-speed\">移動速度が0</span>増加する。<br><br><span class=\"tt-active\">幽霊の歩み</span><br>0秒間、<span class=\"tt-speed\">移動速度が</span>増加して<span class=\"tt-keyword\">ゴースト化</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">幽鬼</span> <br>非戦闘時に<span class=\"tt-speed\">移動速度が0</span>増加する。<br><br><span class=\"tt-active\">幽霊の歩み</span><br>0秒間、<span class=\"tt-speed\">移動速度が</span>増加して<span class=\"tt-keyword\">ゴースト化</span>する。</span>",
     "gold": 2800,
     "tags": [
       "Damage",
@@ -1006,7 +1006,7 @@
     "id": "3179",
     "name": "アンブラル グレイブ",
     "plaintext": "定期的に罠とワードを見破る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">60</span><br>脅威<span class=\"tt-attention\">18</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">ナイトストーカー</span><br>少しの間敵から視認されずにいると、チャンピオンに対する次の通常攻撃が追加<span class=\"tt-truedamage\">確定ダメージ</span>を与える。<br><br><span class=\"tt-passive\">ブラックアウト</span><br>敵のステルス ワードやトラップの近くにいるとき、少しの間両方を可視化する。ワードを可視化している間、通常攻撃でそのワードに追加ダメージを与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">ナイトストーカー</span><br>少しの間敵から視認されずにいると、チャンピオンに対する次の通常攻撃が追加<span class=\"tt-truedamage\">確定ダメージ</span>を与える。<br><br><span class=\"tt-passive\">ブラックアウト</span><br>敵のステルス ワードやトラップの近くにいるとき、少しの間両方を可視化する。ワードを可視化している間、通常攻撃でそのワードに追加ダメージを与える。</span>",
     "gold": 2800,
     "tags": [
       "Damage",
@@ -1022,7 +1022,7 @@
     "id": "4004",
     "name": "スペクトラル カトラス",
     "plaintext": "地面をマークして数秒後にそこに戻る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">50</span><br>脅威<span class=\"tt-attention\">15</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-active\">発動効果 -</span> <span class=\"tt-active\">ソウルアンカー</span> (0秒)<br>自身の現在地をマークする。4秒後、マークした場所に戻ってくる。<span class=\"tt-active\">「ソウルアンカー」</span>の効果時間中は、いつでも再発動してマークした場所に早めに戻ることができる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-active\">発動効果 -</span> <span class=\"tt-active\">ソウルアンカー</span> (0秒)<br>自身の現在地をマークする。4秒後、マークした場所に戻ってくる。<span class=\"tt-active\">「ソウルアンカー」</span>の効果時間中は、いつでも再発動してマークした場所に早めに戻ることができる。</span>",
     "gold": 2800,
     "tags": [
       "Damage",
@@ -1036,7 +1036,7 @@
     "id": "4401",
     "name": "自然の力",
     "plaintext": "移動速度、魔法防御、最大体力自動回復",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>魔法防御<span class=\"tt-attention\">55</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">毅然</span><br>チャンピオンから魔法ダメージを8回受けると、<span class=\"tt-scalemr\">魔法防御が70</span>、<span class=\"tt-speed\">移動速度が6%</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">毅然</span><br>チャンピオンから魔法ダメージを8回受けると、<span class=\"tt-scalemr\">魔法防御が70</span>、<span class=\"tt-speed\">移動速度が6%</span>増加する。</span>",
     "gold": 2800,
     "tags": [
       "Health",
@@ -1050,7 +1050,7 @@
     "id": "4646",
     "name": "ストームサージ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">90</span><br>魔法防御貫通<span class=\"tt-attention\">15</span><br>移動速度<span class=\"tt-attention\">6%</span></span><br><br><span class=\"tt-passive\">ストームレイダー</span><br>チャンピオンに対して、2.5秒以内にその最大体力の25%にあたるダメージを与えると、対象に<span class=\"tt-passive\">「スコール」</span>を付与する。<br><br><span class=\"tt-passive\">スコール</span><br>2秒後、<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与える。<span class=\"tt-passive\">「スコール」</span>が発動する前に対象が倒されると、周囲の敵にダメージを与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">90</span><br><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">6%</span></span><br><br><span class=\"tt-passive\">ストームレイダー</span><br>チャンピオンに対して、2.5秒以内にその最大体力の25%にあたるダメージを与えると、対象に<span class=\"tt-passive\">「スコール」</span>を付与する。<br><br><span class=\"tt-passive\">スコール</span><br>2秒後、<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与える。<span class=\"tt-passive\">「スコール」</span>が発動する前に対象が倒されると、周囲の敵にダメージを与える。</span>",
     "gold": 2800,
     "tags": [
       "SpellDamage",
@@ -1065,7 +1065,7 @@
     "id": "6664",
     "name": "ホロウ レディアンス",
     "plaintext": "敵に移動不能効果を与えるとシールドを獲得。発動すると相手に向かう際の移動速度が増加。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>魔法防御<span class=\"tt-attention\">40</span><br>スキルヘイスト<span class=\"tt-attention\">10</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">荒涼</span><br>敵をキルすると、その周囲に<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。<br><br><span class=\"tt-passive\">荒涼</span><br>敵をキルすると、その周囲に<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
     "gold": 2800,
     "tags": [
       "Health",
@@ -1082,7 +1082,7 @@
     "id": "6655",
     "name": "ルーデン エコー",
     "plaintext": "バーストダメージが大幅に増加、耐久力の低い敵に効果的",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">100</span><br>マナ<span class=\"tt-attention\">600</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">エコー</span><br>ダメージスキルが6発のエコーを放ち、対象と周囲の敵に<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。残りのエコーはメインの対象に向かって放たれ、20%のダメージを与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">100</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">600</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">エコー</span><br>ダメージスキルが6発のエコーを放ち、対象と周囲の敵に<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。残りのエコーはメインの対象に向かって放たれ、20%のダメージを与える。</span>",
     "gold": 2750,
     "tags": [
       "SpellDamage",
@@ -1097,7 +1097,7 @@
     "id": "6696",
     "name": "アクシオム アーク",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">18</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">流転</span><br>ダメージを与えてから3秒以内にそのチャンピオンが倒されると、アルティメットスキルの合計クールダウンが一部解消される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">流転</span><br>ダメージを与えてから3秒以内にそのチャンピオンが倒されると、アルティメットスキルの合計クールダウンが一部解消される。</span>",
     "gold": 2750,
     "tags": [
       "Damage",
@@ -1111,7 +1111,7 @@
     "id": "3065",
     "name": "スピリット ビサージュ",
     "plaintext": "体力とすべての回復効果が増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">400</span><br>魔法防御<span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">10</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">無限の胆力</span><br>自身が受けるすべての回復効果とシールド耐久値が25%増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">無限の胆力</span><br>自身が受けるすべての回復効果とシールド耐久値が25%増加する。</span>",
     "gold": 2700,
     "tags": [
       "Health",
@@ -1127,7 +1127,7 @@
     "id": "3118",
     "name": "マリグナンス",
     "plaintext": "1人の味方とパートナーになってお互いを守る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">90</span><br>マナ<span class=\"tt-attention\">600</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">嘲り</span><br>20のアルティメットスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">憎悪の霧</span><br>アルティメットスキルでチャンピオンにダメージを与えると、対象の足元の地面が燃え上がり、3秒間、毎秒<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与えて、対象の<span class=\"tt-scalemr\">魔法防御を</span>低下させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">90</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">600</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">嘲り</span><br>20のアルティメットスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">憎悪の霧</span><br>アルティメットスキルでチャンピオンにダメージを与えると、対象の足元の地面が燃え上がり、3秒間、毎秒<span class=\"tt-magicdamage\">の魔法ダメージ</span>を与えて、対象の<span class=\"tt-scalemr\">魔法防御を</span>低下させる。</span>",
     "gold": 2700,
     "tags": [
       "SpellDamage",
@@ -1141,7 +1141,7 @@
     "id": "3143",
     "name": "ランデュイン オーメン",
     "plaintext": "防御力が大幅に上昇し、発動で周辺の敵にスロウを付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span><br>物理防御 <span class=\"tt-attention\">75</span></span><br><br><span class=\"tt-passive\">耐性</span><br>受けるクリティカルダメージが30%軽減される。<br><span class=\"tt-active\">卑下</span><br>周囲の敵に2秒間、70%の<span class=\"tt-keyword\">スロウ効果</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">75</span></span><br><br><span class=\"tt-passive\">耐性</span><br>受けるクリティカルダメージが30%軽減される。<br><span class=\"tt-active\">卑下</span><br>周囲の敵に2秒間、70%の<span class=\"tt-keyword\">スロウ効果</span>を付与する。</span>",
     "gold": 2700,
     "tags": [
       "Health",
@@ -1156,7 +1156,7 @@
     "id": "4628",
     "name": "ホライゾン フォーカス",
     "plaintext": "チャンピオンを移動不能にした際に雷で攻撃",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">75</span><br>スキルヘイスト<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">ハイパーショット</span><br>射程600以上でチャンピオンにスキルダメージを与えると、そのチャンピオンを6秒間<span class=\"tt-keywordstealth\">可視化</span>する。<br><br><span class=\"tt-passive\">フォーカス</span><br><span class=\"tt-passive\">「ハイパーショット」</span>を発動させると、対象から1400ユニット以内にいる他のすべての敵チャンピオンを3秒間<span class=\"tt-keywordstealth\">可視化</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">75</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">ハイパーショット</span><br>射程600以上でチャンピオンにスキルダメージを与えると、そのチャンピオンを6秒間<span class=\"tt-keywordstealth\">可視化</span>する。<br><br><span class=\"tt-passive\">フォーカス</span><br><span class=\"tt-passive\">「ハイパーショット」</span>を発動させると、対象から1400ユニット以内にいる他のすべての敵チャンピオンを3秒間<span class=\"tt-keywordstealth\">可視化</span>する。</span>",
     "gold": 2700,
     "tags": [
       "SpellDamage",
@@ -1169,7 +1169,7 @@
     "id": "2512",
     "name": "フィーンドハンターの矢",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">45%</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">夜警</span><br>アルティメットスキルヘイストが30増加する。<br><br><span class=\"tt-passive\">連射</span><br> アルティメットスキルを使用後、8秒間、次の3回の通常攻撃の<span class=\"tt-attackspeed\">攻撃速度が50%</span>増加し、通常のクリティカルダメージの80%にあたるクリティカルダメージを与える。通常攻撃が元々クリティカルになる場合、代わりに<span class=\"tt-truedamage\">15%の追加確定ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">45%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">夜警</span><br>アルティメットスキルヘイストが30増加する。<br><br><span class=\"tt-passive\">連射</span><br> アルティメットスキルを使用後、8秒間、次の3回の通常攻撃の<span class=\"tt-attackspeed\">攻撃速度が50%</span>増加し、通常のクリティカルダメージの80%にあたるクリティカルダメージを与える。通常攻撃が元々クリティカルになる場合、代わりに<span class=\"tt-truedamage\">15%の追加確定ダメージ</span>を与える。</span>",
     "gold": 2650,
     "tags": [
       "CriticalStrike",
@@ -1184,7 +1184,7 @@
     "id": "3046",
     "name": "ファントム ダンサー",
     "plaintext": "敵を攻撃すると移動速度が上昇し、体力が低い場合にシールドを発生させる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">65%</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-passive\">幽霊のワルツ</span><br><span class=\"tt-keyword\">ゴースト化</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">65%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-passive\">幽霊のワルツ</span><br><span class=\"tt-keyword\">ゴースト化</span>する。</span>",
     "gold": 2650,
     "tags": [
       "CriticalStrike",
@@ -1198,7 +1198,7 @@
     "id": "3085",
     "name": "ルナーン ハリケーン",
     "plaintext": "遠隔の通常攻撃で周辺の敵に対し2本の矢を射出",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">40%</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">5%</span></span><br><br><span class=\"tt-passive\">連撃の風</span><br>炎の矢を放ち、対象の近くにいる敵2体を追加で攻撃する。<br>矢はそれぞれ、<span class=\"tt-physicaldamage\">の物理ダメージ</span>と<span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">40%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">5%</span></span><br><br><span class=\"tt-passive\">連撃の風</span><br>炎の矢を放ち、対象の近くにいる敵2体を追加で攻撃する。<br>矢はそれぞれ、<span class=\"tt-physicaldamage\">の物理ダメージ</span>と<span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 2650,
     "tags": [
       "CriticalStrike",
@@ -1213,7 +1213,7 @@
     "id": "3094",
     "name": "ラピッド ファイアキャノン",
     "plaintext": "移動によってチャージが溜まり、解放時に砲撃を放つ",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">35%</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">心眼</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>が<span class=\"tt-magicdamage\">40の追加魔法ダメージ</span>を与え、その射程距離が35%増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">35%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">心眼</span><br><span class=\"tt-keyword\">エネルギー充填状態の通常攻撃</span>が<span class=\"tt-magicdamage\">40の追加魔法ダメージ</span>を与え、その射程距離が35%増加する。</span>",
     "gold": 2650,
     "tags": [
       "CriticalStrike",
@@ -1227,7 +1227,7 @@
     "id": "3152",
     "name": "ヘクステック ロケットベルト",
     "plaintext": "発動で前方にダッシュして火の矢を放つ",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">60</span><br>体力<span class=\"tt-attention\">350</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">超音速</span><br>指定方向にダッシュして複数の魔弾を放ち、<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">超音速</span><br>指定方向にダッシュして複数の魔弾を放ち、<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
     "gold": 2650,
     "tags": [
       "Health",
@@ -1244,7 +1244,7 @@
     "id": "6675",
     "name": "ナヴォリ フリッカーブレード",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">40%</span><br>クリティカル率<span class=\"tt-attention\">25%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">至上</span><br>通常攻撃でアルティメット以外のスキルの残りクールダウンが<span class=\"tt-attention\">15%</span>短縮する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">40%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">25%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">至上</span><br>通常攻撃でアルティメット以外のスキルの残りクールダウンが<span class=\"tt-attention\">15%</span>短縮する。</span>",
     "gold": 2650,
     "tags": [
       "CriticalStrike",
@@ -1258,7 +1258,7 @@
     "id": "8020",
     "name": "アビサル マスク",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span><br>魔法防御<span class=\"tt-attention\">45</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">荒廃</span><br>周囲の敵チャンピオンが受ける<span class=\"tt-magicdamage\">魔法ダメージ</span>が12%増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">荒廃</span><br>周囲の敵チャンピオンが受ける<span class=\"tt-magicdamage\">魔法ダメージ</span>が12%増加する。</span>",
     "gold": 2650,
     "tags": [
       "Health",
@@ -1274,7 +1274,7 @@
     "id": "2525",
     "name": "プロトプラズム ハーネス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">600</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">ライフライン</span> (0秒)<br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、5秒間、<span class=\"tt-health\">最大体力を0</span>獲得し、その効果時間をかけて<span class=\"tt-health\">体力が0</span>回復する。体力回復中は、サイズが15%、移動速度が10%、行動妨害耐性が25%増加する。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">600</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">ライフライン</span> (0秒)<br>ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、5秒間、<span class=\"tt-health\">最大体力を0</span>獲得し、その効果時間をかけて<span class=\"tt-health\">体力が0</span>回復する。体力回復中は、サイズが15%、移動速度が10%、行動妨害耐性が25%増加する。 </span>",
     "gold": 2600,
     "tags": [
       "Health",
@@ -1289,7 +1289,7 @@
     "id": "3116",
     "name": "リーライ クリスタル セプター",
     "plaintext": "スキルによる攻撃で敵にスロウを付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">65</span><br>体力<span class=\"tt-attention\">400</span></span><br><br><span class=\"tt-passive\">ライムフロスト</span><br>攻撃スキルが、敵に1秒間30%の<span class=\"tt-keyword\">スロウ効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">65</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">400</span></span><br><br><span class=\"tt-passive\">ライムフロスト</span><br>攻撃スキルが、敵に1秒間30%の<span class=\"tt-keyword\">スロウ効果</span>を与える。</span>",
     "gold": 2600,
     "tags": [
       "Health",
@@ -1303,7 +1303,7 @@
     "id": "6657",
     "name": "ロッド オブ エイジス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span><br>体力<span class=\"tt-attention\">350</span><br>マナ<span class=\"tt-attention\">500</span></span><br><br><span class=\"tt-passive\">時空の超越者</span><br>このアイテムの付与ステータスは、60秒ごとに<span class=\"tt-scalehealth\">体力が10</span>、<span class=\"tt-scalemana\">マナが30</span>、<span class=\"tt-scaleap\">魔力が3</span>ずつ増加する。この効果は10回までスタックする。最大スタックになると、チャンピオンレベルが1増加する。<br><br><span class=\"tt-passive\">久遠</span><br>チャンピオンからダメージを受けると、ダメージの<span class=\"tt-scalemana\">10%</span>を<span class=\"tt-scalemana\">マナ</span>として回復する。<br>スキルを発動すると消費したマナの<span class=\"tt-healing\">25%分の体力</span>を回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">500</span></span><br><br><span class=\"tt-passive\">時空の超越者</span><br>このアイテムの付与ステータスは、60秒ごとに<span class=\"tt-scalehealth\">体力が10</span>、<span class=\"tt-scalemana\">マナが30</span>、<span class=\"tt-scaleap\">魔力が3</span>ずつ増加する。この効果は10回までスタックする。最大スタックになると、チャンピオンレベルが1増加する。<br><br><span class=\"tt-passive\">久遠</span><br>チャンピオンからダメージを受けると、ダメージの<span class=\"tt-scalemana\">10%</span>を<span class=\"tt-scalemana\">マナ</span>として回復する。<br>スキルを発動すると消費したマナの<span class=\"tt-healing\">25%分の体力</span>を回復する。</span>",
     "gold": 2600,
     "tags": [
       "Health",
@@ -1319,7 +1319,7 @@
     "id": "3110",
     "name": "フローズン ハート",
     "plaintext": "物理防御がかなり上昇し、敵の攻撃速度を低下させる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">75</span><br>マナ<span class=\"tt-attention\">400</span><br>スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">冬の抱擁</span><br>周囲のチャンピオンの<span class=\"tt-attackspeed\">攻撃速度</span>を<span class=\"tt-attackspeed\">20%</span>低下させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">75</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">400</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">冬の抱擁</span><br>周囲のチャンピオンの<span class=\"tt-attackspeed\">攻撃速度</span>を<span class=\"tt-attackspeed\">20%</span>低下させる。</span>",
     "gold": 2500,
     "tags": [
       "Armor",
@@ -1335,7 +1335,7 @@
     "id": "6621",
     "name": "ドーンコア",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span><br>体力回復量とシールド量<span class=\"tt-attention\">16%</span><br>基本マナ自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">ファーストライト</span><br>基本マナ自動回復100%ごとに、<span class=\"tt-healing\">体力回復量とシールド量が2%</span>、<span class=\"tt-scaleap\">魔力が15</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">16%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">ファーストライト</span><br>基本マナ自動回復100%ごとに、<span class=\"tt-healing\">体力回復量とシールド量が2%</span>、<span class=\"tt-scaleap\">魔力が15</span>増加する。</span>",
     "gold": 2500,
     "tags": [
       "SpellDamage",
@@ -1348,7 +1348,7 @@
     "id": "6695",
     "name": "毒蛇の牙",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">55</span><br>脅威<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">盾崩し</span><br>敵チャンピオンにダメージを与えると3秒間、対象が獲得するシールドの耐久値を0%低下させる。<br>対象がまだ<span class=\"tt-passive\">「盾崩し」</span>の効果を受けていなかった場合は、対象が受けているすべてのシールドの耐久値を0%低下させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">55</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">盾崩し</span><br>敵チャンピオンにダメージを与えると3秒間、対象が獲得するシールドの耐久値を0%低下させる。<br>対象がまだ<span class=\"tt-passive\">「盾崩し」</span>の効果を受けていなかった場合は、対象が受けているすべてのシールドの耐久値を0%低下させる。</span>",
     "gold": 2500,
     "tags": [
       "Damage",
@@ -1361,7 +1361,7 @@
     "id": "994403",
     "name": "金のへら",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">90</span><br>魔力<span class=\"tt-attention\">110</span><br>攻撃速度<span class=\"tt-attention\">40%</span><br>クリティカル率<span class=\"tt-attention\">15%</span><br>体力<span class=\"tt-attention\">200</span><br>物理防御 <span class=\"tt-attention\">20</span><br>魔法防御<span class=\"tt-attention\">20</span><br>マナ<span class=\"tt-attention\">200</span><br>スキルヘイスト<span class=\"tt-attention\">20</span><br>移動速度<span class=\"tt-attention\">10%</span><br>ライフ スティール<span class=\"tt-attention\">10%</span><br>基本体力自動回復<span class=\"tt-attention\">50%</span><br>基本マナ自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">何かする</span><br>恒久的に「オンファイア！」を獲得している。<br><br><span class=\"tt-flavortext\">「どれかが増えているはずだが…<br>違うな、&quot;全て&quot;だよ！」</span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">90</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">110</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">40%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">15%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">10%</span><br>ライフ スティール<span class=\"tt-attention\">10%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">50%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">何かする</span><br>恒久的に「オンファイア！」を獲得している。<br><br><span class=\"tt-flavortext\">「どれかが増えているはずだが…<br>違うな、&quot;全て&quot;だよ！」</span></span>",
     "gold": 2500,
     "tags": [
       "Health",
@@ -1385,7 +1385,7 @@
     "id": "3075",
     "name": "ソーンメイル",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">150</span><br>物理防御 <span class=\"tt-attention\">75</span></span><br><br><span class=\"tt-passive\">棘</span><br>通常攻撃を受けると、攻撃者に<span class=\"tt-magicdamage\">魔法ダメージ</span>を与え、対象がチャンピオンだった場合は、3秒間40%の<span class=\"tt-keyword\">「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">75</span></span><br><br><span class=\"tt-passive\">棘</span><br>通常攻撃を受けると、攻撃者に<span class=\"tt-magicdamage\">魔法ダメージ</span>を与え、対象がチャンピオンだった場合は、3秒間40%の<span class=\"tt-keyword\">「負傷」</span>を付与する。</span>",
     "gold": 2450,
     "tags": [
       "Health",
@@ -1398,7 +1398,7 @@
     "id": "3119",
     "name": "冬の訪れ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">550</span><br>マナ<span class=\"tt-attention\">500</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">畏怖</span><br><span class=\"tt-scalehealth\">0の体力</span>を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>通常攻撃とスキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(チャンピオンに対しては2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「フィンブルウィンター」</span>に変化する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">550</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">500</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">畏怖</span><br><span class=\"tt-scalehealth\">0の体力</span>を獲得する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>通常攻撃とスキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(チャンピオンに対しては2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>になると、<span class=\"tt-raritylegendary\">「フィンブルウィンター」</span>に変化する。</span>",
     "gold": 2400,
     "tags": [
       "Health",
@@ -1412,7 +1412,7 @@
     "id": "4005",
     "name": "帝国の指令",
     "plaintext": "被ダメージを先送り",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">60</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>基本マナ自動回復<span class=\"tt-attention\">150%</span></span><br><br><span class=\"tt-passive\">制御</span><br><span class=\"tt-keyword\">移動不能効果</span>を持つスキルが20のスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">指令</span><br>敵チャンピオンに<span class=\"tt-keyword\">移動不能効果</span>を与えると、その敵を4秒間、7%の<span class=\"tt-keyword\">「弱点」</span>でマークする。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">60</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">150%</span></span><br><br><span class=\"tt-passive\">制御</span><br><span class=\"tt-keyword\">移動不能効果</span>を持つスキルが20のスキルヘイストを獲得する。<br><br><span class=\"tt-passive\">指令</span><br>敵チャンピオンに<span class=\"tt-keyword\">移動不能効果</span>を与えると、その敵を4秒間、7%の<span class=\"tt-keyword\">「弱点」</span>でマークする。</span>",
     "gold": 2400,
     "tags": [
       "SpellDamage",
@@ -1427,7 +1427,7 @@
     "id": "124011",
     "name": "花咲く夜明けの剣",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span><br>体力<span class=\"tt-attention\">200</span><br>体力回復量とシールド量<span class=\"tt-attention\">12%</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">はつらつ</span><br><span class=\"tt-healing\">体力回復およびシールド量1%</span>ごとに<span class=\"tt-attackspeed\">攻撃速度が+1.2%</span>増加する。<br><br><span class=\"tt-passive\">ペパーミント</span><br><span class=\"tt-onhit\">通常攻撃時効果</span>で、付近にいる<span class=\"tt-healing\">体力が最も低い</span>味方チャンピオンの体力を0回復させる。最も体力が低い味方が優先される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">12%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">はつらつ</span><br><span class=\"tt-healing\">体力回復およびシールド量1%</span>ごとに<span class=\"tt-attackspeed\">攻撃速度が+1.2%</span>増加する。<br><br><span class=\"tt-passive\">ペパーミント</span><br><span class=\"tt-onhit\">通常攻撃時効果</span>で、付近にいる<span class=\"tt-healing\">体力が最も低い</span>味方チャンピオンの体力を0回復させる。最も体力が低い味方が優先される。</span>",
     "gold": 2350,
     "tags": [
       "Health",
@@ -1443,7 +1443,7 @@
     "id": "2524",
     "name": "バンドルパイプ",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>物理防御 <span class=\"tt-attention\">20</span><br>魔法防御<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">ファンファーレ</span><br>敵チャンピオンに<span class=\"tt-keyword\">スロウ効果</span>または<span class=\"tt-keyword\">移動不能効果</span>を付与すると、0秒間「ファンファーレ」を獲得する。「ファンファーレ」は<span class=\"tt-speed\">移動速度を20</span>増加させる。「ファンファーレ」を獲得中は、自身を含む周囲の味方の<span class=\"tt-attackspeed\">攻撃速度が0</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">20</span></span><br><br><span class=\"tt-passive\">ファンファーレ</span><br>敵チャンピオンに<span class=\"tt-keyword\">スロウ効果</span>または<span class=\"tt-keyword\">移動不能効果</span>を付与すると、0秒間「ファンファーレ」を獲得する。「ファンファーレ」は<span class=\"tt-speed\">移動速度を20</span>増加させる。「ファンファーレ」を獲得中は、自身を含む周囲の味方の<span class=\"tt-attackspeed\">攻撃速度が0</span>増加する。</span>",
     "gold": 2300,
     "tags": [
       "Health",
@@ -1460,7 +1460,7 @@
     "id": "3107",
     "name": "リデンプション",
     "plaintext": "発動で範囲内の味方を回復して敵にダメージを与える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">30</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>基本マナ自動回復<span class=\"tt-attention\">100%</span><br>体力回復量とシールド量<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-active\">介入</span><br>2.5秒後に味方ユニットの<span class=\"tt-healing\">体力を150 - 350</span>回復し、敵チャンピオンに<span class=\"tt-truedamage\">最大体力の10%の確定ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">100%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">10%</span></span><br><br><span class=\"tt-active\">介入</span><br>2.5秒後に味方ユニットの<span class=\"tt-healing\">体力を150 - 350</span>回復し、敵チャンピオンに<span class=\"tt-truedamage\">最大体力の10%の確定ダメージ</span>を与える。</span>",
     "gold": 2300,
     "tags": [
       "SpellDamage",
@@ -1475,7 +1475,7 @@
     "id": "3109",
     "name": "騎士の誓い",
     "plaintext": "1人の味方とパートナーになってお互いを守る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>物理防御 <span class=\"tt-attention\">40</span><br>スキルヘイスト<span class=\"tt-attention\">10</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">犠牲</span><br>味方の<span class=\"tt-attention\">同志</span>が近くにいる間は、その味方が受けるダメージの14%を代わりに受け、また<span class=\"tt-attention\">同志</span>がチャンピオンに与えたダメージの<span class=\"tt-healing\">12%にあたる体力</span>を回復する。<span class=\"tt-active\">誓約</span> (0秒)<br>味方を<span class=\"tt-attention\">同志</span>に指定する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span><br><br><span class=\"tt-passive\">犠牲</span><br>味方の<span class=\"tt-attention\">同志</span>が近くにいる間は、その味方が受けるダメージの14%を代わりに受け、また<span class=\"tt-attention\">同志</span>がチャンピオンに与えたダメージの<span class=\"tt-healing\">12%にあたる体力</span>を回復する。<span class=\"tt-active\">誓約</span> (0秒)<br>味方を<span class=\"tt-attention\">同志</span>に指定する。</span>",
     "gold": 2300,
     "tags": [
       "Health",
@@ -1493,7 +1493,7 @@
     "id": "3222",
     "name": "ミカエルの祝福",
     "plaintext": "発動で味方チャンピオンのすべての行動妨害効果を無効化",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">250</span><br>基本マナ自動回復<span class=\"tt-attention\">100%</span><br>体力回復量とシールド量<span class=\"tt-attention\">12%</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-active\">浄化</span><br>味方チャンピオンから<span class=\"tt-keyword\">ノックアップ</span>と<span class=\"tt-keyword\">サプレッション</span>以外のすべての行動妨害系デバフを除去し、<span class=\"tt-healing\">体力を100 - 250</span>回復させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">250</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">100%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">12%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-active\">浄化</span><br>味方チャンピオンから<span class=\"tt-keyword\">ノックアップ</span>と<span class=\"tt-keyword\">サプレッション</span>以外のすべての行動妨害系デバフを除去し、<span class=\"tt-healing\">体力を100 - 250</span>回復させる。</span>",
     "gold": 2300,
     "tags": [
       "Health",
@@ -1510,7 +1510,7 @@
     "id": "2526",
     "name": "囁きのサークレット",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>体力回復量とシールド量<span class=\"tt-attention\">8%</span><br>基本マナ自動回復<span class=\"tt-attention\">75%</span><br>マナ<span class=\"tt-attention\">300</span></span><br><br><span class=\"tt-passive\">調和</span><br>体力回復およびシールド効果が0%増加する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大5チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが4</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>に到達すると、このアイテムは<span class=\"tt-raritylegendary\">「旋律のダイアデム」</span>に変化する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">8%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">75%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">300</span></span><br><br><span class=\"tt-passive\">調和</span><br>体力回復およびシールド効果が0%増加する。<br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大5チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが4</span>(相手がチャンピオンの場合は2倍)増加する。<br><span class=\"tt-scalemana\">最大マナが360</span>に到達すると、このアイテムは<span class=\"tt-raritylegendary\">「旋律のダイアデム」</span>に変化する。</span>",
     "gold": 2250,
     "tags": [
       "Health",
@@ -1524,7 +1524,7 @@
     "id": "6616",
     "name": "フロー ウォーター スタッフ",
     "plaintext": "自身の回復効果とシールドが行動妨害効果を軽減し、移動速度が増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">35</span><br>体力回復量とシールド量<span class=\"tt-attention\">10%</span><br>基本マナ自動回復<span class=\"tt-attention\">125%</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">急流</span><br>味方に体力回復効果またはシールドを付与すると、6秒間、<span class=\"tt-magicdamage\">魔力が40</span>、<span class=\"tt-attention\">スキルヘイストが15</span>増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">10%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">125%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">急流</span><br>味方に体力回復効果またはシールドを付与すると、6秒間、<span class=\"tt-magicdamage\">魔力が40</span>、<span class=\"tt-attention\">スキルヘイストが15</span>増加する。</span>",
     "gold": 2250,
     "tags": [
       "SpellDamage",
@@ -1539,7 +1539,7 @@
     "id": "2065",
     "name": "シュレリアの戦歌",
     "plaintext": "発動すると周囲の味方の速度が上昇する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">50</span><br>スキルヘイスト<span class=\"tt-attention\">15</span><br>移動速度<span class=\"tt-attention\">4%</span><br>基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-active\">感動的スピーチ</span><br>周囲の味方の移動速度を4秒間、<span class=\"tt-speed\">30%</span>増加させる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-active\">感動的スピーチ</span><br>周囲の味方の移動速度を4秒間、<span class=\"tt-speed\">30%</span>増加させる。</span>",
     "gold": 2200,
     "tags": [
       "SpellDamage",
@@ -1556,7 +1556,7 @@
     "id": "3050",
     "name": "ジーク コンバージェンス",
     "plaintext": "アルティメットスキル使用時に自身と味方に追加効果を付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">300</span><br>物理防御 <span class=\"tt-attention\">25</span><br>魔法防御<span class=\"tt-attention\">25</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">氷炎のテンペスト</span><br>アルティメットスキルを使用すると自身の周りに5秒間、嵐を発生させる。この嵐は敵チャンピオンに毎秒<span class=\"tt-magicdamage\">30の魔法ダメージ</span>を与え、対象に30%の<span class=\"tt-keyword\">スロウ効果</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">氷炎のテンペスト</span><br>アルティメットスキルを使用すると自身の周りに5秒間、嵐を発生させる。この嵐は敵チャンピオンに毎秒<span class=\"tt-magicdamage\">30の魔法ダメージ</span>を与え、対象に30%の<span class=\"tt-keyword\">スロウ効果</span>を付与する。</span>",
     "gold": 2200,
     "tags": [
       "Health",
@@ -1571,7 +1571,7 @@
     "id": "3190",
     "name": "ソラリのロケット",
     "plaintext": "発動すると周辺の味方にダメージを軽減するシールドを付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>物理防御 <span class=\"tt-attention\">30</span><br>魔法防御<span class=\"tt-attention\">30</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">献身</span><br>周囲の味方に耐久値<span class=\"tt-shield\">290 - 360のシールド</span>を付与する。シールドは2.5秒かけて減衰する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-active\">献身</span><br>周囲の味方に耐久値<span class=\"tt-shield\">290 - 360のシールド</span>を付与する。シールドは2.5秒かけて減衰する。</span>",
     "gold": 2200,
     "tags": [
       "Health",
@@ -1589,7 +1589,7 @@
     "id": "3504",
     "name": "アーデント センサー",
     "plaintext": "他のユニットへシールドおよび回復効果を付与すると、その対象と自身の両方に攻撃速度増加と通常攻撃時の追加魔法ダメージが付与される",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span><br>体力回復量とシールド量<span class=\"tt-attention\">10%</span><br>基本マナ自動回復<span class=\"tt-attention\">125%</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">サンクティファイ</span><br>味方に体力回復効果またはシールドを付与すると、6秒間、自身とその味方の両方が強化され、<span class=\"tt-attackspeed\">攻撃速度が25%</span>増加して、<span class=\"tt-magicdamage\">20の魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">10%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">125%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-passive\">サンクティファイ</span><br>味方に体力回復効果またはシールドを付与すると、6秒間、自身とその味方の両方が強化され、<span class=\"tt-attackspeed\">攻撃速度が25%</span>増加して、<span class=\"tt-magicdamage\">20の魔法ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 2200,
     "tags": [
       "AttackSpeed",
@@ -1604,7 +1604,7 @@
     "id": "6617",
     "name": "ムーンストーンの再生",
     "plaintext": "自身の回復効果とシールドのクールダウンが短縮されて、体力の低下した味方への効果が増加",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">25</span><br>体力<span class=\"tt-attention\">200</span><br>スキルヘイスト<span class=\"tt-attention\">20</span><br>基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-passive\">星明りの恩寵</span><br>味方への体力回復またはシールド効果が、別の味方1体(自身を除く)に連鎖する。連鎖による<span class=\"tt-healing\">体力回復量は元の値の30%</span>、<span class=\"tt-shield\">シールド耐久値は元の値の35%</span>となる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-passive\">星明りの恩寵</span><br>味方への体力回復またはシールド効果が、別の味方1体(自身を除く)に連鎖する。連鎖による<span class=\"tt-healing\">体力回復量は元の値の30%</span>、<span class=\"tt-shield\">シールド耐久値は元の値の35%</span>となる。</span>",
     "gold": 2200,
     "tags": [
       "Health",
@@ -1620,7 +1620,7 @@
     "id": "6620",
     "name": "ヘリアの残響",
     "plaintext": "体力が低下した敵にダメージを与えると呪いの爆発が発生して、周囲の敵にダメージとスロウ効果を付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">35</span><br>体力<span class=\"tt-attention\">200</span><br>スキルヘイスト<span class=\"tt-attention\">20</span><br>基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-passive\">ソウルサイフォン</span><br>チャンピオンに対する軽減前の与ダメージの30%をソウルチャージとして獲得する。味方に体力回復効果またはシールドを付与すると、<span class=\"tt-passive\">ソウルチャージ</span>をすべて消費して<span class=\"tt-healing\">体力</span>を回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">125%</span></span><br><br><span class=\"tt-passive\">ソウルサイフォン</span><br>チャンピオンに対する軽減前の与ダメージの30%をソウルチャージとして獲得する。味方に体力回復効果またはシールドを付与すると、<span class=\"tt-passive\">ソウルチャージ</span>をすべて消費して<span class=\"tt-healing\">体力</span>を回復する。</span>",
     "gold": 2200,
     "tags": [
       "Health",
@@ -1636,7 +1636,7 @@
     "id": "2420",
     "name": "シーカー アームガード",
     "plaintext": "発動ですべての行動が不可になるが、一定時間無敵になる",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">40</span><br>物理防御 <span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-active\">時間停止</span>(使用は一度のみ)<br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-active\">時間停止</span>(使用は一度のみ)<br>2.5秒間<span class=\"tt-keyword\">固有時停止</span>状態になる。</span>",
     "gold": 1600,
     "tags": [
       "Armor",
@@ -1650,7 +1650,7 @@
     "id": "4003",
     "name": "ライフライン",
     "plaintext": "地面をマークして数秒後にそこに戻る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span><br>脅威<span class=\"tt-attention\">5</span><br>移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-active\">発動効果 -</span> <span class=\"tt-active\">ソウルアンカー</span> (0秒)<br>自身の現在地をマークする。4秒後、マークした場所に戻ってくる。<span class=\"tt-active\">「ソウルアンカー」</span>の効果時間中は、いつでも再発動してマークした場所に早めに戻ることができる。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">5</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span><br><br><span class=\"tt-active\">発動効果 -</span> <span class=\"tt-active\">ソウルアンカー</span> (0秒)<br>自身の現在地をマークする。4秒後、マークした場所に戻ってくる。<span class=\"tt-active\">「ソウルアンカー」</span>の効果時間中は、いつでも再発動してマークした場所に早めに戻ることができる。</span>",
     "gold": 1600,
     "tags": [
       "Damage",
@@ -1664,7 +1664,7 @@
     "id": "4632",
     "name": "ヴァーダント バリア",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">40</span><br>魔法防御<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">打消し</span><br>次に敵から受けるスキルをブロックするスペルシールドを獲得する。</span>",
     "gold": 1600,
     "tags": [
       "SpellBlock",
@@ -1677,7 +1677,7 @@
     "id": "3035",
     "name": "ラスト ウィスパー",
     "plaintext": "物理防御の高い敵を打倒する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">20</span><br>物理防御貫通<span class=\"tt-attention\">18%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">物理防御貫通<span class=\"tt-attention\">18%</span></span></span>",
     "gold": 1450,
     "tags": [
       "ArmorPenetration",
@@ -1690,7 +1690,7 @@
     "id": "2020",
     "name": "ブルータライザー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span><br>スキルヘイスト<span class=\"tt-attention\">10</span><br>脅威<span class=\"tt-attention\">5</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">5</span></span></span>",
     "gold": 1337,
     "tags": [
       "Damage",
@@ -1704,7 +1704,7 @@
     "id": "1038",
     "name": "B. F. ソード",
     "plaintext": "攻撃力が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">40</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">40</span></span></span>",
     "gold": 1300,
     "tags": [
       "Damage"
@@ -1716,7 +1716,7 @@
     "id": "3140",
     "name": "クイックシルバー サッシュ",
     "plaintext": "発動で行動妨害系のデバフを無効化",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔法防御<span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-active\">水銀</span><br>すべての行動妨害系デバフを除去する(<span class=\"tt-keyword\">ノックアップ</span>を除く)。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-active\">水銀</span><br>すべての行動妨害系デバフを除去する(<span class=\"tt-keyword\">ノックアップ</span>を除く)。</span>",
     "gold": 1300,
     "tags": [
       "Active",
@@ -1729,7 +1729,7 @@
     "id": "3147",
     "name": "悲愴な仮面",
     "plaintext": "敵を奇襲した時に追加物理ダメージを与える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">30</span><br>体力<span class=\"tt-attention\">200</span></span><br><br><span class=\"tt-passive\">狂気</span><br>敵チャンピオンと戦闘状態の間、毎秒2%の追加ダメージを与える(最大6%)。 </span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span></span><br><br><span class=\"tt-passive\">狂気</span><br>敵チャンピオンと戦闘状態の間、毎秒2%の追加ダメージを与える(最大6%)。 </span>",
     "gold": 1300,
     "tags": [
       "Health",
@@ -1742,7 +1742,7 @@
     "id": "3155",
     "name": "ヘクスドリンカー",
     "plaintext": "攻撃力と魔法防御が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span><br>魔法防御<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>魔法ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、2.5秒間<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を得る。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">ライフライン</span><br>魔法ダメージを受け、そのダメージにより体力が最大値の30%未満になる場合、2.5秒間<span class=\"tt-shield\">魔法ダメージを防ぐシールド</span>を得る。</span>",
     "gold": 1300,
     "tags": [
       "Damage",
@@ -1755,7 +1755,7 @@
     "id": "3803",
     "name": "久遠のカタリスト",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">300</span><br>マナ<span class=\"tt-attention\">375</span></span><br><br><span class=\"tt-passive\">久遠</span><br>チャンピオンから<span class=\"tt-scalemana\">受けたダメージの10%</span>を<span class=\"tt-scalemana\">マナ</span>として獲得する。<br>スキルを発動すると消費した<span class=\"tt-healing\">マナの25%を体力として回復</span>する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">375</span></span><br><br><span class=\"tt-passive\">久遠</span><br>チャンピオンから<span class=\"tt-scalemana\">受けたダメージの10%</span>を<span class=\"tt-scalemana\">マナ</span>として獲得する。<br>スキルを発動すると消費した<span class=\"tt-healing\">マナの25%を体力として回復</span>する。</span>",
     "gold": 1300,
     "tags": [
       "Health",
@@ -1770,7 +1770,7 @@
     "id": "6670",
     "name": "ヌーンクィヴァー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>クリティカル率<span class=\"tt-attention\">20%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">20%</span></span></span>",
     "gold": 1300,
     "tags": [
       "Damage",
@@ -1783,7 +1783,7 @@
     "id": "3111",
     "name": "マーキュリー ブーツ",
     "plaintext": "移動速度が上昇し、行動阻害の効果時間を短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔法防御<span class=\"tt-attention\">20</span><br>移動速度<span class=\"tt-attention\">45</span><br>行動妨害耐性<span class=\"tt-attention\">30%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span><br><img class=\"tt-icon\" src=\"/img/stats/scaletenacity.png\" alt=\"\" width=\"14\" height=\"14\">行動妨害耐性<span class=\"tt-attention\">30%</span></span></span>",
     "gold": 1250,
     "tags": [
       "Boots",
@@ -1797,7 +1797,7 @@
     "id": "3211",
     "name": "スペクター カウル",
     "plaintext": "防御が強化され、攻撃を受けた際自動回復を付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>魔法防御<span class=\"tt-attention\">35</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">35</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
     "gold": 1250,
     "tags": [
       "Health",
@@ -1811,7 +1811,7 @@
     "id": "1058",
     "name": "ムダニ デカイ ロッド",
     "plaintext": "魔力が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">65</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">65</span></span></span>",
     "gold": 1200,
     "tags": [
       "SpellDamage"
@@ -1823,7 +1823,7 @@
     "id": "3047",
     "name": "プレート スチールキャップ",
     "plaintext": "移動速度が上昇し、通常攻撃によって受けるダメージが軽減",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">25</span><br>移動速度<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">プレート</span><br>通常攻撃で受けるダメージを10%軽減する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">プレート</span><br>通常攻撃で受けるダメージを10%軽減する。</span>",
     "gold": 1200,
     "tags": [
       "Armor",
@@ -1836,7 +1836,7 @@
     "id": "3051",
     "name": "ハースバウンド アックス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">20</span><br>攻撃速度<span class=\"tt-attention\">20%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">20%</span></span></span>",
     "gold": 1200,
     "tags": [
       "Damage",
@@ -1849,7 +1849,7 @@
     "id": "3077",
     "name": "ティアマット",
     "plaintext": "近接攻撃が周囲の敵にダメージを与える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">三日月</span><br>周囲の敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">なぎ払い</span><br>通常攻撃が周囲の敵にも<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。<br><span class=\"tt-active\">三日月</span><br>周囲の敵に<span class=\"tt-physicaldamage\">物理ダメージ</span>を与える。</span>",
     "gold": 1200,
     "tags": [
       "Damage",
@@ -1862,7 +1862,7 @@
     "id": "3086",
     "name": "ジール",
     "plaintext": "クリティカル率、移動速度、攻撃速度にわずかなボーナス付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">15%</span><br>クリティカル率<span class=\"tt-attention\">15%</span><br>移動速度<span class=\"tt-attention\">4%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">15%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">15%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span></span>",
     "gold": 1200,
     "tags": [
       "CriticalStrike",
@@ -1876,7 +1876,7 @@
     "id": "3802",
     "name": "ロスト チャプター",
     "plaintext": "レベルアップ時にマナを回復する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">40</span><br>マナ<span class=\"tt-attention\">300</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">啓発</span><br>レベルアップすると<span class=\"tt-scalemana\">最大マナの20%</span>を3秒かけて回復する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">40</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">啓発</span><br>レベルアップすると<span class=\"tt-scalemana\">最大マナの20%</span>を3秒かけて回復する。</span>",
     "gold": 1200,
     "tags": [
       "SpellDamage",
@@ -1892,7 +1892,7 @@
     "id": "2021",
     "name": "トンネル掘り",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>体力<span class=\"tt-attention\">250</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">250</span></span></span>",
     "gold": 1150,
     "tags": [
       "Health",
@@ -1905,7 +1905,7 @@
     "id": "2019",
     "name": "スチール シジル",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>物理防御 <span class=\"tt-attention\">30</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">30</span></span></span>",
     "gold": 1100,
     "tags": [
       "Armor",
@@ -1918,7 +1918,7 @@
     "id": "3006",
     "name": "バーサーカー ブーツ",
     "plaintext": "移動速度と攻撃速度が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">30%</span><br>移動速度<span class=\"tt-attention\">45</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">30%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span></span></span>",
     "gold": 1100,
     "tags": [
       "AttackSpeed",
@@ -1931,7 +1931,7 @@
     "id": "3020",
     "name": "ソーサラー シューズ",
     "plaintext": "移動速度と魔法ダメージが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔法防御貫通<span class=\"tt-attention\">12</span><br>移動速度<span class=\"tt-attention\">45</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">12</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span></span></span>",
     "gold": 1100,
     "tags": [
       "Boots",
@@ -1944,7 +1944,7 @@
     "id": "3044",
     "name": "ファージ",
     "plaintext": "攻撃およびキルで小規模の移動速度増加を得る",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>体力<span class=\"tt-attention\">200</span></span><br><br><span class=\"tt-passive\">怒り</span><br>通常攻撃で2秒間、<span class=\"tt-speed\">移動速度</span>が増加する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span></span><br><br><span class=\"tt-passive\">怒り</span><br>通常攻撃で2秒間、<span class=\"tt-speed\">移動速度</span>が増加する。</span>",
     "gold": 1100,
     "tags": [
       "Health",
@@ -1958,7 +1958,7 @@
     "id": "3145",
     "name": "ヘクステック オルタネーター",
     "plaintext": "魔力が上昇。一定期間毎に通常攻撃に魔法ダメージを追加。",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">レヴド</span><br>チャンピオンにダメージを与えると<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">レヴド</span><br>チャンピオンにダメージを与えると<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。</span>",
     "gold": 1100,
     "tags": [
       "SpellDamage"
@@ -1970,7 +1970,7 @@
     "id": "4630",
     "name": "枯死の宝石",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">25</span><br>魔法防御貫通<span class=\"tt-attention\">13%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalempen.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御貫通<span class=\"tt-attention\">13%</span></span></span>",
     "gold": 1100,
     "tags": [
       "MagicPenetration",
@@ -1983,7 +1983,7 @@
     "id": "3133",
     "name": "コールフィールド ウォーハンマー",
     "plaintext": "攻撃力が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">20</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
     "gold": 1050,
     "tags": [
       "Damage",
@@ -1997,7 +1997,7 @@
     "id": "3009",
     "name": "スイフトネス ブーツ",
     "plaintext": "移動速度が上昇し、スロウ効果が減少",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">移動速度<span class=\"tt-attention\">55</span></span><br><br><span class=\"tt-passive\">俊足</span><br><span class=\"tt-keyword\">スロウ効果</span>が25%低下する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">55</span></span><br><br><span class=\"tt-passive\">俊足</span><br><span class=\"tt-keyword\">スロウ効果</span>が25%低下する。</span>",
     "gold": 1000,
     "tags": [
       "Boots"
@@ -2009,7 +2009,7 @@
     "id": "3082",
     "name": "ワーデン メイル",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">岩より固く</span><br>通常攻撃で受けるダメージを軽減する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">40</span></span><br><br><span class=\"tt-passive\">岩より固く</span><br>通常攻撃で受けるダメージを軽減する。</span>",
     "gold": 1000,
     "tags": [
       "Armor"
@@ -2021,7 +2021,7 @@
     "id": "3134",
     "name": "セレイテッド ダーク",
     "plaintext": "攻撃力と脅威が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">20</span><br>脅威<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleapen.png\" alt=\"\" width=\"14\" height=\"14\">脅威<span class=\"tt-attention\">10</span></span></span>",
     "gold": 1000,
     "tags": [
       "Damage",
@@ -2034,7 +2034,7 @@
     "id": "2051",
     "name": "ガーディアン ホーン",
     "plaintext": "タンク系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">150</span></span><br><br><br><span class=\"tt-li\"><span class=\"tt-passive\">治癒: </span>5秒ごとに<span class=\"tt-healing\">20の体力</span>を回復する。<span class=\"tt-li\"><span class=\"tt-passive\">屈強: </span>チャンピオンによる通常攻撃とスキルのダメージを15低減する(継続ダメージスキルに対しては効果が25%)。</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span></span><br><br><br><span class=\"tt-li\"><span class=\"tt-passive\">治癒: </span>5秒ごとに<span class=\"tt-healing\">20の体力</span>を回復する。<span class=\"tt-li\"><span class=\"tt-passive\">屈強: </span>チャンピオンによる通常攻撃とスキルのダメージを15低減する(継続ダメージスキルに対しては効果が25%)。</span></span></span>",
     "gold": 950,
     "tags": [
       "Health",
@@ -2048,7 +2048,7 @@
     "id": "3112",
     "name": "ガーディアン オーブ",
     "plaintext": "メイジ系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">50</span><br>体力<span class=\"tt-attention\">150</span></span><br><br><br><span class=\"tt-li\"><span class=\"tt-passive\">治癒: </span>5秒ごとに、<span class=\"tt-scalemana\">マナを10</span>回復する。マナを獲得できない場合は、代わりに<span class=\"tt-healing\">体力を15</span>回復する。</span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">50</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span></span><br><br><br><span class=\"tt-li\"><span class=\"tt-passive\">治癒: </span>5秒ごとに、<span class=\"tt-scalemana\">マナを10</span>回復する。マナを獲得できない場合は、代わりに<span class=\"tt-healing\">体力を15</span>回復する。</span></span>",
     "gold": 950,
     "tags": [
       "Health",
@@ -2063,7 +2063,7 @@
     "id": "3177",
     "name": "ガーディアン ブレード",
     "plaintext": "物理攻撃系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">30</span><br>体力<span class=\"tt-attention\">150</span><br>スキルヘイスト<span class=\"tt-attention\">15</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">15</span></span></span>",
     "gold": 950,
     "tags": [
       "Health",
@@ -2078,7 +2078,7 @@
     "id": "3184",
     "name": "ガーディアン ハンマー",
     "plaintext": "物理攻撃系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span><br>体力<span class=\"tt-attention\">150</span><br>ライフ スティール<span class=\"tt-attention\">5%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span><br>ライフ スティール<span class=\"tt-attention\">5%</span></span></span>",
     "gold": 950,
     "tags": [
       "Health",
@@ -2093,7 +2093,7 @@
     "id": "1011",
     "name": "ジャイアント ベルト",
     "plaintext": "体力が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">350</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">350</span></span></span>",
     "gold": 900,
     "tags": [
       "Health"
@@ -2105,7 +2105,7 @@
     "id": "1053",
     "name": "ヴァンパイア セプター",
     "plaintext": "通常攻撃で体力回復",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>ライフ スティール<span class=\"tt-attention\">7%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br>ライフ スティール<span class=\"tt-attention\">7%</span></span></span>",
     "gold": 900,
     "tags": [
       "Damage",
@@ -2118,7 +2118,7 @@
     "id": "2508",
     "name": "運命の灰",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-passive\">発火</span><br>ダメージスキルが3秒間かけて<span class=\"tt-magicdamage\">15の追加魔法ダメージ</span>を与える。<br>モンスターには追加で<span class=\"tt-magicdamage\">45の魔法ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-passive\">発火</span><br>ダメージスキルが3秒間かけて<span class=\"tt-magicdamage\">15の追加魔法ダメージ</span>を与える。<br>モンスターには追加で<span class=\"tt-magicdamage\">45の魔法ダメージ</span>を与える。</span>",
     "gold": 900,
     "tags": [
       "SpellDamage"
@@ -2130,7 +2130,7 @@
     "id": "3024",
     "name": "グレイシャル バックラー",
     "plaintext": "物理防御が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">25</span><br>マナ<span class=\"tt-attention\">300</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">300</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
     "gold": 900,
     "tags": [
       "Armor",
@@ -2145,7 +2145,7 @@
     "id": "3057",
     "name": "シーン",
     "plaintext": "スキル使用後の次の攻撃に追加ダメージ付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span><br><br><span class=\"tt-passive\">追撃</span><br>スキル使用後、次の通常攻撃で<span class=\"tt-physicaldamage\">追加物理ダメージ</span> <span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 900,
     "tags": [
       "OnHit",
@@ -2158,7 +2158,7 @@
     "id": "3113",
     "name": "エーテル ウィスプ",
     "plaintext": "魔力と移動速度が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">30</span><br>移動速度<span class=\"tt-attention\">4%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">30</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span></span>",
     "gold": 900,
     "tags": [
       "NonbootsMovement",
@@ -2171,7 +2171,7 @@
     "id": "3158",
     "name": "アイオニア ブーツ",
     "plaintext": "移動速度が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">スキルヘイスト<span class=\"tt-attention\">10</span><br>移動速度<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">アイオニアン・インサイト</span><br>10のサモナースペルヘイストを獲得する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">45</span></span><br><br><span class=\"tt-passive\">アイオニアン・インサイト</span><br>10のサモナースペルヘイストを獲得する。</span>",
     "gold": 900,
     "tags": [
       "Boots",
@@ -2184,7 +2184,7 @@
     "id": "4642",
     "name": "バンドルグラスの鏡",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">20</span><br>基本マナ自動回復<span class=\"tt-attention\">100%</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">20</span><br><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">100%</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
     "gold": 900,
     "tags": [
       "SpellDamage",
@@ -2199,7 +2199,7 @@
     "id": "6660",
     "name": "バミ シンダー",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">150</span><br>スキルヘイスト<span class=\"tt-attention\">5</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">5</span></span><br><br><span class=\"tt-passive\">猛火</span><br>ダメージを受けるか与えると、3秒間、周囲の敵に毎秒<span class=\"tt-magicdamage\">魔法ダメージ</span>を与える。</span>",
     "gold": 900,
     "tags": [
       "Health",
@@ -2212,7 +2212,7 @@
     "id": "1037",
     "name": "ピッケル",
     "plaintext": "攻撃力がやや上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">25</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">25</span></span></span>",
     "gold": 875,
     "tags": [
       "Damage"
@@ -2224,7 +2224,7 @@
     "id": "1026",
     "name": "ブラスティング ワンド",
     "plaintext": "魔力がやや上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">45</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">45</span></span></span>",
     "gold": 850,
     "tags": [
       "SpellDamage"
@@ -2236,7 +2236,7 @@
     "id": "1057",
     "name": "ネガトロン クローク",
     "plaintext": "魔法防御がやや上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔法防御<span class=\"tt-attention\">45</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">45</span></span></span>",
     "gold": 850,
     "tags": [
       "SpellBlock"
@@ -2248,7 +2248,7 @@
     "id": "3108",
     "name": "フィンディッシュの古書",
     "plaintext": "魔力が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">25</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">25</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
     "gold": 850,
     "tags": [
       "SpellDamage",
@@ -2262,7 +2262,7 @@
     "id": "1031",
     "name": "チェイン ベスト",
     "plaintext": "物理防御が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">40</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">40</span></span></span>",
     "gold": 800,
     "tags": [
       "Armor"
@@ -2274,7 +2274,7 @@
     "id": "3066",
     "name": "翼のムーンプレート",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>移動速度<span class=\"tt-attention\">4%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span></span>",
     "gold": 800,
     "tags": [
       "Health",
@@ -2287,7 +2287,7 @@
     "id": "3067",
     "name": "キンドルジェム",
     "plaintext": "体力が上昇し、クールダウンを短縮",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">10</span></span></span>",
     "gold": 800,
     "tags": [
       "Health",
@@ -2301,7 +2301,7 @@
     "id": "3076",
     "name": "ブランブル ベスト",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-passive\">棘</span><br>通常攻撃を受けると、攻撃者に<span class=\"tt-magicdamage\">0の魔法ダメージ</span>を与え、対象がチャンピオンだった場合は3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">30</span></span><br><br><span class=\"tt-passive\">棘</span><br>通常攻撃を受けると、攻撃者に<span class=\"tt-magicdamage\">0の魔法ダメージ</span>を与え、対象がチャンピオンだった場合は3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 800,
     "tags": [
       "Armor"
@@ -2313,7 +2313,7 @@
     "id": "3123",
     "name": "エクスキューショナー コーリング",
     "plaintext": "体力回復効果の高い敵を打倒する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに物理ダメージを与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 800,
     "tags": [
       "Damage"
@@ -2325,7 +2325,7 @@
     "id": "3801",
     "name": "クリスタル ブレーサー",
     "plaintext": "体力と体力自動回復が増える",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">200</span><br>基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">200</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
     "gold": 800,
     "tags": [
       "Health",
@@ -2338,7 +2338,7 @@
     "id": "3916",
     "name": "忘却のオーブ",
     "plaintext": "魔法ダメージが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">25</span></span><br><br><span class=\"tt-passive\">重傷</span><br>チャンピオンに<span class=\"tt-magicdamage\">魔法ダメージ</span>を与えると、3秒間<span class=\"tt-keyword\">40%の「負傷」</span>を付与する。</span>",
     "gold": 800,
     "tags": [
       "SpellDamage"
@@ -2350,7 +2350,7 @@
     "id": "6690",
     "name": "レクトリクス",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">15</span><br>移動速度<span class=\"tt-attention\">4%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">15</span><br><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">4%</span></span></span>",
     "gold": 775,
     "tags": [
       "Damage",
@@ -2391,7 +2391,7 @@
     "id": "1043",
     "name": "リカーブ ボウ",
     "plaintext": "攻撃速度が大幅に上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">15%</span></span><br><br><span class=\"tt-passive\">刺傷</span><br>通常攻撃が<span class=\"tt-physicaldamage\">15の追加物理ダメージ</span><span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">15%</span></span><br><br><span class=\"tt-passive\">刺傷</span><br>通常攻撃が<span class=\"tt-physicaldamage\">15の追加物理ダメージ</span><span class=\"tt-onhit\">通常攻撃時効果</span>を与える。</span>",
     "gold": 700,
     "tags": [
       "AttackSpeed",
@@ -2404,7 +2404,7 @@
     "id": "1018",
     "name": "アジリティ クローク",
     "plaintext": "クリティカル率がやや上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">クリティカル率<span class=\"tt-attention\">15%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalecrit.png\" alt=\"\" width=\"14\" height=\"14\">クリティカル率<span class=\"tt-attention\">15%</span></span></span>",
     "gold": 600,
     "tags": [
       "CriticalStrike"
@@ -2416,7 +2416,7 @@
     "id": "3114",
     "name": "フォビドゥン アイドル",
     "plaintext": "体力回復量、シールド量、マナ自動回復量が増加し、クールダウンを短縮する",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">基本マナ自動回復<span class=\"tt-attention\">50%</span><br>体力回復量とシールド量<span class=\"tt-attention\">8%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">50%</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力回復量とシールド量<span class=\"tt-attention\">8%</span></span></span>",
     "gold": 600,
     "tags": [
       "ManaRegen"
@@ -2428,7 +2428,7 @@
     "id": "3144",
     "name": "偵察兵のパチンコ",
     "plaintext": "発動で魔法ダメージとスロウを対象のチャンピオンに付与",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">ブルズアイ</span><br>チャンピオンにダメージを与えると<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。<br>通常攻撃でこのクールダウンが1秒短縮される。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">20%</span></span><br><br><span class=\"tt-passive\">ブルズアイ</span><br>チャンピオンにダメージを与えると<span class=\"tt-magicdamage\">追加魔法ダメージ</span>を与える。<br>通常攻撃でこのクールダウンが1秒短縮される。</span>",
     "gold": 600,
     "tags": [
       "AttackSpeed"
@@ -2484,7 +2484,7 @@
     "id": "1054",
     "name": "ドラン シールド",
     "plaintext": "防御強化向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">110</span></span><br><br><span class=\"tt-passive\">一点集中</span><br>5秒ごとに<span class=\"tt-healing\">4の体力</span>を自動回復する。<br>チャンピオンからダメージを受けると、8秒かけて<span class=\"tt-healing\">体力</span>を回復する。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の追加物理ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">110</span></span><br><br><span class=\"tt-passive\">一点集中</span><br>5秒ごとに<span class=\"tt-healing\">4の体力</span>を自動回復する。<br>チャンピオンからダメージを受けると、8秒かけて<span class=\"tt-healing\">体力</span>を回復する。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の追加物理ダメージ</span>を与える。</span>",
     "gold": 450,
     "tags": [
       "Health",
@@ -2498,7 +2498,7 @@
     "id": "1055",
     "name": "ドラン ブレード",
     "plaintext": "物理攻撃系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">10</span><br>体力<span class=\"tt-attention\">80</span><br>オムニヴァンプ<span class=\"tt-attention\">2.5%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">10</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">80</span><br><img class=\"tt-icon\" src=\"/img/stats/scalesv.png\" alt=\"\" width=\"14\" height=\"14\">オムニヴァンプ<span class=\"tt-attention\">2.5%</span></span></span>",
     "gold": 450,
     "tags": [
       "Health",
@@ -2514,7 +2514,7 @@
     "id": "1028",
     "name": "ルビー クリスタル",
     "plaintext": "体力が上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">体力<span class=\"tt-attention\">150</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">150</span></span></span>",
     "gold": 400,
     "tags": [
       "Health"
@@ -2526,7 +2526,7 @@
     "id": "1033",
     "name": "ヌルマジック マント",
     "plaintext": "魔法防御がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔法防御<span class=\"tt-attention\">20</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemr.png\" alt=\"\" width=\"14\" height=\"14\">魔法防御<span class=\"tt-attention\">20</span></span></span>",
     "gold": 400,
     "tags": [
       "SpellBlock"
@@ -2538,7 +2538,7 @@
     "id": "1052",
     "name": "増魔の書",
     "plaintext": "魔力がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">20</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">20</span></span></span>",
     "gold": 400,
     "tags": [
       "SpellDamage"
@@ -2550,7 +2550,7 @@
     "id": "1056",
     "name": "ドラン リング",
     "plaintext": "魔法攻撃系チャンピオン向けの初期アイテム",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">魔力<span class=\"tt-attention\">18</span><br>体力<span class=\"tt-attention\">90</span></span><br><br><span class=\"tt-passive\">ドレイン</span><br>毎秒<span class=\"tt-scalemana\">マナを1</span>回復する。敵チャンピオンにダメージを与えると、5秒間、回復量が<span class=\"tt-scalemana\">2マナ</span>に増加する。マナを獲得できない場合は、代わりにその値の<span class=\"tt-healing\">45%</span>にあたる体力を回復する。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の追加物理ダメージ</span>を与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleap.png\" alt=\"\" width=\"14\" height=\"14\">魔力<span class=\"tt-attention\">18</span><br><img class=\"tt-icon\" src=\"/img/stats/scalehealth.png\" alt=\"\" width=\"14\" height=\"14\">体力<span class=\"tt-attention\">90</span></span><br><br><span class=\"tt-passive\">ドレイン</span><br>毎秒<span class=\"tt-scalemana\">マナを1</span>回復する。敵チャンピオンにダメージを与えると、5秒間、回復量が<span class=\"tt-scalemana\">2マナ</span>に増加する。マナを獲得できない場合は、代わりにその値の<span class=\"tt-healing\">45%</span>にあたる体力を回復する。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の追加物理ダメージ</span>を与える。</span>",
     "gold": 400,
     "tags": [
       "Health",
@@ -2565,7 +2565,7 @@
     "id": "3070",
     "name": "女神の涙",
     "plaintext": "マナ消費時に最大マナが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">マナ<span class=\"tt-attention\">240</span></span><br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(相手がチャンピオンの場合は2倍)増加する。最大<span class=\"tt-scalemana\">360</span>。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の物理ダメージ</span>を追加で与える。</span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">240</span></span><br><br><span class=\"tt-passive\">マナフロー</span> (8秒、最大4チャージ)<br>スキルが命中すると<span class=\"tt-scalemana\">最大マナが3</span>(相手がチャンピオンの場合は2倍)増加する。最大<span class=\"tt-scalemana\">360</span>。<br><br><span class=\"tt-passive\">手助け</span><br>通常攻撃がミニオンに<span class=\"tt-physicaldamage\">5の物理ダメージ</span>を追加で与える。</span>",
     "gold": 400,
     "tags": [
       "Mana",
@@ -2578,7 +2578,7 @@
     "id": "1036",
     "name": "ロング ソード",
     "plaintext": "攻撃力がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃力<span class=\"tt-attention\">10</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalead.png\" alt=\"\" width=\"14\" height=\"14\">攻撃力<span class=\"tt-attention\">10</span></span></span>",
     "gold": 350,
     "tags": [
       "Damage",
@@ -2591,7 +2591,7 @@
     "id": "1001",
     "name": "ブーツ",
     "plaintext": "移動速度がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">移動速度<span class=\"tt-attention\">25</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalems.png\" alt=\"\" width=\"14\" height=\"14\">移動速度<span class=\"tt-attention\">25</span></span></span>",
     "gold": 300,
     "tags": [
       "Boots"
@@ -2603,7 +2603,7 @@
     "id": "1006",
     "name": "再生の珠",
     "plaintext": "体力自動回復がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalehpregen.png\" alt=\"\" width=\"14\" height=\"14\">基本体力自動回復<span class=\"tt-attention\">100%</span></span></span>",
     "gold": 300,
     "tags": [
       "HealthRegen"
@@ -2615,7 +2615,7 @@
     "id": "1027",
     "name": "サファイア クリスタル",
     "plaintext": "マナが上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">マナ<span class=\"tt-attention\">300</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemana.png\" alt=\"\" width=\"14\" height=\"14\">マナ<span class=\"tt-attention\">300</span></span></span>",
     "gold": 300,
     "tags": [
       "Mana"
@@ -2627,7 +2627,7 @@
     "id": "1029",
     "name": "クロース アーマー",
     "plaintext": "物理防御がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">物理防御 <span class=\"tt-attention\">15</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalearmor.png\" alt=\"\" width=\"14\" height=\"14\">物理防御 <span class=\"tt-attention\">15</span></span></span>",
     "gold": 300,
     "tags": [
       "Armor"
@@ -2652,7 +2652,7 @@
     "id": "1042",
     "name": "ダガー",
     "plaintext": "攻撃速度がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">攻撃速度<span class=\"tt-attention\">10%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleas.png\" alt=\"\" width=\"14\" height=\"14\">攻撃速度<span class=\"tt-attention\">10%</span></span></span>",
     "gold": 250,
     "tags": [
       "AttackSpeed"
@@ -2664,7 +2664,7 @@
     "id": "2022",
     "name": "輝きのモート",
     "plaintext": "",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">スキルヘイスト<span class=\"tt-attention\">5</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scaleah.png\" alt=\"\" width=\"14\" height=\"14\">スキルヘイスト<span class=\"tt-attention\">5</span></span></span>",
     "gold": 250,
     "tags": [
       "CooldownReduction"
@@ -2676,7 +2676,7 @@
     "id": "1004",
     "name": "フェアリー チャーム",
     "plaintext": "マナ自動回復がわずかに上昇",
-    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\">基本マナ自動回復<span class=\"tt-attention\">50%</span></span></span>",
+    "description": "<span class=\"tt-maintext\"><span class=\"tt-stats\"><img class=\"tt-icon\" src=\"/img/stats/scalemanaregen.png\" alt=\"\" width=\"14\" height=\"14\">基本マナ自動回復<span class=\"tt-attention\">50%</span></span></span>",
     "gold": 200,
     "tags": [
       "ManaRegen"
