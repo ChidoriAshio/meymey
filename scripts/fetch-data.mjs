@@ -203,6 +203,16 @@ async function main() {
   const champJson = await getJson(`${DDRAGON}/cdn/${ddVersion}/data/ja_JP/champion.json`);
   const amChampions = await getJson(`${ARAMMAYHEM}/champions.json`);
   const champStats = new Map(amChampions.rows.map((r) => [r.championId.toLowerCase(), r]));
+  // Editorial combo ratings per champion (arammayhem.com), used for the "注目度" tier.
+  const amCombos = await getJson(`${ARAMMAYHEM}/combos.json`).catch(() => ({ rows: [] }));
+  const comboCounts = new Map();
+  for (const r of amCombos.rows) {
+    const id = r.championId.toLowerCase();
+    const c = comboCounts.get(id) ?? { god: 0, strong: 0 };
+    if (r.types.includes('god')) c.god++;
+    else if (r.types.includes('strong')) c.strong++;
+    comboCounts.set(id, c);
+  }
 
   const champions = Object.values(champJson.data)
     .map((c) => {
@@ -218,6 +228,7 @@ async function main() {
         pickRate: s?.pickRate ?? null,
         pickRateRank: s?.pickRateRank ?? null,
         pickRateChange: s?.pickRateChange ?? null,
+        combos: comboCounts.get(c.id.toLowerCase()) ?? { god: 0, strong: 0 },
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name, 'ja'));

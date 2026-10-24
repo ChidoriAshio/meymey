@@ -1,14 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
 import ChampionTile from '../components/ChampionTile.astro';
-import { champions, getBuilds, TIERS } from '../lib/data';
+import { champions, getBuilds, meta, tierOf, TIERS } from '../lib/data';
 
 const builds = await getBuilds();
 const byTier = TIERS.map((tier) => ({
   tier,
-  list: champions.filter((c) => builds.get(c.slug)?.tier === tier),
+  list: champions.filter((c) => tierOf(c, builds)?.tier === tier),
 }));
-const hasTiers = byTier.some((t) => t.list.length);
+const manualCount = champions.filter((c) => tierOf(c, builds)?.manual).length;
 const popular = [...champions].filter((c) => c.pickRate != null).sort((a, b) => b.pickRate! - a.pickRate!);
 const tierColor: Record<string, string> = {
   S: 'bg-[#ff6b6b]',
@@ -19,11 +19,20 @@ const tierColor: Record<string, string> = {
 };
 ---
 
-<Base title="ティアリスト">
-  <h1 class="text-2xl font-bold mb-2">チャンピオン ティアリスト</h1>
+<Base title="注目度ティア">
+  <h1 class="text-2xl font-bold mb-2">チャンピオン 注目度ティア</h1>
+  <div class="rounded-lg border border-line bg-panel-2 p-4 mb-6 text-sm text-ink-2 space-y-1">
+    <p>
+      今よく選ばれているチャンピオンの目安です。<strong class="text-ink">強さ（勝率）の順ではありません。</strong>
+    </p>
+    <p>
+      パッチ {meta.stats.patch} のピック率（6割）、前のパッチからの増減（2割）、arammayhem.com の「強い」コンボの数（2割）を合わせて順位を付け、上位10%をS、次の20%をA、次の35%をB、次の20%をC、残りをDにしています。
+    </p>
+    {manualCount > 0 && <p>うち {manualCount} 体は手動で決めたティアです。</p>}
+  </div>
 
   {
-    hasTiers ? (
+    (
       <div class="space-y-2 mb-10">
         {byTier.map(({ tier, list }) => (
           <div class="flex rounded-lg border border-line overflow-hidden">
@@ -34,10 +43,6 @@ const tierColor: Record<string, string> = {
           </div>
         ))}
       </div>
-    ) : (
-      <p class="text-ink-2 mb-10">
-        ティアはまだ登録されていません。<code class="text-accent">src/data/builds.yaml</code> にチャンピオンごとの tier を書くとここに表示されます。
-      </p>
     )
   }
 

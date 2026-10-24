@@ -20,6 +20,7 @@ export interface Champion {
   pickRate: number | null;
   pickRateRank: number | null;
   pickRateChange: number | null;
+  combos: { god: number; strong: number };
 }
 
 export interface Augment {
@@ -119,6 +120,54 @@ async function loadBuilds(): Promise<Map<string, Build>> {
     });
   }
   return out;
+}
+
+// "注目度" tier: how much players are picking a champion right now, from public data only.
+// It is not a strength (win-rate) ranking. Weights and cutoffs are deliberately simple to tweak.
+export const BUZZ_WEIGHTS = { pickRate: 0.6, pickRateChange: 0.2, combos: 0.2 };
+const BUZZ_CUTOFFS: [Tier, number][] = [
+  ['S', 0.1],
+  ['A', 0.3],
+  ['B', 0.65],
+  ['C', 0.85],
+  ['D', 1],
+];
+
+// Share of champions with a lower value (0 = lowest, 1 = highest); ties share the same rank.
+function percentile(values: number[]): (v: number) => number {
+  const sorted = [...values].sort((a, b) => a - b);
+  return (v) => (sorted.length < 2 ? 0.5 : sorted.findIndex((x) => x >= v) / (sorted.length - 1));
+}
+
+const rated = champions.filter((c) => c.pickRate != null);
+const comboScore = (c: Champion) => c.combos.god * 2 + c.combos.strong;
+const pPick = percentile(rated.map((c) => c.pickRate!));
+const pChange = percentile(rated.map((c) => c.pickRateChange ?? 0));
+const pCombo = percentile(rated.map(comboScore));
+
+export const buzzByChampion = new Map<string, { score: number; tier: Tier }>(
+  rated
+    .map((c) => ({
+      slug: c.slug,
+      score:
+        BUZZ_WEIGHTS.pickRate * pPick(c.pickRate!) +
+        BUZZ_WEIGHTS.pickRateChange * pChange(c.pickRateChange ?? 0) +
+        BUZZ_WEIGHTS.combos * pCombo(comboScore(c)),
+    }))
+    .sort((a, b) => b.score - a.score)
+    .map(({ slug, score }, i, all) => {
+      const rank = (i + 1) / all.length;
+      const tier = BUZZ_CUTOFFS.find(([, cut]) => rank <= cut)![0];
+      return [slug, { score, tier }] as const;
+    }),
+);
+
+// The tier shown for a champion: a hand-written tier in builds.yaml wins over the 注目度 tier.
+export function tierOf(c: Champion, builds: Map<string, Build>): { tier: Tier; manual: boolean } | undefined {
+  const manual = builds.get(c.slug)?.tier;
+  if (manual) return { tier: manual, manual: true };
+  const buzz = buzzByChampion.get(c.slug);
+  return buzz && { tier: buzz.tier, manual: false };
 }
 
 export const formatRate = (n: number | null) => (n == null ? '—' : `${n.toFixed(2)}%`);
