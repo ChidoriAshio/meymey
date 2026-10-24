@@ -1,11 +1,13 @@
 ---
-import { FIT_PER_RARITY, RARITY_LABEL, formatRate, type Augment, type Rarity } from '../lib/data';
+import { FIT_PER_RARITY, RARITY_LABEL, championPickShare, championPlays, formatRate, type Augment, type Champion, type Rarity } from '../lib/data';
 
 interface Props {
+  champion: Champion;
   fitting: Record<Rarity, Augment[]>;
 }
 
-const { fitting } = Astro.props;
+const { champion, fitting } = Astro.props;
+const plays = championPlays(champion);
 const rarities: Rarity[] = ['silver', 'gold', 'prismatic'];
 const text = { silver: 'text-silver', gold: 'text-gold', prismatic: 'text-prismatic' };
 const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prismatic' };
@@ -14,7 +16,12 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
 <section class="mb-8">
   <h2 class="text-lg font-bold">相性の良いオーグメント</h2>
   <p class="text-xs text-ink-2 mt-1 mb-3">
-    チャンピオンのタイプとオーグメントの効果文から自動で選んだ目安です（レアリティごとに最大{FIT_PER_RARITY}個、上ほど相性とピック率が高い）。
+    {
+      plays > 0
+        ? `集めた試合で${champion.name}が実際に取ったオーグメント（${plays}試合分）と、タイプ・効果文からの相性を合わせた目安です。数字は${champion.name}の試合で選ばれた割合です。`
+        : 'チャンピオンのタイプとオーグメントの効果文から自動で選んだ目安です。数字は全体のピック率です。'
+    }
+    （レアリティごとに最大{FIT_PER_RARITY}個、上ほどおすすめ）
   </p>
   <div class="grid md:grid-cols-3 gap-4">
     {
@@ -32,7 +39,7 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
                     <img src={a.icon} alt="" width="28" height="28" loading="lazy" class={`size-7 rounded ring-1 ${ring[r]} bg-panel-2 shrink-0`} />
                   )}
                   <span class="text-sm leading-tight flex-1 min-w-0">{a.name}</span>
-                  <span class="text-[11px] text-ink-2 tabular-nums shrink-0">{formatRate(a.pickRate)}</span>
+                  <span class="text-[11px] text-ink-2 tabular-nums shrink-0">{formatRate(plays > 0 ? championPickShare(champion, a)! * 100 || null : a.pickRate)}</span>
                 </a>
               </li>
             ))}

@@ -49,3 +49,16 @@ Cloudflare Workers（静的アセット）で公開しています。Cloudflare 
 ## 注意
 
 メイメイは Riot Games の承認を受けたものではなく、Riot Games および League of Legends の制作・運営に公式に関わる人物の見解や意見を反映するものではありません。League of Legends および Riot Games は Riot Games, Inc. の商標または登録商標です。
+
+## 試合データ（Mayhem Tracker）
+
+[Mayhem Tracker](https://github.com/Yhprum/mayhem-tracker)（MIT）が記録した `matches.db` から、チャンピオン別に「どのオーグメントが取られたか」を数えてサイトに反映できます。
+
+```bash
+node scripts/import-tracker.mjs path/to/matches.db
+npm run build
+```
+
+- 結果は `src/data/champion-augments.json` に追記されます。試合はゲームIDのハッシュで重複を除くので、同じファイルを何度取り込んでも二重に数えません。
+- 書き出すのはチャンピオンとオーグメントの組み合わせだけで、プレイヤー名・puuid・勝敗は含めません（Riot の方針に合わせ、勝率は公開しません）。
+- `matches.db` 自体はリポジトリに入れないでください。

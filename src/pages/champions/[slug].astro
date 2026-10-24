@@ -59,7 +59,7 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
             </div>
           </section>
         )}
-        <FittingAugments fitting={fitting} />
+        <FittingAugments champion={c} fitting={fitting} />
         {build.items.length > 0 && (
           <section class="mb-8">
             <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
@@ -75,7 +75,7 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
         )}
       </>
     ) : (
-      <FittingAugments fitting={fitting} />
+      <FittingAugments champion={c} fitting={fitting} />
     )
   }
   {

@@ -6,6 +6,7 @@ import championsJson from '../data/champions.json';
 import augmentsJson from '../data/augments.json';
 import itemsJson from '../data/items.json';
 import metaJson from '../data/meta.json';
+import trackerJson from '../data/champion-augments.json';
 
 export type Rarity = 'silver' | 'gold' | 'prismatic';
 
@@ -243,22 +244,57 @@ function championWeights(c: Champion): Weights {
   return out;
 }
 
+// Per-champion augment picks from Mayhem Tracker uploads (scripts/import-tracker.mjs).
+const tracker = trackerJson as { updatedAt: string | null; games: string[]; participants: [string, string][]; picks: [string, string, string][] };
+export const trackerGames = tracker.games.length;
+export const trackerUpdatedAt = tracker.updatedAt;
+const trackerPlays = new Map<string, number>();
+for (const [, champ] of tracker.participants) trackerPlays.set(champ, (trackerPlays.get(champ) ?? 0) + 1);
+const trackerPicks = new Map<string, Map<string, number>>();
+for (const [, champ, aug] of tracker.picks) {
+  const m = trackerPicks.get(champ) ?? new Map<string, number>();
+  m.set(aug, (m.get(aug) ?? 0) + 1);
+  trackerPicks.set(champ, m);
+}
+
+export function championPlays(c: Champion) {
+  return trackerPlays.get(c.slug) ?? 0;
+}
+
+// Share of this champion's tracked games in which the augment was taken, or null without data.
+export function championPickShare(c: Champion, a: Augment): number | null {
+  const plays = championPlays(c);
+  return plays ? (trackerPicks.get(c.slug)?.get(a.slug) ?? 0) / plays : null;
+}
+
+// Plays needed before tracked picks fully count; fewer are blended with the text-based guess.
+const TRACKER_FULL_TRUST = 30;
+const TRACKER_WEIGHT = 40;
+
 export const FIT_PER_RARITY = 10;
 
 // Up to FIT_PER_RARITY augments per rarity that suit the champion, best first.
-// An augment with no matching traits can still rank on popularity; one that clashes with the
-// champion's type (e.g. crit for a mage) is left out.
+// The guess from champion type and augment text is topped up by how often players of this champion
+// actually took the augment (tracker data), which counts for more as games accumulate. An augment
+// that clashes with the champion's type (e.g. crit for a mage) is left out unless players take it.
 export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Record<Rarity, Augment[]> {
   const w = championWeights(c);
+  const trust = Math.min(1, championPlays(c) / TRACKER_FULL_TRUST);
   const scored = augments
     .filter((a) => !exclude.has(a.slug))
     .map((a) => {
       const traits = [...(augmentTraits.get(a.slug) ?? [])];
       const fit = traits.reduce((sum, t) => sum + (w[t] ?? 0), 0);
       const clash = traits.some((t) => (w[t] ?? 0) <= -1.5);
-      return { a, fit, clash, score: fit + (a.pickRate ?? 0) * 0.03 };
+      const share = championPickShare(c, a) ?? 0;
+      const played = share * trust >= 0.05;
+      return {
+        a,
+        keep: played || (!clash && fit >= 0),
+        score: fit + (a.pickRate ?? 0) * 0.03 + share * TRACKER_WEIGHT * trust,
+      };
     })
-    .filter((x) => !x.clash && x.fit >= 0)
+    .filter((x) => x.keep)
     .sort((x, y) => y.score - x.score);
   const pick = (r: Rarity) => scored.filter((x) => x.a.rarity === r).slice(0, FIT_PER_RARITY).map((x) => x.a);
   return { silver: pick('silver'), gold: pick('gold'), prismatic: pick('prismatic') };

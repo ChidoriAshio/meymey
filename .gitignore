@@ -4,3 +4,6 @@ dist/
 .env
 .DS_Store
 .wrangler/
+*.db
+*.db-wal
+*.db-shm
