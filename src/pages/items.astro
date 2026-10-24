@@ -17,6 +17,20 @@ const TAG_LABEL: Record<string, string> = {
   LifeSteal: 'ライフスティール',
   Boots: 'ブーツ',
 };
+// Stats Riot doesn't tag on their own (脅威 and 物理防御貫通 share one tag), read from the item's stat lines.
+const STAT_FILTERS: Record<string, string> = {
+  Lethality: '脅威',
+  ArmorPen: '物理防御貫通',
+  MagicPen: '魔法防御貫通',
+  TenacityStat: '行動妨害耐性',
+  MoveSpeed: '移動速度',
+};
+Object.assign(TAG_LABEL, STAT_FILTERS);
+const statLines = (html: string) => html.split('<br><br>')[0].replace(/<[^>]+>/g, ' ');
+const filterTags = (it: (typeof items)[number]) => {
+  const stats = statLines(it.description);
+  return [...it.tags, ...Object.entries(STAT_FILTERS).filter(([, label]) => stats.includes(label)).map(([tag]) => tag)].join(' ');
+};
 const tags = Object.entries(TAG_LABEL).map(([value, label]) => ({ value, label }));
 ---
 
@@ -27,7 +41,7 @@ const tags = Object.entries(TAG_LABEL).map(([value, label]) => ({ value, label }
   <div data-filter-list class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
     {
       finished.map((it) => (
-        <div data-search={`${it.name} ${it.plaintext} ${it.id}`} data-tags={it.tags.join(' ')} class="flex gap-3 rounded-lg border border-line bg-panel p-3">
+        <div data-search={`${it.name} ${it.plaintext} ${it.id}`} data-tags={filterTags(it)} class="flex gap-3 rounded-lg border border-line bg-panel p-3">
           <img src={it.icon} alt="" width="40" height="40" loading="lazy" class="size-10 rounded border border-line" />
           <div class="min-w-0">
             <div class="font-semibold leading-tight">{it.name}</div>
