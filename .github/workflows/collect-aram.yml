@@ -47,7 +47,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --cached --quiet || git commit -qm "ARAM counts $(date -u +%F)"
-          git push origin HEAD:refs/heads/aram-data
+          # Nothing to push yet when the very first run collected nothing.
+          if git rev-parse -q --verify HEAD >/dev/null; then git push origin HEAD:refs/heads/aram-data; fi
       - name: Update builds on main
         run: |
           node scripts/build-aram-builds.mjs aram-state
