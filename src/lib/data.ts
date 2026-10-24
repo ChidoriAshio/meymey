@@ -23,6 +23,8 @@ export interface Champion {
   pickRateRank: number | null;
   pickRateChange: number | null;
   combos: { god: number; strong: number };
+  // Passive first, then Q W E R. description is safe HTML.
+  spells: { key: string; name: string; description: string; icon: string; cooldown?: string }[];
 }
 
 export interface Augment {

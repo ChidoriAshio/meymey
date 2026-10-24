@@ -1,0 +1,41 @@
+---
+// An icon with a caption that shows a tooltip on hover, or on tap on phones (focus).
+// The tooltip is placed against the nearest positioned ancestor, so give the row `relative`:
+// it then spans the row and never runs off a phone screen.
+interface Props {
+  icon: string;
+  caption: string;
+  name: string;
+  meta?: string;
+  description: string;
+  // Short captions (e.g. skill keys) fit five icons in a phone-width row.
+  narrow?: boolean;
+}
+
+const { icon, caption, name, meta, description, narrow = false } = Astro.props;
+---
+
+<li tabindex="0" class:list={['tip flex flex-col items-center text-center cursor-help outline-none', narrow ? 'w-14' : 'w-20']}>
+  <img src={icon} alt="" width="48" height="48" loading="lazy" class="size-12 rounded border border-line" />
+  <span class="text-xs mt-1 leading-tight">{caption}</span>
+  <div role="tooltip" class="tip-body absolute left-0 top-full z-20 mt-2 w-full max-w-sm rounded-lg border border-line bg-panel-2 p-3 text-left shadow-lg">
+    <div class="font-semibold leading-tight">
+      {name}
+      {meta && <span class="text-xs font-normal text-ink-2 ml-1">{meta}</span>}
+    </div>
+    {description && <p class="tooltip-text text-xs text-ink-2 mt-1 leading-relaxed" set:html={description} />}
+  </div>
+</li>
+
+<style>
+  .tip-body {
+    display: none;
+  }
+  .tip:hover .tip-body,
+  .tip:focus .tip-body {
+    display: block;
+  }
+  .tip:focus img {
+    border-color: var(--color-accent);
+  }
+</style>

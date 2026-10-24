@@ -235,6 +235,27 @@ async function main() {
     })
     .sort((a, b) => a.name.localeCompare(b.name, 'ja'));
 
+  console.log('Fetching champion skills…');
+  const champQueue = [...champions];
+  await Promise.all(
+    Array.from({ length: 10 }, async () => {
+      for (let c; (c = champQueue.shift()); ) {
+        const d = (await getJson(`${DDRAGON}/cdn/${ddVersion}/data/ja_JP/champion/${c.id}.json`)).data[c.id];
+        const img = (group, file) => `${DDRAGON}/cdn/${ddVersion}/img/${group}/${file}`;
+        c.spells = [
+          { key: 'P', name: d.passive.name, description: toSafeHtml(d.passive.description), icon: img('passive', d.passive.image.full) },
+          ...d.spells.map((sp, i) => ({
+            key: 'QWER'[i],
+            name: sp.name,
+            description: toSafeHtml(sp.description),
+            icon: img('spell', sp.image.full),
+            cooldown: sp.cooldownBurn,
+          })),
+        ];
+      }
+    }),
+  );
+
   console.log('Fetching items…');
   const itemJson = await getJson(`${DDRAGON}/cdn/${ddVersion}/data/ja_JP/item.json`);
   // The ARAM map (12) also lists Arena copies of items under other ids, so keep only the ids

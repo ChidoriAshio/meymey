@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import AugmentCard from '../../components/AugmentCard.astro';
+import IconTip from '../../components/IconTip.astro';
 import FittingAugments from '../../components/FittingAugments.astro';
 import Change from '../../components/Change.astro';
 import { champions, fittingAugments, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
@@ -47,6 +48,25 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
     </div>
   </section>
 
+  <section class="mb-8">
+    <h2 class="text-lg font-bold mb-1">スキル</h2>
+    <p class="text-xs text-ink-2 mb-3">アイコンにカーソルを合わせる（スマホはタップ）と説明が見られます。</p>
+    <ol class="relative flex flex-wrap gap-3">
+      {
+        c.spells.map((sp) => (
+          <IconTip
+            icon={sp.icon}
+            caption={sp.key}
+            narrow
+            name={sp.name}
+            meta={sp.cooldown ? `${sp.key} · CD ${sp.cooldown}秒` : sp.key === 'P' ? 'パッシブ' : sp.key}
+            description={sp.description}
+          />
+        ))
+      }
+    </ol>
+  </section>
+
   {
     build ? (
       <>
@@ -63,18 +83,10 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
         {build.items.length > 0 && (
           <section class="mb-8">
             <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
-            <ol class="grid sm:grid-cols-2 gap-3">
+            <p class="text-xs text-ink-2 -mt-2 mb-3">アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。</p>
+            <ol class="relative flex flex-wrap gap-4">
               {build.items.map((it, i) => (
-                <li class="flex gap-3 rounded-lg border border-line bg-panel p-3">
-                  <img src={it.icon} alt="" width="40" height="40" loading="lazy" class="size-10 rounded border border-line shrink-0" />
-                  <div class="min-w-0">
-                    <div class="font-semibold leading-tight">
-                      {i + 1}. {it.name}
-                      <span class="text-xs font-normal text-ink-2 ml-1">{it.gold}G</span>
-                    </div>
-                    {it.description && <p class="tooltip-text text-xs text-ink-2 mt-1 leading-relaxed" set:html={it.description} />}
-                  </div>
-                </li>
+                <IconTip icon={it.icon} caption={`${i + 1}. ${it.name}`} name={it.name} meta={`${it.gold}G`} description={it.description} />
               ))}
             </ol>
           </section>
