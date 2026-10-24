@@ -5,9 +5,11 @@ interface Props {
   champion: Champion;
   // Best first, up to FIT_PER_RARITY of each rarity.
   fitting: Augment[];
+  // Curated picks (builds.yaml), marked in the list and always shown.
+  featured?: Set<string>;
 }
 
-const { champion, fitting } = Astro.props;
+const { champion, fitting, featured = new Set() } = Astro.props;
 const plays = championPlays(champion);
 const shares = hasPickShares(champion);
 const rarities: Rarity[] = ['silver', 'gold', 'prismatic'];
@@ -24,6 +26,7 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
         : 'チャンピオンのタイプとオーグメントの効果文から自動で選んだ目安です。数字は全体のピック率です。'
     }
     （全レアリティでは上位{FIT_SHOWN}個、レアリティごとでは最大{FIT_PER_RARITY}個。上ほどおすすめ）
+    {featured.size > 0 && <><br /><span class="featured-mark">★ 特におすすめ</span> は、このチャンピオンと特に相性が良いとされる組み合わせ（arammayhem.com のコンボ）です。</>}
   </p>
   <div class="flex flex-wrap gap-2 mb-3">
     <label class="fit-check">
@@ -42,13 +45,22 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
   <ol class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1.5">
     {
       fitting.map((a, i) => (
-        <li data-rarity={a.rarity} hidden={i >= FIT_SHOWN} class="aug-tip relative" tabindex="0">
-          <div class="flex items-center gap-2 rounded-md border border-line bg-panel px-2 py-1.5 cursor-help">
+        <li
+          data-rarity={a.rarity}
+          data-featured={featured.has(a.slug) ? '' : undefined}
+          hidden={i >= FIT_SHOWN && !featured.has(a.slug)}
+          class="aug-tip relative"
+          tabindex="0"
+        >
+          <div class:list={['flex items-center gap-2 rounded-md border border-line bg-panel px-2 py-1.5 cursor-help', featured.has(a.slug) && 'is-featured']}>
             <span class="w-5 text-right text-[11px] text-ink-2 tabular-nums shrink-0" data-fit-rank />
             {a.icon && (
               <img src={a.icon} alt="" width="28" height="28" loading="lazy" class={`size-7 rounded ring-1 ${ring[a.rarity]} bg-panel-2 shrink-0`} />
             )}
-            <span class="text-sm leading-tight flex-1 min-w-0">{a.name}</span>
+            <span class="text-sm leading-tight flex-1 min-w-0">
+              {a.name}
+              {featured.has(a.slug) && <span class="featured-mark ml-1 whitespace-nowrap">★ 特におすすめ</span>}
+            </span>
             <span class="text-[11px] text-ink-2 tabular-nums shrink-0">
               {formatRate(shares ? championPickShare(champion, a)! * 100 || null : a.pickRate)}
             </span>
@@ -100,6 +112,15 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
   .aug-tip:hover > div:first-child {
     border-color: var(--color-accent);
   }
+  .featured-mark {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-gold);
+  }
+  .is-featured {
+    border-color: rgb(229 185 78 / 0.7);
+    background: linear-gradient(90deg, rgb(229 185 78 / 0.14), transparent 70%), var(--color-panel);
+  }
   .fit-check input {
     accent-color: var(--color-accent);
   }
@@ -118,7 +139,8 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
       all.indeterminate = on.size > 0 && on.size < boxes.length;
       let n = 0;
       for (const row of rows) {
-        const show = on.has(row.dataset.rarity) && n < limit;
+        // Featured picks always show, so a rarity filter or the limit never hides them.
+        const show = on.has(row.dataset.rarity) && (n < limit || row.dataset.featured !== undefined);
         row.hidden = !show;
         if (show) row.querySelector('[data-fit-rank]')!.textContent = String(++n);
       }

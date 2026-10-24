@@ -308,11 +308,11 @@ export const FIT_SHOWN = 30;
 // The guess from champion type and augment text is topped up by how often players of this champion
 // actually took the augment (tracker data), which counts for more as games accumulate. An augment
 // that clashes with the champion's type (e.g. crit for a mage) is left out unless players take it.
-export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): Augment[] {
+// Augments in `featured` (the curated picks in builds.yaml) are always in the list.
+export function fittingAugments(c: Champion, featured: Set<string> = new Set()): Augment[] {
   const w = championWeights(c);
   const trust = pickShareTrust(c);
   const scored = augments
-    .filter((a) => !exclude.has(a.slug))
     .map((a) => {
       const traits = [...(augmentTraits.get(a.slug) ?? [])];
       const fit = traits.reduce((sum, t) => sum + (w[t] ?? 0), 0);
@@ -321,14 +321,14 @@ export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): 
       const played = share * trust >= 0.05;
       return {
         a,
-        keep: played || (!clash && fit >= 0),
+        keep: featured.has(a.slug) || played || (!clash && fit >= 0),
         score: fit * (1 - (1 - GUESS_WEIGHT_WITH_SHARES) * trust) + (a.pickRate ?? 0) * 0.03 + share * SHARE_WEIGHT * trust,
       };
     })
     .filter((x) => x.keep)
     .sort((x, y) => y.score - x.score);
   const taken: Record<Rarity, number> = { silver: 0, gold: 0, prismatic: 0 };
-  return scored.filter((x) => taken[x.a.rarity]++ < FIT_PER_RARITY).map((x) => x.a);
+  return scored.filter((x) => taken[x.a.rarity]++ < FIT_PER_RARITY || featured.has(x.a.slug)).map((x) => x.a);
 }
 
 // Item builds from normal ARAM games (scripts/collect-aram.mjs + build-aram-builds.mjs).
