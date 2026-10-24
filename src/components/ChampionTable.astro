@@ -17,6 +17,7 @@ const tierRank = (t?: string) => (t ? TIERS.length - TIERS.indexOf(t as (typeof 
     { value: 'tier', label: 'ティア順' },
     { value: 'pick', label: 'ピック率順' },
   ]}
+  defaultSort="tier"
 />
 <div class="champ-table rounded-lg border border-line overflow-hidden">
   <div class="champ-row text-xs text-ink-2 bg-panel-2 border-b border-line">
