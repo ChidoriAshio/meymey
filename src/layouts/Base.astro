@@ -76,6 +76,29 @@ const nav = [
         </p>
       </div>
     </footer>
+    <script>
+      // Tooltips open on focus (tap on phones). Phones don't drop focus when tapping elsewhere,
+      // so close them on a tap outside, and on a second tap of the same icon.
+      const tipSelector = '.tip, .aug-tip';
+      let wasOpen: HTMLElement | null = null;
+      document.addEventListener(
+        'pointerdown',
+        (e) => {
+          const open = (document.activeElement as HTMLElement | null)?.closest<HTMLElement>(tipSelector) ?? null;
+          const target = e.target as Element;
+          // Taps inside an open tooltip (its link, its text) leave it open.
+          wasOpen = open && !target.closest('[role="tooltip"]') ? open : null;
+          if (open && !open.contains(target)) open.blur();
+        },
+        true,
+      );
+      // The tap itself focuses the icon again, so a second tap on it closes after the click.
+      document.addEventListener('click', (e) => {
+        const tip = (e.target as Element).closest<HTMLElement>(tipSelector);
+        if (tip && tip === wasOpen) setTimeout(() => tip.blur());
+        wasOpen = null;
+      });
+    </script>
   </body>
 </html>
 

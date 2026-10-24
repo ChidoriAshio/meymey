@@ -31,9 +31,14 @@ const { icon, caption, name, meta, description, narrow = false } = Astro.props;
   .tip-body {
     display: none;
   }
-  .tip:hover .tip-body,
   .tip:focus .tip-body {
     display: block;
+  }
+  /* Phones keep :hover after a tap, which would stop the tooltip from closing. */
+  @media (hover: hover) {
+    .tip:hover .tip-body {
+      display: block;
+    }
   }
   .tip:focus img {
     border-color: var(--color-accent);

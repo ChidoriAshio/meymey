@@ -100,17 +100,26 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
     display: none;
   }
   /* Hover on PC, tap (focus) on phones. Hovering the tooltip itself keeps it open for the link. */
-  .aug-tip:hover,
   .aug-tip:focus-within {
     z-index: 10;
   }
-  .aug-tip:hover .aug-tip-body,
   .aug-tip:focus-within .aug-tip-body {
     display: block;
   }
-  .aug-tip:focus-within > div:first-child,
-  .aug-tip:hover > div:first-child {
+  .aug-tip:focus-within > div:first-child {
     border-color: var(--color-accent);
+  }
+  /* Phones keep :hover after a tap, which would stop the tooltip from closing. */
+  @media (hover: hover) {
+    .aug-tip:hover {
+      z-index: 10;
+    }
+    .aug-tip:hover .aug-tip-body {
+      display: block;
+    }
+    .aug-tip:hover > div:first-child {
+      border-color: var(--color-accent);
+    }
   }
   .featured-mark {
     font-size: 0.7rem;
