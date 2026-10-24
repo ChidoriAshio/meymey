@@ -5,6 +5,10 @@ import ChampionTile from '../components/ChampionTile.astro';
 import { champions, meta, ROLE_LABEL } from '../lib/data';
 
 const roles = Object.entries(ROLE_LABEL).map(([value, label]) => ({ value, label }));
+const topChampions = [...champions]
+  .filter((c) => c.pickRate != null)
+  .sort((a, b) => b.pickRate! - a.pickRate!)
+  .slice(0, 12);
 ---
 
 <Base title="">
@@ -15,6 +19,14 @@ const roles = Object.entries(ROLE_LABEL).map(([value, label]) => ({ value, label
     </p>
   </section>
 
+  <section class="mb-8">
+    <h2 class="text-lg font-bold mb-3">よく選ばれるチャンピオン</h2>
+    <div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-3">
+      {topChampions.map((c) => <ChampionTile champion={c} />)}
+    </div>
+  </section>
+
+  <h2 class="text-lg font-bold mb-3">すべてのチャンピオン</h2>
   <ListFilter placeholder="チャンピオン名で検索（例: あーり、Ahri）" tags={roles} />
   <div data-filter-list class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-4">
     {
