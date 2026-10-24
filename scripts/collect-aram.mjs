@@ -14,7 +14,8 @@ import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 
-const KEY = process.env.RIOT_API_KEY;
+// Pasted keys sometimes carry a trailing newline or quotes.
+const KEY = process.env.RIOT_API_KEY?.trim().replace(/^['"]|['"]$/g, '');
 const PLATFORM = process.env.RIOT_PLATFORM ?? 'jp1';
 const REGION = process.env.RIOT_REGION ?? 'asia';
 const MAX_MINUTES = Number(process.env.MAX_MINUTES ?? 50);
@@ -27,6 +28,7 @@ if (!stateDir) {
   console.error('usage: node scripts/collect-aram.mjs <state-dir>');
   process.exit(1);
 }
+if (KEY && !KEY.startsWith('RGAPI-')) console.warn(`RIOT_API_KEY doesn't look like a Riot key (starts with ${JSON.stringify(KEY.slice(0, 3))}, length ${KEY.length}).`);
 if (!KEY) {
   console.warn('RIOT_API_KEY is not set; nothing collected.');
   process.exit(0);
@@ -71,7 +73,10 @@ async function riot(url) {
       await new Promise((r) => setTimeout(r, retry * 1000));
       continue;
     }
-    if (res.status === 401 || res.status === 403) throw new StopError(`API key rejected (${res.status}); it may have expired.`);
+    if (res.status === 401 || res.status === 403) {
+      const body = await res.text().catch(() => '');
+      throw new StopError(`API key rejected (${res.status} ${body.slice(0, 120)}); it may have expired.`);
+    }
     if (res.status === 404) return null;
     throw new Error(`${res.status} ${url}`);
   }
