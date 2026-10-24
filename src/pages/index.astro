@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import AugmentCard from '../components/AugmentCard.astro';
+import ChampionTile from '../components/ChampionTile.astro';
+import { augments, champions, meta } from '../lib/data';
+
+const topChampions = [...champions]
+  .filter((c) => c.pickRate != null)
+  .sort((a, b) => b.pickRate! - a.pickRate!)
+  .slice(0, 12);
+const topAugments = augments.filter((a) => a.pickRate != null).slice(0, 9);
+// Augments in the current game files that the pick-rate data doesn't cover yet: usually this patch's new ones.
+const newAugments = augments.filter((a) => a.pickRate == null);
+const gamePatch = meta.patch;
+---
+
+<Base title="">
+  <section class="mb-10">
+    <h1 class="text-2xl sm:text-3xl font-bold">ランダムミッド: メイヘム 攻略データ</h1>
+    <p class="text-ink-2 mt-2">
+      パッチ {gamePatch} のチャンピオン {champions.length} 体、オーグメント {augments.length} 個を日本語で調べられます。ピック率はパッチ {meta.stats.patch} の集計です。
+    </p>
+    <div class="flex flex-wrap gap-3 mt-4">
+      <a href="/tier-list/" class="rounded-md bg-accent text-bg font-semibold px-4 py-2 text-sm">ティアリストを見る</a>
+      <a href="/augments/" class="rounded-md border border-line px-4 py-2 text-sm hover:border-accent">オーグメント一覧</a>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <div class="flex items-baseline justify-between mb-3">
+      <h2 class="text-lg font-bold">よく選ばれるチャンピオン</h2>
+      <a href="/champions/" class="text-sm text-ink-2 hover:text-accent">すべて見る →</a>
+    </div>
+    <div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-3">
+      {topChampions.map((c) => <ChampionTile champion={c} />)}
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <div class="flex items-baseline justify-between mb-3">
+      <h2 class="text-lg font-bold">ピック率の高いオーグメント</h2>
+      <a href="/augments/" class="text-sm text-ink-2 hover:text-accent">すべて見る →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {topAugments.map((a) => <AugmentCard augment={a} />)}
+    </div>
+  </section>
+
+  {
+    newAugments.length > 0 && (
+      <section>
+        <h2 class="text-lg font-bold mb-1">集計がまだないオーグメント（{newAugments.length}）</h2>
+        <p class="text-sm text-ink-2 mb-3">パッチ {gamePatch} のゲームデータにあり、パッチ {meta.stats.patch} の集計には含まれないものです。多くは今回の新オーグメントです。</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {newAugments.map((a) => <AugmentCard augment={a} compact />)}
+        </div>
+      </section>
+    )
+  }
+</Base>

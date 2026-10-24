@@ -1,0 +1,11 @@
+# チャンピオンごとの手書きの情報です。キーはチャンピオンのスラッグ（URL の /champions/<スラッグ>/ の部分）。
+#
+#   ahri:
+#     tier: A                 # S / A / B / C / D（省略可）
+#     augments:               # おすすめオーグメントのスラッグ（URL の /augments/<スラッグ>/ の部分）
+#       - transmute-prismatic
+#     items:                  # おすすめアイテムの ID（Data Dragon のアイテム ID）
+#       - "3089"
+#     note: 一言メモ（省略可）
+#
+# 書いたチャンピオンだけがティアリストとおすすめ欄に表示されます。

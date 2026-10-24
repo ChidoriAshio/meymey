@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import ListFilter from '../components/ListFilter.astro';
+import { items } from '../lib/data';
+
+const finished = items.filter((i) => i.finished);
+const TAG_LABEL: Record<string, string> = {
+  Damage: '攻撃力',
+  SpellDamage: '魔力',
+  AttackSpeed: '攻撃速度',
+  CriticalStrike: 'クリティカル',
+  Health: '体力',
+  Armor: '物理防御',
+  SpellBlock: '魔法防御',
+  AbilityHaste: 'スキルヘイスト',
+  LifeSteal: 'ライフスティール',
+  Boots: 'ブーツ',
+};
+const tags = Object.entries(TAG_LABEL).map(([value, label]) => ({ value, label }));
+---
+
+<Base title="アイテム一覧">
+  <h1 class="text-2xl font-bold mb-1">アイテム一覧</h1>
+  <p class="text-sm text-ink-2 mb-4">ARAM のマップで買える完成アイテム {finished.length} 個。アイテム ID は builds.yaml で使います。</p>
+  <ListFilter placeholder="名前で検索" tags={tags} />
+  <div data-filter-list class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {
+      finished.map((it) => (
+        <div data-search={`${it.name} ${it.plaintext} ${it.id}`} data-tags={it.tags.join(' ')} class="flex gap-3 rounded-lg border border-line bg-panel p-3">
+          <img src={it.icon} alt="" width="40" height="40" loading="lazy" class="size-10 rounded border border-line" />
+          <div class="min-w-0">
+            <div class="font-semibold leading-tight">{it.name}</div>
+            <div class="text-xs text-ink-2 mt-1">
+              {it.gold}G · ID {it.id}
+            </div>
+            {it.plaintext && <p class="text-xs text-ink-2 mt-1">{it.plaintext}</p>}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Base>
