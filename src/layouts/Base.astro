@@ -31,9 +31,9 @@ const nav = [
   </head>
   <body class="min-h-screen flex flex-col">
     <header class="site-header sticky top-0 z-10 backdrop-blur">
-      <div class="mx-auto max-w-6xl px-4 h-14 flex items-center gap-4 sm:gap-6">
-        <a href="/" class="logo shrink-0">メイメイ</a>
-        <nav class="flex gap-3 sm:gap-4 text-sm overflow-x-auto">
+      <div class="mx-auto max-w-6xl px-4 py-2 sm:py-0 sm:h-14 flex flex-wrap sm:flex-nowrap items-center gap-x-4 gap-y-1 sm:gap-6">
+        <a href="/" class="logo shrink-0">ランダムミッド: メイヘム 攻略データ</a>
+        <nav class="flex gap-4 text-sm overflow-x-auto w-full sm:w-auto">
           {
             nav.map((n) => (
               <a
@@ -88,8 +88,8 @@ const nav = [
   .logo {
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: 0.08em;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
     background: linear-gradient(180deg, #f0e6d2, #c8aa6e 60%, #785a28);
     -webkit-background-clip: text;
     background-clip: text;
