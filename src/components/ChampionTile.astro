@@ -1,0 +1,23 @@
+---
+import { formatRate, type Champion } from '../lib/data';
+
+interface Props {
+  champion: Champion;
+  showRate?: boolean;
+}
+
+const { champion: c, showRate = true } = Astro.props;
+---
+
+<a href={`/champions/${c.slug}/`} class="group flex flex-col items-center gap-1 text-center">
+  <img
+    src={c.icon}
+    alt=""
+    width="64"
+    height="64"
+    loading="lazy"
+    class="size-16 rounded-lg border border-line group-hover:border-accent"
+  />
+  <span class="text-xs leading-tight group-hover:text-accent">{c.name}</span>
+  {showRate && <span class="text-[11px] text-ink-2">{formatRate(c.pickRate)}</span>}
+</a>

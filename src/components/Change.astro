@@ -1,0 +1,12 @@
+---
+import { formatChange } from '../lib/data';
+
+interface Props {
+  value: number | null;
+}
+
+const { value } = Astro.props;
+const label = formatChange(value);
+---
+
+{label && <span class:list={['text-xs', value! > 0 ? 'text-up' : 'text-down']}>{label}</span>}

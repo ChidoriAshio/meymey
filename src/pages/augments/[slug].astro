@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import ChampionTile from '../../components/ChampionTile.astro';
+import Change from '../../components/Change.astro';
+import { augments, champions, getBuilds, meta, RARITY_LABEL, formatRate, type Augment } from '../../lib/data';
+
+export function getStaticPaths() {
+  return augments.map((augment) => ({ params: { slug: augment.slug }, props: { augment } }));
+}
+
+const { augment: a } = Astro.props as { augment: Augment };
+const builds = await getBuilds();
+const recommendedFor = champions.filter((c) => builds.get(c.slug)?.augments.some((x) => x.slug === a.slug));
+const text = { silver: 'text-silver', gold: 'text-gold', prismatic: 'text-prismatic' }[a.rarity];
+const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prismatic' }[a.rarity];
+const plain = a.description.replace(/<[^>]+>/g, '').slice(0, 110);
+---
+
+<Base title={`${a.name}（オーグメント）`} description={`ランダムミッド: メイヘムのオーグメント「${a.name}」: ${plain}`}>
+  <a href="/augments/" class="text-sm text-ink-2 hover:text-accent">← オーグメント一覧</a>
+
+  <header class="flex items-center gap-4 mt-3 mb-6">
+    {a.icon && <img src={a.icon} alt="" width="80" height="80" class={`size-20 rounded-xl ring-2 ${ring} bg-panel-2`} />}
+    <div>
+      <p class={`text-sm ${text}`}>{RARITY_LABEL[a.rarity]}</p>
+      <h1 class="text-2xl font-bold">{a.name}</h1>
+      {a.nameEn && <p class="text-xs text-ink-2 mt-1">{a.nameEn}</p>}
+    </div>
+  </header>
+
+  <section class="rounded-lg border border-line bg-panel p-4 mb-6">
+    <h2 class="text-sm text-ink-2 mb-2">効果</h2>
+    <p class="tooltip-text" set:html={a.description} />
+    <p class="text-xs text-ink-2 mt-3">数値はゲームデータから自動で埋めています。レベルなどで変わる値は代表値です。</p>
+  </section>
+
+  <section class="grid sm:grid-cols-2 gap-3 mb-8">
+    <div class="rounded-lg border border-line bg-panel p-4">
+      <div class="text-xs text-ink-2">ピック率（パッチ {meta.stats.patch}）</div>
+      <div class="text-2xl font-bold tabular-nums mt-1">{formatRate(a.pickRate)} <Change value={a.pickRateChange} /></div>
+      {a.pickRate == null && <p class="text-xs text-ink-2 mt-1">集計データにまだありません（新オーグメントの可能性があります）。</p>}
+    </div>
+    <div class="rounded-lg border border-line bg-panel p-4">
+      <div class="text-xs text-ink-2">登場パッチ</div>
+      <div class="text-2xl font-bold tabular-nums mt-1">{a.introducedPatch ?? '—'}</div>
+    </div>
+  </section>
+
+  {
+    recommendedFor.length > 0 && (
+      <section>
+        <h2 class="text-lg font-bold mb-3">このオーグメントがおすすめのチャンピオン</h2>
+        <div class="flex flex-wrap gap-4">
+          {recommendedFor.map((c) => <ChampionTile champion={c} showRate={false} />)}
+        </div>
+      </section>
+    )
+  }
+</Base>

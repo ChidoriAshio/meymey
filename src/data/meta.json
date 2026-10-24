@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-10-24T03:03:57.817Z",
+  "gameVersion": "16.21.1",
+  "patch": "26.21",
+  "cdragonVersion": "16.21.8298620+branch.releases-16-21.content.release",
+  "stats": {
+    "patch": "26.20",
+    "statsDate": "2026-10-20",
+    "attribution": "Data: arammayhem.com",
+    "source": "https://arammayhem.com/data/",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "ARAM: Mayhem match statistics from a limited sample. Not worldwide data."
+  }
+}

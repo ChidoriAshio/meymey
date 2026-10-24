@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListFilter from '../../components/ListFilter.astro';
+import AugmentCard from '../../components/AugmentCard.astro';
+import { augments, meta, RARITY_LABEL } from '../../lib/data';
+
+const rarities = Object.entries(RARITY_LABEL).map(([value, label]) => ({ value, label }));
+---
+
+<Base title="オーグメント一覧">
+  <h1 class="text-2xl font-bold mb-1">オーグメント一覧</h1>
+  <p class="text-sm text-ink-2 mb-4">ピック率（パッチ {meta.stats.patch}）の高い順。名前や効果の言葉で検索できます。</p>
+  <ListFilter placeholder="名前・効果で検索（例: ヘイスト）" tags={rarities} />
+  <div data-filter-list class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {
+      augments.map((a) => (
+        <div data-search={`${a.name} ${a.nameEn ?? ''} ${a.description.replace(/<[^>]+>/g, '')}`} data-tags={a.rarity}>
+          <AugmentCard augment={a} />
+        </div>
+      ))
+    }
+  </div>
+</Base>

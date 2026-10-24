@@ -1,0 +1,92 @@
+---
+// Search box + tag buttons that hide items of the following [data-filter-list].
+// Each item needs data-search="<lowercased words>" and data-tags="<space separated tags>".
+interface Props {
+  placeholder: string;
+  tags: { value: string; label: string }[];
+}
+
+const { placeholder, tags } = Astro.props;
+---
+
+<div data-filter class="flex flex-col sm:flex-row gap-3 mb-4">
+  <input
+    type="search"
+    data-filter-search
+    placeholder={placeholder}
+    class="w-full sm:w-72 rounded-md border border-line bg-panel px-3 py-2 text-sm outline-none focus:border-accent"
+  />
+  <div class="flex flex-wrap gap-2">
+    <button type="button" data-filter-tag="" aria-pressed="true" class="filter-btn">すべて</button>
+    {
+      tags.map((t) => (
+        <button type="button" data-filter-tag={t.value} aria-pressed="false" class="filter-btn">
+          {t.label}
+        </button>
+      ))
+    }
+  </div>
+  <span data-filter-count class="text-xs text-ink-2 self-center sm:ml-auto"></span>
+</div>
+
+<style>
+  .filter-btn {
+    border: 1px solid var(--color-line);
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    color: var(--color-ink-2);
+    cursor: pointer;
+  }
+  .filter-btn[aria-pressed='true'] {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+</style>
+
+<script>
+  // Hiragana and katakana are matched as the same, so "あーり" finds "アーリ".
+  const fold = (s: string) =>
+    s
+      .toLowerCase()
+      .normalize('NFKC')
+      .replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60))
+      .replace(/[\s・:：]/g, '');
+
+  for (const root of document.querySelectorAll<HTMLElement>('[data-filter]')) {
+    const list = root.nextElementSibling?.matches('[data-filter-list]')
+      ? root.nextElementSibling
+      : root.parentElement?.querySelector('[data-filter-list]');
+    if (!list) continue;
+    const items = [...list.querySelectorAll<HTMLElement>('[data-search]')].map((el) => ({
+      el,
+      text: fold(el.dataset.search ?? ''),
+      tags: (el.dataset.tags ?? '').split(' '),
+    }));
+    const input = root.querySelector<HTMLInputElement>('[data-filter-search]')!;
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>('[data-filter-tag]')];
+    const count = root.querySelector<HTMLElement>('[data-filter-count]')!;
+    let tag = '';
+
+    const apply = () => {
+      const q = fold(input.value);
+      let shown = 0;
+      for (const it of items) {
+        const ok = (!q || it.text.includes(q)) && (!tag || it.tags.includes(tag));
+        it.el.hidden = !ok;
+        if (ok) shown++;
+      }
+      count.textContent = `${shown} / ${items.length} 件`;
+    };
+
+    input.addEventListener('input', apply);
+    for (const b of buttons) {
+      b.addEventListener('click', () => {
+        tag = b.dataset.filterTag ?? '';
+        for (const o of buttons) o.setAttribute('aria-pressed', String(o === b));
+        apply();
+      });
+    }
+    apply();
+  }
+</script>
