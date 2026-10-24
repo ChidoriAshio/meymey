@@ -8,6 +8,7 @@ import itemsJson from '../data/items.json';
 import metaJson from '../data/meta.json';
 import trackerJson from '../data/champion-augments.json';
 import cnJson from '../data/champion-augments-cn.json';
+import aramBuildsJson from '../data/aram-builds.json';
 
 export type Rarity = 'silver' | 'gold' | 'prismatic';
 
@@ -326,6 +327,32 @@ export function fittingAugments(c: Champion, exclude: Set<string> = new Set()): 
     .sort((x, y) => y.score - x.score);
   const pick = (r: Rarity) => scored.filter((x) => x.a.rarity === r).slice(0, FIT_PER_RARITY).map((x) => x.a);
   return { silver: pick('silver'), gold: pick('gold'), prismatic: pick('prismatic') };
+}
+
+// Item builds from normal ARAM games (scripts/collect-aram.mjs + build-aram-builds.mjs).
+type Counted = { id: string; games: number; wins?: number };
+const aramData = aramBuildsJson as {
+  gameVersion: string | null;
+  matches: number;
+  champions: Record<string, { games: number; builds: { name: string; core: string[]; games: number; wins: number; situational: Counted[] }[]; boots: Counted[] }>;
+};
+export const aramStats = { gameVersion: aramData.gameVersion, matches: aramData.matches };
+// Win rates on fewer games than this swing too much to show.
+export const MIN_WINRATE_GAMES = 30;
+
+export function aramBuilds(c: Champion) {
+  const d = aramData.champions[c.slug];
+  if (!d) return null;
+  const withItem = <T extends Counted>(x: T) => ({ ...x, item: itemById.get(x.id)! });
+  return {
+    games: d.games,
+    builds: d.builds.map((b) => ({
+      ...b,
+      items: b.core.map((id) => itemById.get(id)!).filter(Boolean),
+      situational: b.situational.filter((x) => itemById.has(x.id)).map(withItem),
+    })),
+    boots: d.boots.filter((x) => itemById.has(x.id)).map(withItem),
+  };
 }
 
 export const formatRate = (n: number | null) => (n == null ? '—' : `${n.toFixed(2)}%`);

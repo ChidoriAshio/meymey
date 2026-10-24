@@ -1,0 +1,63 @@
+name: Collect ARAM builds
+
+# Collects normal ARAM games from the Riot API (needs the RIOT_API_KEY secret) and turns them into
+# item builds. Raw counts are kept on the aram-data branch; only the summary goes to main.
+on:
+  schedule:
+    - cron: '0 4 * * *' # 毎日 13:00 JST
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 集める時間（分）
+        default: '50'
+
+permissions:
+  contents: write
+
+concurrency: collect-aram
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check out saved counts
+        run: |
+          if git ls-remote --exit-code origin aram-data >/dev/null; then
+            git fetch --depth 1 origin aram-data
+            git worktree add aram-state FETCH_HEAD
+          else
+            git worktree add --detach aram-state
+            git -C aram-state checkout --orphan aram-data-new
+            git -C aram-state rm -rfq .
+          fi
+      - name: Collect
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          MAX_MINUTES: ${{ inputs.minutes || '50' }}
+        run: node scripts/collect-aram.mjs aram-state
+      - name: Save counts
+        run: |
+          cd aram-state
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -qm "ARAM counts $(date -u +%F)"
+          git push origin HEAD:refs/heads/aram-data
+      - name: Update builds on main
+        run: |
+          node scripts/build-aram-builds.mjs aram-state
+          if [ -z "$(git status --porcelain src/data/aram-builds.json)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/aram-builds.json
+          git commit -m "Update ARAM builds"
+          git pull --rebase origin main
+          git push origin HEAD:main

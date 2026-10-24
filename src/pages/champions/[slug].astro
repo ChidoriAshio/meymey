@@ -3,8 +3,9 @@ import Base from '../../layouts/Base.astro';
 import AugmentCard from '../../components/AugmentCard.astro';
 import IconTip from '../../components/IconTip.astro';
 import FittingAugments from '../../components/FittingAugments.astro';
+import AramBuilds from '../../components/AramBuilds.astro';
 import Change from '../../components/Change.astro';
-import { champions, fittingAugments, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
+import { aramBuilds, champions, fittingAugments, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
 
 export function getStaticPaths() {
   return champions.map((champion) => ({ params: { slug: champion.slug }, props: { champion } }));
@@ -80,7 +81,7 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
           </section>
         )}
         <FittingAugments champion={c} fitting={fitting} />
-        {build.items.length > 0 && (
+        {aramBuilds(c) ? <AramBuilds champion={c} /> : build.items.length > 0 && (
           <section class="mb-8">
             <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
             <p class="text-xs text-ink-2 -mt-2 mb-3">アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。</p>
@@ -93,7 +94,10 @@ const fitting = fittingAugments(c, new Set(build?.augments.map((a) => a.slug)));
         )}
       </>
     ) : (
-      <FittingAugments champion={c} fitting={fitting} />
+      <>
+        <FittingAugments champion={c} fitting={fitting} />
+        {aramBuilds(c) && <AramBuilds champion={c} />}
+      </>
     )
   }
   {

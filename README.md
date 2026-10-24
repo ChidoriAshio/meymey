@@ -68,3 +68,12 @@ npm run build
 `fetch-data` は [aramhex-data](https://github.com/czgreat/aramhex-data)（CC BY-NC 4.0）の最新版から、チャンピオン × オーグメントの試合数を `src/data/champion-augments-cn.json` に書き出します。勝率は使いません。チャンピオンページの「相性の良いオーグメント」はこの採用率を中心に並び、Mayhem Tracker で集めた試合が増えると最大半分までそちらも混ぜます。
 
 **ライセンスが非営利（NC）なので、このデータを使う間はサイトを商用（広告・有料化など）にしないでください。** 出典表示はフッターにあります。
+
+## 通常ARAMのビルド（Riot API）
+
+メイヘムの試合は Riot API で取れないため、ビルドは同じマップの通常ARAM（queue 450、日本サーバー）から集計します。
+
+- GitHub の Secrets に `RIOT_API_KEY` を入れておくと、`Collect ARAM builds` ワークフローが毎日試合を集めます（手動実行も可）。キーが切れていても失敗にはならず、それまでのデータは残ります。
+- 生の集計（チャンピオン × 最終アイテム → 試合数・勝利数）は `aram-data` ブランチに保存し、`main` には要約の `src/data/aram-builds.json` だけを入れます。プレイヤーはハッシュでしか保存しません。
+- ローカル: `RIOT_API_KEY=... node scripts/collect-aram.mjs aram-state && node scripts/build-aram-builds.mjs aram-state`
+- パッチが変わると集計はリセットされます。勝率は30試合未満では表示しません。

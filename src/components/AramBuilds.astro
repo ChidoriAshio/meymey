@@ -1,0 +1,110 @@
+---
+import IconTip from './IconTip.astro';
+import { MIN_WINRATE_GAMES, aramBuilds, aramStats, formatRate, type Champion } from '../lib/data';
+
+interface Props {
+  champion: Champion;
+}
+
+const { champion } = Astro.props;
+const data = aramBuilds(champion)!;
+const pct = (n: number, d: number) => formatRate((n / d) * 100);
+const winRate = (games: number, wins = 0) => (games >= MIN_WINRATE_GAMES ? pct(wins, games) : '—');
+---
+
+<section class="mb-8" data-tabs>
+  <h2 class="text-lg font-bold">おすすめビルド</h2>
+  <p class="text-xs text-ink-2 mt-1 mb-3">
+    通常ARAM（ハウリングアビス）の日本サーバーの試合から集計（パッチ {aramStats.gameVersion}、{champion.name} {data.games}試合）。メイヘムではオーグメントで最適なビルドが変わることがあります。勝率は{MIN_WINRATE_GAMES}試合未満だと表示しません。アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。
+  </p>
+  <div class="flex flex-wrap gap-2 mb-3" role="tablist">
+    {
+      data.builds.map((b, i) => (
+        <button type="button" role="tab" data-tab={i} aria-selected={i === 0 ? 'true' : 'false'} class="build-tab">
+          {b.name}
+        </button>
+      ))
+    }
+  </div>
+  {
+    data.builds.map((b, i) => (
+      <div role="tabpanel" data-panel={i} hidden={i !== 0} class="rounded-lg border border-line bg-panel p-4">
+        <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm mb-3">
+          <span>
+            勝率 <strong class="tabular-nums">{winRate(b.games, b.wins)}</strong>
+          </span>
+          <span>
+            採用率 <strong class="tabular-nums">{pct(b.games, data.games)}</strong>
+          </span>
+          <span class="text-ink-2 text-xs self-center">{b.games}試合</span>
+        </div>
+        <h3 class="text-xs font-semibold text-ink-2 mb-2">コアアイテム</h3>
+        <ol class="relative flex flex-wrap gap-4 mb-4">
+          {b.items.map((it) => (
+            <IconTip icon={it.icon} caption={it.name} name={it.name} meta={`${it.gold}G`} description={it.description} />
+          ))}
+        </ol>
+        {b.situational.length > 0 && (
+          <>
+            <h3 class="text-xs font-semibold text-ink-2 mb-2">状況に応じて（このビルドで一緒に買われた割合）</h3>
+            <ol class="relative flex flex-wrap gap-4 mb-4">
+              {b.situational.map((x) => (
+                <IconTip
+                  icon={x.item.icon}
+                  caption={`${x.item.name} ${pct(x.games, b.games)}`}
+                  name={x.item.name}
+                  meta={`${x.item.gold}G · 勝率 ${winRate(x.games, x.wins)}`}
+                  description={x.item.description}
+                />
+              ))}
+            </ol>
+          </>
+        )}
+        {data.boots.length > 0 && (
+          <>
+            <h3 class="text-xs font-semibold text-ink-2 mb-2">ブーツ</h3>
+            <ol class="relative flex flex-wrap gap-4">
+              {data.boots.map((x) => (
+                <IconTip
+                  icon={x.item.icon}
+                  caption={`${x.item.name} ${pct(x.games, data.games)}`}
+                  name={x.item.name}
+                  meta={`${x.item.gold}G`}
+                  description={x.item.description}
+                />
+              ))}
+            </ol>
+          </>
+        )}
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .build-tab {
+    border: 1px solid var(--color-line);
+    border-radius: 9999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.85rem;
+    color: var(--color-ink-2);
+    cursor: pointer;
+  }
+  .build-tab[aria-selected='true'] {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-tabs]')) {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[data-tab]')];
+    const panels = [...root.querySelectorAll<HTMLElement>('[data-panel]')];
+    for (const tab of tabs) {
+      tab.addEventListener('click', () => {
+        for (const t of tabs) t.setAttribute('aria-selected', String(t === tab));
+        for (const p of panels) p.hidden = p.dataset.panel !== tab.dataset.tab;
+      });
+    }
+  }
+</script>
