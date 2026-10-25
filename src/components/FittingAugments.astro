@@ -42,7 +42,7 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
       ))
     }
   </div>
-  <ol class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1.5">
+  <ol class="flex flex-col gap-1.5" data-fit-list>
     {
       fitting.map((a, i) => (
         <li
@@ -141,7 +141,13 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
     const all = root.querySelector<HTMLInputElement>('[data-fit-all]')!;
     const boxes = [...root.querySelectorAll<HTMLInputElement>('[data-fit-rarity]')];
     const rows = [...root.querySelectorAll<HTMLElement>('li[data-rarity]')];
+    const list = root.querySelector<HTMLElement>('[data-fit-list]')!;
     const limit = Number(root.dataset.shown);
+    // The list keeps the tallest height it has had, so a filter with fewer rows doesn't make the page
+    // below it jump up.
+    const hold = () => {
+      list.style.minHeight = `${Math.max(parseFloat(list.style.minHeight) || 0, list.offsetHeight)}px`;
+    };
     const apply = () => {
       const on = new Set(boxes.filter((b) => b.checked).map((b) => b.dataset.fitRarity));
       all.checked = on.size === boxes.length;
@@ -153,12 +159,21 @@ const ring = { silver: 'ring-silver', gold: 'ring-gold', prismatic: 'ring-prisma
         row.hidden = !show;
         if (show) row.querySelector('[data-fit-rank]')!.textContent = String(++n);
       }
+      hold();
     };
     all.addEventListener('change', () => {
       for (const b of boxes) b.checked = all.checked;
       apply();
     });
     for (const b of boxes) b.addEventListener('change', apply);
+    // Row heights change with the width, so measure again from scratch.
+    let width = window.innerWidth;
+    window.addEventListener('resize', () => {
+      if (window.innerWidth === width) return;
+      width = window.innerWidth;
+      list.style.minHeight = '';
+      hold();
+    });
     apply();
   }
 </script>

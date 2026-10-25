@@ -76,30 +76,24 @@ const fitting = fittingAugments(c, featured);
     </ol>
   </section>
 
-  {
-    build ? (
-      <>
-        {build.note && <p class="mb-6 rounded-lg border border-line bg-panel-2 p-4">{build.note}</p>}
-        <FittingAugments champion={c} fitting={fitting} featured={featured} />
-        {aramBuilds(c) ? <AramBuilds champion={c} /> : build.items.length > 0 && (
-          <section class="mb-8">
-            <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
-            <p class="text-xs text-ink-2 -mt-2 mb-3">アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。</p>
-            <ol class="relative flex flex-wrap gap-4">
-              {build.items.map((it, i) => (
-                <IconTip icon={it.icon} caption={`${i + 1}. ${it.name}`} name={it.name} meta={`${it.gold}G`} description={it.description} />
-              ))}
-            </ol>
-          </section>
-        )}
-      </>
-    ) : (
-      <>
-        <FittingAugments champion={c} fitting={fitting} featured={featured} />
-        {aramBuilds(c) && <AramBuilds champion={c} />}
-      </>
-    )
-  }
+  {build?.note && <p class="mb-6 rounded-lg border border-line bg-panel-2 p-4">{build.note}</p>}
+  <!-- Augments left, builds right on wide screens, so both are in view at once. -->
+  <div class="lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-6 lg:items-start">
+    <FittingAugments champion={c} fitting={fitting} featured={featured} />
+    <div class="min-w-0 lg:sticky lg:top-[73px]">
+      {aramBuilds(c) ? <AramBuilds champion={c} /> : build && build.items.length > 0 && (
+        <section class="mb-8">
+          <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
+          <p class="text-xs text-ink-2 -mt-2 mb-3">アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。</p>
+          <ol class="relative flex flex-wrap gap-4">
+            {build.items.map((it, i) => (
+              <IconTip icon={it.icon} caption={`${i + 1}. ${it.name}`} name={it.name} meta={`${it.gold}G`} description={it.description} />
+            ))}
+          </ol>
+        </section>
+      )}
+    </div>
+  </div>
   {
     !build && (
       <p class="text-ink-2 mb-8">
