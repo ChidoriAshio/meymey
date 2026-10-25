@@ -73,7 +73,7 @@ npm run build
 
 メイヘムの試合は Riot API で取れないため、ビルドは同じマップの通常ARAM（queue 450、日本サーバー）から集計します。
 
-- GitHub の Secrets に `RIOT_API_KEY` を入れておくと、`Collect ARAM builds` ワークフローが毎日試合を集めます（手動実行も可）。キーが切れていても失敗にはならず、それまでのデータは残ります。
+- GitHub の Secrets に `RIOT_API_KEY` を入れておくと、`Collect ARAM builds` ワークフローが6時間ごとに試合を集めます（手動実行も可）。キーが切れていても失敗にはならず、それまでのデータは残ります。
 - 生の集計（チャンピオン × 最終アイテム → 試合数・勝利数）は `aram-data` ブランチに保存し、`main` には要約の `src/data/aram-builds.json` だけを入れます。プレイヤーはハッシュでしか保存しません。
 - ローカル: `RIOT_API_KEY=... node scripts/collect-aram.mjs aram-state && node scripts/build-aram-builds.mjs aram-state`
 - パッチが変わると集計はリセットされます。勝率は30試合未満では表示しません。

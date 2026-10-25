@@ -4,7 +4,7 @@ name: Collect ARAM builds
 # item builds. Raw counts are kept on the aram-data branch; only the summary goes to main.
 on:
   schedule:
-    - cron: '0 4 * * *' # 毎日 13:00 JST
+    - cron: '0 */6 * * *' # 6時間ごと（3時・9時・15時・21時 JST）
   workflow_dispatch:
     inputs:
       minutes:
