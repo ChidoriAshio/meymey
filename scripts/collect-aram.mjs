@@ -8,7 +8,8 @@
 //   state.json   patch, match ids already counted and players recently visited (both hashed)
 //   counts.json  per champion: final legendary items + boots -> [games, wins]
 // Only champion, final items and win/loss are kept, and players are stored only as hashes, so the
-// files can sit in a public repository. The list of players to visit lives in memory per run.
+// files can sit in a public repository. The list of players to visit lives in memory per run; the
+// ids of the latest counted matches are kept so the next run can pick up from their players.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
@@ -48,10 +49,14 @@ let counts = await load(countsPath, {});
 if (!state || state.gameVersion !== gameVersion) {
   // New patch: builds change, so start over.
   console.log(`Starting fresh for ${gameVersion}`);
-  state = { gameVersion, startedAt: new Date().toISOString(), matches: 0, visited: {}, seen: [] };
+  state = { gameVersion, startedAt: new Date().toISOString(), matches: 0, visited: {}, seen: [], recent: [] };
   counts = {};
 }
 const seen = new Set(state.seen);
+// Match ids (not player ids) of the latest counted games.
+state.recent ??= [];
+const RECENT_KEEP = 500;
+const RESTART_MATCHES = 40;
 // Players are looked at again after a few days, for their newer games.
 const today = Math.floor(Date.now() / 86400000);
 const REVISIT_DAYS = 3;
@@ -117,7 +122,32 @@ try {
     const league = await riot(`https://${PLATFORM}.api.riotgames.com/lol/league/v4/${tier}/by-queue/RANKED_SOLO_5x5`);
     for (const e of league?.entries ?? []) if (e.puuid) queue.push(e.puuid);
   }
+  // A few random pages of mid-ranked players too: they play more ARAM, and give a fresh start when
+  // there are no earlier games to restart from.
+  const pick = (a) => a[Math.floor(Math.random() * a.length)];
+  for (let i = 0; i < 3; i++) {
+    const tier = pick(['EMERALD', 'PLATINUM', 'GOLD', 'SILVER']);
+    const division = pick(['I', 'II', 'III', 'IV']);
+    const page = 1 + Math.floor(Math.random() * 5);
+    const entries = await riot(`https://${PLATFORM}.api.riotgames.com/lol/league/v4/entries/RANKED_SOLO_5x5/${tier}/${division}?page=${page}`);
+    for (const e of entries ?? []) if (e.puuid) queue.push(e.puuid);
+  }
   console.log(`Seeded ${queue.length} players`);
+  // Top ranked players rarely play ARAM and are all visited within a few runs, so restart from the
+  // players of games counted earlier; they go last in the queue, so they're visited first.
+  const restart = [...state.recent].sort(() => Math.random() - 0.5).slice(0, RESTART_MATCHES);
+  let restarted = 0;
+  for (const id of restart) {
+    if (Date.now() >= deadline) break;
+    const m = await riot(`https://${REGION}.api.riotgames.com/lol/match/v5/matches/${id}`);
+    for (const p of m?.info.participants ?? []) {
+      if (!visited.has(hash(p.puuid))) {
+        queue.push(p.puuid);
+        restarted++;
+      }
+    }
+  }
+  console.log(`Restarting from ${restarted} players of ${restart.length} earlier games`);
   const since = Math.floor(Date.now() / 1000) - 14 * 86400;
   while (Date.now() < deadline && queue.length) {
     // Players met in games first (breadth), seeds after.
@@ -138,6 +168,8 @@ try {
       if (m.info.gameDuration < 300) continue; // remakes
       addMatch(m);
       added++;
+      state.recent.push(id);
+      if (state.recent.length > RECENT_KEEP) state.recent.splice(0, state.recent.length - RECENT_KEEP);
       state.matches++;
       for (const p of m.info.participants) if (!visited.has(hash(p.puuid)) && queue.length < 20000) queue.push(p.puuid);
       if (added % 100 === 0) {
