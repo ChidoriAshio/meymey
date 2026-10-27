@@ -446,6 +446,24 @@ async function main() {
   await writeFile(path.join(DATA_DIR, 'augments.json'), JSON.stringify(augments, null, 2) + '\n');
   await writeFile(path.join(DATA_DIR, 'items.json'), JSON.stringify(items, null, 2) + '\n');
 
+  // Augment combos per champion (arammayhem.com, CC BY 4.0). Augments are matched by name, and
+  // combos with an augment that's out of the current pool are left out.
+  {
+    const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const byEn = new Map(augments.map((a) => [norm(a.nameEn ?? ''), a.slug]));
+    const byJa = new Map(augments.map((a) => [a.name, a.slug]));
+    const out = {};
+    for (const r of amCombos.rows) {
+      const slugs = r.augmentNames.map((n) => byEn.get(norm(n.en ?? '')) ?? byJa.get(n['ja-JP']));
+      if (!slugs.length || slugs.some((s) => !s)) continue;
+      (out[r.championId.toLowerCase()] ??= []).push({ augments: slugs, types: r.types, url: r.url });
+    }
+    await writeFile(
+      path.join(DATA_DIR, 'combos.json'),
+      JSON.stringify({ patch: amCombos.meta?.patch ?? null, champions: out }) + '\n',
+    );
+  }
+
   console.log('Fetching China-server champion x augment counts…');
   try {
     const latest = await getJson(`${ARAMHEX}/latest.json`);

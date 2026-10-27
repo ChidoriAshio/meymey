@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import IconTip from '../../components/IconTip.astro';
 import FittingAugments from '../../components/FittingAugments.astro';
 import AramBuilds from '../../components/AramBuilds.astro';
+import AugmentCombos from '../../components/AugmentCombos.astro';
 import Change from '../../components/Change.astro';
 import { aramBuilds, champions, fittingAugments, getBuilds, meta, ROLE_LABEL, formatRate, tierOf, type Champion } from '../../lib/data';
 
@@ -92,6 +93,7 @@ const fitting = fittingAugments(c, featured);
           </ol>
         </section>
       )}
+      <AugmentCombos champion={c} />
     </div>
   </div>
   {

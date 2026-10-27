@@ -1,0 +1,161 @@
+---
+import { COMBO_TYPES, RARITY_LABEL, championCombos, type Champion } from '../lib/data';
+
+interface Props {
+  champion: Champion;
+}
+
+const { champion } = Astro.props;
+const combos = championCombos(champion);
+// Long lists (Ryze has 18) show the best few and fold the rest.
+const SHOWN = 8;
+---
+
+{
+  combos.length > 0 && (
+    <section class="mb-8">
+      <h2 class="text-lg font-bold">オーグメントコンボ</h2>
+      <p class="text-xs text-ink-2 mt-1 mb-3">
+        {champion.name}と組み合わせると強い（または注意が必要な）オーグメントです。arammayhem.com の評価（CC BY 4.0）。アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。
+      </p>
+      <ul class="flex flex-col gap-1.5">
+        {combos.slice(0, SHOWN).map((x) => (
+          <li class="relative flex items-center gap-3 rounded-md border border-line bg-panel px-2 py-1.5" data-combo={x.types[0] ?? 'none'}>
+            <span class="flex flex-col gap-1 w-20 shrink-0">
+              {x.types.length > 0 ? (
+                x.types.map((t) => <span class="combo-chip" data-combo-type={t}>{COMBO_TYPES[t]}</span>)
+              ) : (
+                <span class="combo-chip">コンボ</span>
+              )}
+            </span>
+            <span class="flex flex-wrap items-center gap-x-1 gap-y-1 flex-1 min-w-0">
+              {x.augments.map((a, i) => (
+                <>
+                  {i > 0 && <span class="text-ink-2 text-xs">＋</span>}
+                  <span class="combo-aug inline-flex items-center gap-1.5 rounded px-1 py-0.5 cursor-help" tabindex="0">
+                    <img src={a.icon} alt="" width="24" height="24" loading="lazy" class="size-6 rounded bg-panel-2 shrink-0" />
+                    <span class="text-sm leading-tight">{a.name}</span>
+                    <span role="tooltip" class="combo-tip absolute left-0 right-0 top-full z-20 -mt-px rounded-lg border border-line bg-panel-2 p-3 shadow-lg text-left">
+                      <span class="block font-semibold leading-tight">
+                        {a.name}
+                        <span class="text-xs font-normal text-ink-2 ml-1">{RARITY_LABEL[a.rarity]}</span>
+                      </span>
+                      <span class="tooltip-text block text-xs text-ink-2 mt-1 leading-relaxed" set:html={a.description} />
+                    </span>
+                  </span>
+                </>
+              ))}
+            </span>
+            <a href={x.url} class="text-[11px] text-ink-2 hover:text-accent shrink-0" rel="noopener" title="arammayhem.com で見る">
+              詳細 →
+            </a>
+          </li>
+        ))}
+      </ul>
+      {combos.length > SHOWN && (
+        <details class="mt-1.5">
+          <summary class="text-xs text-accent cursor-pointer py-1">残り{combos.length - SHOWN}件を表示</summary>
+          <ul class="flex flex-col gap-1.5 mt-1.5">
+            {combos.slice(SHOWN).map((x) => (
+          <li class="relative flex items-center gap-3 rounded-md border border-line bg-panel px-2 py-1.5" data-combo={x.types[0] ?? 'none'}>
+            <span class="flex flex-col gap-1 w-20 shrink-0">
+              {x.types.length > 0 ? (
+                x.types.map((t) => <span class="combo-chip" data-combo-type={t}>{COMBO_TYPES[t]}</span>)
+              ) : (
+                <span class="combo-chip">コンボ</span>
+              )}
+            </span>
+            <span class="flex flex-wrap items-center gap-x-1 gap-y-1 flex-1 min-w-0">
+              {x.augments.map((a, i) => (
+                <>
+                  {i > 0 && <span class="text-ink-2 text-xs">＋</span>}
+                  <span class="combo-aug inline-flex items-center gap-1.5 rounded px-1 py-0.5 cursor-help" tabindex="0">
+                    <img src={a.icon} alt="" width="24" height="24" loading="lazy" class="size-6 rounded bg-panel-2 shrink-0" />
+                    <span class="text-sm leading-tight">{a.name}</span>
+                    <span role="tooltip" class="combo-tip absolute left-0 right-0 top-full z-20 -mt-px rounded-lg border border-line bg-panel-2 p-3 shadow-lg text-left">
+                      <span class="block font-semibold leading-tight">
+                        {a.name}
+                        <span class="text-xs font-normal text-ink-2 ml-1">{RARITY_LABEL[a.rarity]}</span>
+                      </span>
+                      <span class="tooltip-text block text-xs text-ink-2 mt-1 leading-relaxed" set:html={a.description} />
+                    </span>
+                  </span>
+                </>
+              ))}
+            </span>
+            <a href={x.url} class="text-[11px] text-ink-2 hover:text-accent shrink-0" rel="noopener" title="arammayhem.com で見る">
+              詳細 →
+            </a>
+          </li>
+        ))}
+          </ul>
+        </details>
+      )}
+    </section>
+  )
+}
+
+<style>
+  .combo-chip {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--color-line);
+    border-radius: 9999px;
+    color: var(--color-ink-2);
+  }
+  .combo-chip[data-combo-type='god'] {
+    color: #ff5c7a;
+    border-color: #ff5c7a;
+  }
+  .combo-chip[data-combo-type='strong'] {
+    color: #ffa94d;
+    border-color: #ffa94d;
+  }
+  .combo-chip[data-combo-type='blackTech'] {
+    color: var(--color-hextech);
+    border-color: var(--color-hextech);
+  }
+  .combo-chip[data-combo-type='entertainment'] {
+    color: #74b9ff;
+    border-color: #74b9ff;
+  }
+  .combo-chip[data-combo-type='trap'],
+  .combo-chip[data-combo-type='bug'] {
+    color: #9aa4ad;
+    border-style: dashed;
+  }
+  .combo-chip {
+    text-align: center;
+  }
+  .combo-tip {
+    display: none;
+  }
+  .combo-aug:focus {
+    outline: 1px solid var(--color-accent);
+  }
+  .combo-aug:focus .combo-tip {
+    display: block;
+  }
+  /* Phones keep :hover after a tap, which would stop the tooltip from closing. */
+  @media (hover: hover) {
+    .combo-aug:hover {
+      background: rgb(200 170 110 / 0.08);
+    }
+    .combo-aug:hover .combo-tip {
+      display: block;
+    }
+  }
+  li:has(.combo-aug:focus) {
+    z-index: 10;
+  }
+  @media (hover: hover) {
+    li:has(.combo-aug:hover) {
+      z-index: 10;
+    }
+  }
+  li[data-combo='trap'],
+  li[data-combo='bug'] {
+    opacity: 0.75;
+  }
+</style>

@@ -9,6 +9,7 @@ import metaJson from '../data/meta.json';
 import trackerJson from '../data/champion-augments.json';
 import cnJson from '../data/champion-augments-cn.json';
 import aramBuildsJson from '../data/aram-builds.json';
+import combosJson from '../data/combos.json';
 
 export type Rarity = 'silver' | 'gold' | 'prismatic';
 
@@ -360,3 +361,28 @@ export function aramBuilds(c: Champion) {
 export const formatRate = (n: number | null) => (n == null ? '—' : `${n.toFixed(2)}%`);
 export const formatChange = (n: number | null) =>
   n == null || n === 0 ? '' : `${n > 0 ? '▲' : '▼'}${Math.abs(n).toFixed(2)}`;
+
+// Augment combos per champion from arammayhem.com, best kinds first.
+export const COMBO_TYPES = {
+  god: '神コンボ',
+  strong: '強力',
+  blackTech: '裏技',
+  entertainment: 'お楽しみ',
+  trap: '罠（非推奨）',
+  bug: 'バグ',
+} as const;
+export type ComboType = keyof typeof COMBO_TYPES;
+const comboOrder = Object.keys(COMBO_TYPES) as ComboType[];
+const combos = combosJson as { champions: Record<string, { augments: string[]; types: string[]; url: string }[]> };
+
+export function championCombos(c: Champion) {
+  // Untagged combos go after the recommended kinds and before traps and bugs.
+  const rank = (types: ComboType[]) => (types.length ? Math.min(...types.map((t) => comboOrder.indexOf(t))) : comboOrder.indexOf('trap') - 0.5);
+  return (combos.champions[c.slug] ?? [])
+    .map((x) => ({
+      url: x.url,
+      types: x.types.filter((t): t is ComboType => t in COMBO_TYPES),
+      augments: x.augments.map((s) => augmentBySlug.get(s)!),
+    }))
+    .sort((a, b) => rank(a.types) - rank(b.types));
+}
