@@ -81,7 +81,7 @@ const fitting = fittingAugments(c, featured);
   <!-- Augments left, builds right on wide screens, so both are in view at once. -->
   <div class="lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-6 lg:items-start">
     <FittingAugments champion={c} fitting={fitting} featured={featured} />
-    <div class="min-w-0 lg:sticky lg:top-[73px]">
+    <div class="min-w-0">
       {aramBuilds(c) ? <AramBuilds champion={c} /> : build && build.items.length > 0 && (
         <section class="mb-8">
           <h2 class="text-lg font-bold mb-3">おすすめアイテム</h2>
