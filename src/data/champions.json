@@ -16,9 +16,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Urgot.png",
-    "pickRate": 3.3,
-    "pickRateRank": 126,
-    "pickRateChange": -0.95,
+    "pickRate": 3.35,
+    "pickRateRank": 125,
+    "pickRateChange": -0.9,
     "combos": {
       "god": 0,
       "strong": 2
@@ -77,9 +77,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ahri.png",
-    "pickRate": 5.66,
+    "pickRate": 5.64,
     "pickRateRank": 81,
-    "pickRateChange": 0.47,
+    "pickRateChange": 0.45,
     "combos": {
       "god": 0,
       "strong": 0
@@ -198,9 +198,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Akali.png",
-    "pickRate": 2.83,
-    "pickRateRank": 137,
-    "pickRateChange": 0.42,
+    "pickRate": 2.81,
+    "pickRateRank": 138,
+    "pickRateChange": 0.4,
     "combos": {
       "god": 0,
       "strong": 0
@@ -320,9 +320,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Azir.png",
-    "pickRate": 2.1,
+    "pickRate": 2.09,
     "pickRateRank": 157,
-    "pickRateChange": -0.13,
+    "pickRateChange": -0.14,
     "combos": {
       "god": 2,
       "strong": 0
@@ -381,9 +381,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ashe.png",
-    "pickRate": 13.95,
+    "pickRate": 13.97,
     "pickRateRank": 1,
-    "pickRateChange": -0.55,
+    "pickRateChange": -0.53,
     "combos": {
       "god": 0,
       "strong": 0
@@ -442,9 +442,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Annie.png",
-    "pickRate": 2.2,
+    "pickRate": 2.22,
     "pickRateRank": 152,
-    "pickRateChange": -0.11,
+    "pickRateChange": -0.09,
     "combos": {
       "god": 0,
       "strong": 0
@@ -502,9 +502,9 @@
       "difficulty": 10
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
-    "pickRate": 2.42,
+    "pickRate": 2.41,
     "pickRateRank": 145,
-    "pickRateChange": -0.26,
+    "pickRateChange": -0.27,
     "combos": {
       "god": 0,
       "strong": 0
@@ -562,9 +562,9 @@
       "difficulty": 10
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aphelios.png",
-    "pickRate": 4.43,
+    "pickRate": 4.41,
     "pickRateRank": 102,
-    "pickRateChange": 0.06,
+    "pickRateChange": 0.04,
     "combos": {
       "god": 1,
       "strong": 0
@@ -623,9 +623,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Amumu.png",
-    "pickRate": 4.64,
+    "pickRate": 4.62,
     "pickRateRank": 98,
-    "pickRateChange": -1.09,
+    "pickRateChange": -1.11,
     "combos": {
       "god": 0,
       "strong": 0
@@ -745,9 +745,9 @@
       "difficulty": 10
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ambessa.png",
-    "pickRate": 4.44,
-    "pickRateRank": 100,
-    "pickRateChange": 0.62,
+    "pickRate": 4.45,
+    "pickRateRank": 101,
+    "pickRateChange": 0.63,
     "combos": {
       "god": 1,
       "strong": 1
@@ -867,9 +867,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Illaoi.png",
-    "pickRate": 3.67,
-    "pickRateRank": 117,
-    "pickRateChange": -0.92,
+    "pickRate": 3.65,
+    "pickRateRank": 118,
+    "pickRateChange": -0.94,
     "combos": {
       "god": 0,
       "strong": 3
@@ -928,9 +928,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Irelia.png",
-    "pickRate": 2.98,
-    "pickRateRank": 133,
-    "pickRateChange": 1.13,
+    "pickRate": 3.14,
+    "pickRateRank": 131,
+    "pickRateChange": 1.29,
     "combos": {
       "god": 0,
       "strong": 0
@@ -989,9 +989,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vi.png",
-    "pickRate": 3.15,
-    "pickRateRank": 130,
-    "pickRateChange": 0.36,
+    "pickRate": 3.17,
+    "pickRateRank": 129,
+    "pickRateChange": 0.38,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1050,9 +1050,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Varus.png",
-    "pickRate": 9.4,
+    "pickRate": 9.44,
     "pickRateRank": 27,
-    "pickRateChange": 1.44,
+    "pickRateChange": 1.48,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1111,9 +1111,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Viego.png",
-    "pickRate": 4.83,
+    "pickRate": 4.81,
     "pickRateRank": 95,
-    "pickRateChange": 0.2,
+    "pickRateChange": 0.18,
     "combos": {
       "god": 0,
       "strong": 1
@@ -1172,9 +1172,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MonkeyKing.png",
-    "pickRate": 6.22,
-    "pickRateRank": 73,
-    "pickRateChange": 1.36,
+    "pickRate": 6.29,
+    "pickRateRank": 72,
+    "pickRateChange": 1.43,
     "combos": {
       "god": 0,
       "strong": 1
@@ -1233,9 +1233,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vayne.png",
-    "pickRate": 10.18,
+    "pickRate": 10.15,
     "pickRateRank": 23,
-    "pickRateChange": -1.15,
+    "pickRateChange": -1.18,
     "combos": {
       "god": 3,
       "strong": 0
@@ -1293,9 +1293,9 @@
       "difficulty": 0
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vex.png",
-    "pickRate": 2.16,
+    "pickRate": 2.15,
     "pickRateRank": 154,
-    "pickRateChange": 0.2,
+    "pickRateChange": 0.19,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1354,9 +1354,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Velkoz.png",
-    "pickRate": 5.63,
-    "pickRateRank": 82,
-    "pickRateChange": -0.8,
+    "pickRate": 5.59,
+    "pickRateRank": 83,
+    "pickRateChange": -0.84,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1415,9 +1415,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Udyr.png",
-    "pickRate": 6.49,
-    "pickRateRank": 67,
-    "pickRateChange": -0.18,
+    "pickRate": 6.47,
+    "pickRateRank": 68,
+    "pickRateChange": -0.2,
     "combos": {
       "god": 1,
       "strong": 2
@@ -1475,9 +1475,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aatrox.png",
-    "pickRate": 5.81,
+    "pickRate": 5.79,
     "pickRateRank": 78,
-    "pickRateChange": -0.11,
+    "pickRateChange": -0.13,
     "combos": {
       "god": 0,
       "strong": 1
@@ -1536,9 +1536,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ekko.png",
-    "pickRate": 8.99,
-    "pickRateRank": 33,
-    "pickRateChange": 1.75,
+    "pickRate": 9.04,
+    "pickRateRank": 32,
+    "pickRateChange": 1.8,
     "combos": {
       "god": 2,
       "strong": 0
@@ -1719,9 +1719,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aurora.png",
-    "pickRate": 6.94,
+    "pickRate": 6.91,
     "pickRateRank": 56,
-    "pickRateChange": 0.51,
+    "pickRateChange": 0.48,
     "combos": {
       "god": 2,
       "strong": 0
@@ -1779,9 +1779,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ornn.png",
-    "pickRate": 4.55,
+    "pickRate": 4.53,
     "pickRateRank": 99,
-    "pickRateChange": -0.98,
+    "pickRateChange": -1,
     "combos": {
       "god": 0,
       "strong": 1
@@ -1840,9 +1840,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Olaf.png",
-    "pickRate": 1.74,
+    "pickRate": 1.75,
     "pickRateRank": 160,
-    "pickRateChange": 0.19,
+    "pickRateChange": 0.2,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1901,9 +1901,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Orianna.png",
-    "pickRate": 3.34,
+    "pickRate": 3.35,
     "pickRateRank": 125,
-    "pickRateChange": 0.15,
+    "pickRateChange": 0.16,
     "combos": {
       "god": 0,
       "strong": 0
@@ -1961,9 +1961,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/AurelionSol.png",
-    "pickRate": 10.98,
+    "pickRate": 10.97,
     "pickRateRank": 17,
-    "pickRateChange": -1.17,
+    "pickRateChange": -1.18,
     "combos": {
       "god": 2,
       "strong": 0
@@ -2022,9 +2022,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/KSante.png",
-    "pickRate": 2.78,
+    "pickRate": 2.77,
     "pickRateRank": 139,
-    "pickRateChange": 0.97,
+    "pickRateChange": 0.96,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2082,9 +2082,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Khazix.png",
-    "pickRate": 5.98,
+    "pickRate": 5.97,
     "pickRateRank": 76,
-    "pickRateChange": -0.34,
+    "pickRateChange": -0.35,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2203,9 +2203,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
-    "pickRate": 13.62,
+    "pickRate": 13.67,
     "pickRateRank": 4,
-    "pickRateChange": 1.98,
+    "pickRateChange": 2.03,
     "combos": {
       "god": 0,
       "strong": 1
@@ -2324,9 +2324,9 @@
       "difficulty": 10
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Cassiopeia.png",
-    "pickRate": 2.06,
+    "pickRate": 2.05,
     "pickRateRank": 158,
-    "pickRateChange": -0.15,
+    "pickRateChange": -0.16,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2385,9 +2385,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Katarina.png",
-    "pickRate": 7.35,
+    "pickRate": 7.33,
     "pickRateRank": 46,
-    "pickRateChange": -0.67,
+    "pickRateChange": -0.69,
     "combos": {
       "god": 1,
       "strong": 3
@@ -2446,9 +2446,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Camille.png",
-    "pickRate": 2.86,
-    "pickRateRank": 135,
-    "pickRateChange": 1.39,
+    "pickRate": 2.89,
+    "pickRateRank": 134,
+    "pickRateChange": 1.42,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2507,9 +2507,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Galio.png",
-    "pickRate": 5.56,
-    "pickRateRank": 84,
-    "pickRateChange": -1.09,
+    "pickRate": 5.53,
+    "pickRateRank": 85,
+    "pickRateChange": -1.12,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2567,9 +2567,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kalista.png",
-    "pickRate": 2.5,
+    "pickRate": 2.51,
     "pickRateRank": 142,
-    "pickRateChange": 0.07,
+    "pickRateChange": 0.08,
     "combos": {
       "god": 0,
       "strong": 3
@@ -2628,9 +2628,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Karma.png",
-    "pickRate": 3.78,
+    "pickRate": 3.77,
     "pickRateRank": 113,
-    "pickRateChange": -0.16,
+    "pickRateChange": -0.17,
     "combos": {
       "god": 0,
       "strong": 0
@@ -2689,9 +2689,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Garen.png",
-    "pickRate": 7.19,
+    "pickRate": 7.18,
     "pickRateRank": 49,
-    "pickRateChange": -0.51,
+    "pickRateChange": -0.52,
     "combos": {
       "god": 1,
       "strong": 1
@@ -2749,9 +2749,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gangplank.png",
-    "pickRate": 8.2,
+    "pickRate": 8.22,
     "pickRateRank": 40,
-    "pickRateChange": -0.18,
+    "pickRateChange": -0.16,
     "combos": {
       "god": 2,
       "strong": 1
@@ -2869,9 +2869,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kindred.png",
-    "pickRate": 3.19,
+    "pickRate": 3.17,
     "pickRateRank": 129,
-    "pickRateChange": -0.28,
+    "pickRateChange": -0.3,
     "combos": {
       "god": 0,
       "strong": 2
@@ -2990,9 +2990,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gwen.png",
-    "pickRate": 4.38,
-    "pickRateRank": 103,
-    "pickRateChange": 0.56,
+    "pickRate": 4.37,
+    "pickRateRank": 104,
+    "pickRateChange": 0.55,
     "combos": {
       "god": 1,
       "strong": 0
@@ -3171,9 +3171,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kled.png",
-    "pickRate": 0.87,
+    "pickRate": 0.88,
     "pickRateRank": 169,
-    "pickRateChange": 0.05,
+    "pickRateChange": 0.06,
     "combos": {
       "god": 0,
       "strong": 0
@@ -3231,9 +3231,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png",
-    "pickRate": 12.97,
+    "pickRate": 13,
     "pickRateRank": 5,
-    "pickRateChange": 0.03,
+    "pickRateChange": 0.06,
     "combos": {
       "god": 0,
       "strong": 0
@@ -3292,9 +3292,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kayle.png",
-    "pickRate": 6.6,
+    "pickRate": 6.59,
     "pickRateRank": 62,
-    "pickRateChange": -0.25,
+    "pickRateChange": -0.26,
     "combos": {
       "god": 1,
       "strong": 1
@@ -3353,9 +3353,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kayn.png",
-    "pickRate": 7.65,
+    "pickRate": 7.61,
     "pickRateRank": 43,
-    "pickRateChange": -0.35,
+    "pickRateChange": -0.39,
     "combos": {
       "god": 1,
       "strong": 0
@@ -3474,9 +3474,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Corki.png",
-    "pickRate": 6.49,
+    "pickRate": 6.48,
     "pickRateRank": 67,
-    "pickRateChange": -0.05,
+    "pickRateChange": -0.06,
     "combos": {
       "god": 1,
       "strong": 1
@@ -3535,9 +3535,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/KogMaw.png",
-    "pickRate": 5.62,
-    "pickRateRank": 83,
-    "pickRateChange": 0.87,
+    "pickRate": 5.63,
+    "pickRateRank": 82,
+    "pickRateChange": 0.88,
     "combos": {
       "god": 0,
       "strong": 0
@@ -3595,9 +3595,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zaahen.png",
-    "pickRate": 3.09,
-    "pickRateRank": 131,
-    "pickRateChange": 0.57,
+    "pickRate": 3.08,
+    "pickRateRank": 133,
+    "pickRateChange": 0.56,
     "combos": {
       "god": 0,
       "strong": 3
@@ -3656,9 +3656,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sion.png",
-    "pickRate": 6.31,
-    "pickRateRank": 71,
-    "pickRateChange": -1.67,
+    "pickRate": 6.26,
+    "pickRateRank": 73,
+    "pickRateChange": -1.72,
     "combos": {
       "god": 0,
       "strong": 0
@@ -3717,9 +3717,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zyra.png",
-    "pickRate": 4.7,
+    "pickRate": 4.67,
     "pickRateRank": 97,
-    "pickRateChange": 0.1,
+    "pickRateChange": 0.07,
     "combos": {
       "god": 0,
       "strong": 1
@@ -3778,9 +3778,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
-    "pickRate": 8.64,
+    "pickRate": 8.63,
     "pickRateRank": 37,
-    "pickRateChange": 0.66,
+    "pickRateChange": 0.65,
     "combos": {
       "god": 1,
       "strong": 3
@@ -3839,9 +3839,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zac.png",
-    "pickRate": 2.38,
+    "pickRate": 2.37,
     "pickRateRank": 147,
-    "pickRateChange": 0.15,
+    "pickRateChange": 0.14,
     "combos": {
       "god": 1,
       "strong": 0
@@ -3900,9 +3900,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Samira.png",
-    "pickRate": 4.9,
+    "pickRate": 4.87,
     "pickRateRank": 94,
-    "pickRateChange": -1.01,
+    "pickRateChange": -1.04,
     "combos": {
       "god": 2,
       "strong": 2
@@ -3960,9 +3960,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Xayah.png",
-    "pickRate": 4.24,
+    "pickRate": 4.23,
     "pickRateRank": 107,
-    "pickRateChange": -0.37,
+    "pickRateChange": -0.38,
     "combos": {
       "god": 0,
       "strong": 0
@@ -4081,9 +4081,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sivir.png",
-    "pickRate": 4.76,
+    "pickRate": 4.74,
     "pickRateRank": 96,
-    "pickRateChange": -0.66,
+    "pickRateChange": -0.68,
     "combos": {
       "god": 0,
       "strong": 1
@@ -4142,9 +4142,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jayce.png",
-    "pickRate": 8.51,
+    "pickRate": 8.5,
     "pickRateRank": 38,
-    "pickRateChange": -0.13,
+    "pickRateChange": -0.14,
     "combos": {
       "god": 2,
       "strong": 0
@@ -4262,9 +4262,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ziggs.png",
-    "pickRate": 5.75,
+    "pickRate": 5.74,
     "pickRateRank": 79,
-    "pickRateChange": 0.57,
+    "pickRateChange": 0.56,
     "combos": {
       "god": 0,
       "strong": 0
@@ -4383,9 +4383,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Shaco.png",
-    "pickRate": 9.89,
+    "pickRate": 9.88,
     "pickRateRank": 24,
-    "pickRateChange": -0.97,
+    "pickRateChange": -0.98,
     "combos": {
       "god": 2,
       "strong": 3
@@ -4443,9 +4443,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jax.png",
-    "pickRate": 6.33,
+    "pickRate": 6.34,
     "pickRateRank": 69,
-    "pickRateChange": 0.78,
+    "pickRateChange": 0.79,
     "combos": {
       "god": 0,
       "strong": 1
@@ -4626,9 +4626,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jhin.png",
-    "pickRate": 11.75,
+    "pickRate": 11.77,
     "pickRateRank": 11,
-    "pickRateChange": 0.55,
+    "pickRateChange": 0.57,
     "combos": {
       "god": 1,
       "strong": 0
@@ -4687,9 +4687,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/XinZhao.png",
-    "pickRate": 8.81,
+    "pickRate": 8.85,
     "pickRateRank": 34,
-    "pickRateChange": 0.52,
+    "pickRateChange": 0.56,
     "combos": {
       "god": 0,
       "strong": 1
@@ -4747,9 +4747,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jinx.png",
-    "pickRate": 9.22,
+    "pickRate": 9.21,
     "pickRateRank": 29,
-    "pickRateChange": -0.06,
+    "pickRateChange": -0.07,
     "combos": {
       "god": 0,
       "strong": 0
@@ -4808,9 +4808,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Singed.png",
-    "pickRate": 6.84,
-    "pickRateRank": 58,
-    "pickRateChange": -1.17,
+    "pickRate": 6.82,
+    "pickRateRank": 59,
+    "pickRateChange": -1.19,
     "combos": {
       "god": 0,
       "strong": 1
@@ -4868,9 +4868,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Syndra.png",
-    "pickRate": 5.42,
+    "pickRate": 5.4,
     "pickRateRank": 86,
-    "pickRateChange": -0.13,
+    "pickRateChange": -0.15,
     "combos": {
       "god": 0,
       "strong": 2
@@ -4929,9 +4929,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Swain.png",
-    "pickRate": 9.6,
+    "pickRate": 9.58,
     "pickRateRank": 25,
-    "pickRateChange": -0.91,
+    "pickRateChange": -0.93,
     "combos": {
       "god": 0,
       "strong": 2
@@ -4990,9 +4990,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Skarner.png",
-    "pickRate": 1.95,
+    "pickRate": 1.92,
     "pickRateRank": 159,
-    "pickRateChange": -0.06,
+    "pickRateChange": -0.09,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5051,9 +5051,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Smolder.png",
-    "pickRate": 12.21,
+    "pickRate": 12.2,
     "pickRateRank": 9,
-    "pickRateChange": -0.41,
+    "pickRateChange": -0.42,
     "combos": {
       "god": 1,
       "strong": 3
@@ -5112,9 +5112,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Thresh.png",
-    "pickRate": 6.76,
+    "pickRate": 6.79,
     "pickRateRank": 60,
-    "pickRateChange": 0.76,
+    "pickRateChange": 0.79,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5172,9 +5172,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sejuani.png",
-    "pickRate": 3.76,
-    "pickRateRank": 114,
-    "pickRateChange": -0.38,
+    "pickRate": 3.73,
+    "pickRateRank": 115,
+    "pickRateChange": -0.41,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5233,9 +5233,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sett.png",
-    "pickRate": 10.51,
+    "pickRate": 10.5,
     "pickRateRank": 21,
-    "pickRateChange": -0.79,
+    "pickRateChange": -0.8,
     "combos": {
       "god": 0,
       "strong": 3
@@ -5293,9 +5293,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zed.png",
-    "pickRate": 9,
-    "pickRateRank": 32,
-    "pickRateChange": 0.83,
+    "pickRate": 9.01,
+    "pickRateRank": 33,
+    "pickRateChange": 0.84,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5415,9 +5415,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Xerath.png",
-    "pickRate": 7.74,
+    "pickRate": 7.73,
     "pickRateRank": 42,
-    "pickRateChange": 1.05,
+    "pickRateChange": 1.04,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5476,9 +5476,9 @@
       "difficulty": 0
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Seraphine.png",
-    "pickRate": 7.13,
+    "pickRate": 7.1,
     "pickRateRank": 50,
-    "pickRateChange": 0.16,
+    "pickRateChange": 0.13,
     "combos": {
       "god": 0,
       "strong": 1
@@ -5536,9 +5536,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zeri.png",
-    "pickRate": 2.12,
+    "pickRate": 2.1,
     "pickRateRank": 156,
-    "pickRateChange": -0.03,
+    "pickRateChange": -0.05,
     "combos": {
       "god": 0,
       "strong": 2
@@ -5596,9 +5596,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zoe.png",
-    "pickRate": 2.31,
-    "pickRateRank": 150,
-    "pickRateChange": 0.07,
+    "pickRate": 2.3,
+    "pickRateRank": 149,
+    "pickRateChange": 0.06,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5657,9 +5657,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sona.png",
-    "pickRate": 3.74,
-    "pickRateRank": 115,
-    "pickRateChange": 0.72,
+    "pickRate": 3.76,
+    "pickRateRank": 114,
+    "pickRateChange": 0.74,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5718,9 +5718,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Soraka.png",
-    "pickRate": 3.61,
-    "pickRateRank": 119,
-    "pickRateChange": -0.06,
+    "pickRate": 3.59,
+    "pickRateRank": 120,
+    "pickRateChange": -0.08,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5840,9 +5840,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/TahmKench.png",
-    "pickRate": 12.83,
+    "pickRate": 12.86,
     "pickRateRank": 7,
-    "pickRateChange": -0.1,
+    "pickRateChange": -0.07,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5901,9 +5901,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Darius.png",
-    "pickRate": 7.03,
+    "pickRate": 7.04,
     "pickRateRank": 52,
-    "pickRateChange": -0.42,
+    "pickRateChange": -0.41,
     "combos": {
       "god": 0,
       "strong": 0
@@ -5962,9 +5962,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Taric.png",
-    "pickRate": 1.52,
+    "pickRate": 1.55,
     "pickRateRank": 163,
-    "pickRateChange": 0.25,
+    "pickRateChange": 0.28,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6023,9 +6023,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Taliyah.png",
-    "pickRate": 2.3,
+    "pickRate": 2.29,
     "pickRateRank": 151,
-    "pickRateChange": 0.18,
+    "pickRateChange": 0.17,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6083,9 +6083,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Talon.png",
-    "pickRate": 4.91,
+    "pickRate": 4.9,
     "pickRateRank": 93,
-    "pickRateChange": 0.35,
+    "pickRateChange": 0.34,
     "combos": {
       "god": 0,
       "strong": 1
@@ -6144,9 +6144,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Chogath.png",
-    "pickRate": 7.07,
+    "pickRate": 7.05,
     "pickRateRank": 51,
-    "pickRateChange": -1.23,
+    "pickRateChange": -1.25,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6205,9 +6205,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/TwistedFate.png",
-    "pickRate": 10.81,
+    "pickRate": 10.82,
     "pickRateRank": 18,
-    "pickRateChange": -0.38,
+    "pickRateChange": -0.37,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6266,9 +6266,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Teemo.png",
-    "pickRate": 13.77,
+    "pickRate": 13.79,
     "pickRateRank": 3,
-    "pickRateChange": -0.06,
+    "pickRateChange": -0.04,
     "combos": {
       "god": 0,
       "strong": 1
@@ -6327,9 +6327,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Twitch.png",
-    "pickRate": 8.11,
+    "pickRate": 8.14,
     "pickRateRank": 41,
-    "pickRateChange": -0.14,
+    "pickRateChange": -0.11,
     "combos": {
       "god": 1,
       "strong": 1
@@ -6388,9 +6388,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/DrMundo.png",
-    "pickRate": 8.44,
+    "pickRate": 8.39,
     "pickRateRank": 39,
-    "pickRateChange": -2.23,
+    "pickRateChange": -2.28,
     "combos": {
       "god": 0,
       "strong": 1
@@ -6449,9 +6449,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Trundle.png",
-    "pickRate": 9.17,
+    "pickRate": 9.19,
     "pickRateRank": 30,
-    "pickRateChange": -1.39,
+    "pickRateChange": -1.37,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6510,9 +6510,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Tristana.png",
-    "pickRate": 7.37,
+    "pickRate": 7.35,
     "pickRateRank": 45,
-    "pickRateChange": -1.1,
+    "pickRateChange": -1.12,
     "combos": {
       "god": 1,
       "strong": 1
@@ -6572,7 +6572,7 @@
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Tryndamere.png",
     "pickRate": 6.59,
-    "pickRateRank": 64,
+    "pickRateRank": 62,
     "pickRateChange": -0.85,
     "combos": {
       "god": 0,
@@ -6631,9 +6631,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Draven.png",
-    "pickRate": 6.01,
-    "pickRateRank": 75,
-    "pickRateChange": 0.29,
+    "pickRate": 6.09,
+    "pickRateRank": 74,
+    "pickRateChange": 0.37,
     "combos": {
       "god": 1,
       "strong": 0
@@ -6692,9 +6692,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gnar.png",
-    "pickRate": 3.57,
-    "pickRateRank": 120,
-    "pickRateChange": 0.48,
+    "pickRate": 3.7,
+    "pickRateRank": 116,
+    "pickRateChange": 0.61,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6753,9 +6753,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nasus.png",
-    "pickRate": 5.23,
+    "pickRate": 5.25,
     "pickRateRank": 88,
-    "pickRateChange": -1.03,
+    "pickRateChange": -1.01,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6814,9 +6814,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Naafiri.png",
-    "pickRate": 2.89,
-    "pickRateRank": 134,
-    "pickRateChange": 0.09,
+    "pickRate": 2.87,
+    "pickRateRank": 135,
+    "pickRateChange": 0.07,
     "combos": {
       "god": 2,
       "strong": 0
@@ -6936,9 +6936,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Neeko.png",
-    "pickRate": 2.59,
+    "pickRate": 2.58,
     "pickRateRank": 141,
-    "pickRateChange": 0.02,
+    "pickRateChange": 0.01,
     "combos": {
       "god": 0,
       "strong": 0
@@ -6998,7 +6998,7 @@
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nilah.png",
     "pickRate": 0.87,
-    "pickRateRank": 169,
+    "pickRateRank": 170,
     "pickRateChange": -0.03,
     "combos": {
       "god": 0,
@@ -7058,9 +7058,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nidalee.png",
-    "pickRate": 7,
-    "pickRateRank": 54,
-    "pickRateChange": 0.29,
+    "pickRate": 7.01,
+    "pickRateRank": 53,
+    "pickRateChange": 0.3,
     "combos": {
       "god": 0,
       "strong": 0
@@ -7119,9 +7119,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nunu.png",
-    "pickRate": 2.32,
+    "pickRate": 2.31,
     "pickRateRank": 148,
-    "pickRateChange": -0.39,
+    "pickRateChange": -0.4,
     "combos": {
       "god": 0,
       "strong": 1
@@ -7180,9 +7180,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nautilus.png",
-    "pickRate": 6.61,
+    "pickRate": 6.63,
     "pickRateRank": 61,
-    "pickRateChange": 0.33,
+    "pickRateChange": 0.35,
     "combos": {
       "god": 0,
       "strong": 1
@@ -7241,9 +7241,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nocturne.png",
-    "pickRate": 4.07,
-    "pickRateRank": 109,
-    "pickRateChange": 0.85,
+    "pickRate": 4.1,
+    "pickRateRank": 108,
+    "pickRateChange": 0.88,
     "combos": {
       "god": 0,
       "strong": 0
@@ -7302,9 +7302,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Bard.png",
-    "pickRate": 1.17,
+    "pickRate": 1.18,
     "pickRateRank": 165,
-    "pickRateChange": 0.37,
+    "pickRateChange": 0.38,
     "combos": {
       "god": 1,
       "strong": 0
@@ -7363,9 +7363,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Pyke.png",
-    "pickRate": 5.06,
+    "pickRate": 5.05,
     "pickRateRank": 90,
-    "pickRateChange": 0.01,
+    "pickRateChange": 0,
     "combos": {
       "god": 0,
       "strong": 0
@@ -7485,9 +7485,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Pantheon.png",
-    "pickRate": 5.95,
+    "pickRate": 5.94,
     "pickRateRank": 77,
-    "pickRateChange": 0.29,
+    "pickRateChange": 0.28,
     "combos": {
       "god": 1,
       "strong": 0
@@ -7545,9 +7545,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Viktor.png",
-    "pickRate": 5.37,
+    "pickRate": 5.35,
     "pickRateRank": 87,
-    "pickRateChange": 0.33,
+    "pickRateChange": 0.31,
     "combos": {
       "god": 0,
       "strong": 0
@@ -7606,9 +7606,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fiora.png",
-    "pickRate": 5.48,
-    "pickRateRank": 85,
-    "pickRateChange": 0.37,
+    "pickRate": 5.59,
+    "pickRateRank": 83,
+    "pickRateChange": 0.48,
     "combos": {
       "god": 0,
       "strong": 0
@@ -7667,9 +7667,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fizz.png",
-    "pickRate": 8.79,
+    "pickRate": 8.82,
     "pickRateRank": 35,
-    "pickRateChange": 0.79,
+    "pickRateChange": 0.82,
     "combos": {
       "god": 0,
       "strong": 3
@@ -7728,9 +7728,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fiddlesticks.png",
-    "pickRate": 3.82,
+    "pickRate": 3.81,
     "pickRateRank": 111,
-    "pickRateChange": -0.36,
+    "pickRateChange": -0.37,
     "combos": {
       "god": 0,
       "strong": 3
@@ -7789,9 +7789,9 @@
       "difficulty": 9
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Hwei.png",
-    "pickRate": 5.2,
+    "pickRate": 5.17,
     "pickRateRank": 89,
-    "pickRateChange": 0.14,
+    "pickRateChange": 0.11,
     "combos": {
       "god": 0,
       "strong": 1
@@ -7850,9 +7850,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Briar.png",
-    "pickRate": 3.65,
-    "pickRateRank": 118,
-    "pickRateChange": 0.61,
+    "pickRate": 3.63,
+    "pickRateRank": 119,
+    "pickRateChange": 0.59,
     "combos": {
       "god": 0,
       "strong": 2
@@ -7911,9 +7911,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Braum.png",
-    "pickRate": 2.32,
-    "pickRateRank": 148,
-    "pickRateChange": 0.61,
+    "pickRate": 2.3,
+    "pickRateRank": 149,
+    "pickRateChange": 0.59,
     "combos": {
       "god": 0,
       "strong": 1
@@ -7972,9 +7972,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vladimir.png",
-    "pickRate": 7.02,
+    "pickRate": 7.01,
     "pickRateRank": 53,
-    "pickRateChange": 0.13,
+    "pickRateChange": 0.12,
     "combos": {
       "god": 1,
       "strong": 0
@@ -8033,9 +8033,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Brand.png",
-    "pickRate": 12.8,
+    "pickRate": 12.78,
     "pickRateRank": 8,
-    "pickRateChange": -0.71,
+    "pickRateChange": -0.73,
     "combos": {
       "god": 2,
       "strong": 0
@@ -8094,9 +8094,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Blitzcrank.png",
-    "pickRate": 6.96,
+    "pickRate": 6.95,
     "pickRateRank": 55,
-    "pickRateChange": -1.2,
+    "pickRateChange": -1.21,
     "combos": {
       "god": 0,
       "strong": 0
@@ -8154,9 +8154,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Veigar.png",
-    "pickRate": 6.91,
+    "pickRate": 6.89,
     "pickRateRank": 57,
-    "pickRateChange": -0.65,
+    "pickRateChange": -0.67,
     "combos": {
       "god": 0,
       "strong": 1
@@ -8215,9 +8215,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Hecarim.png",
-    "pickRate": 10.78,
+    "pickRate": 10.74,
     "pickRateRank": 19,
-    "pickRateChange": -1.01,
+    "pickRateChange": -1.05,
     "combos": {
       "god": 1,
       "strong": 2
@@ -8397,9 +8397,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Volibear.png",
-    "pickRate": 4.44,
+    "pickRate": 4.52,
     "pickRateRank": 100,
-    "pickRateChange": 0.24,
+    "pickRateChange": 0.32,
     "combos": {
       "god": 0,
       "strong": 0
@@ -8458,9 +8458,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Maokai.png",
-    "pickRate": 7.45,
+    "pickRate": 7.44,
     "pickRateRank": 44,
-    "pickRateChange": -0.72,
+    "pickRateChange": -0.73,
     "combos": {
       "god": 1,
       "strong": 0
@@ -8519,9 +8519,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MasterYi.png",
-    "pickRate": 10.54,
+    "pickRate": 10.55,
     "pickRateRank": 20,
-    "pickRateChange": -0.18,
+    "pickRateChange": -0.17,
     "combos": {
       "god": 1,
       "strong": 0
@@ -8579,9 +8579,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Malzahar.png",
-    "pickRate": 6.6,
-    "pickRateRank": 62,
-    "pickRateChange": -0.2,
+    "pickRate": 6.58,
+    "pickRateRank": 65,
+    "pickRateChange": -0.22,
     "combos": {
       "god": 0,
       "strong": 1
@@ -8640,9 +8640,9 @@
       "difficulty": 2
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Malphite.png",
-    "pickRate": 11.14,
+    "pickRate": 11.17,
     "pickRateRank": 16,
-    "pickRateChange": 1.05,
+    "pickRateChange": 1.08,
     "combos": {
       "god": 0,
       "strong": 1
@@ -8701,9 +8701,9 @@
       "difficulty": 1
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MissFortune.png",
-    "pickRate": 13.84,
+    "pickRate": 13.86,
     "pickRateRank": 2,
-    "pickRateChange": -0.07,
+    "pickRateChange": -0.05,
     "combos": {
       "god": 0,
       "strong": 2
@@ -8823,9 +8823,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Mel.png",
-    "pickRate": 7.26,
+    "pickRate": 7.23,
     "pickRateRank": 48,
-    "pickRateChange": -1.12,
+    "pickRateChange": -1.15,
     "combos": {
       "god": 1,
       "strong": 0
@@ -8884,9 +8884,9 @@
       "difficulty": 1
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Morgana.png",
-    "pickRate": 10.49,
+    "pickRate": 10.48,
     "pickRateRank": 22,
-    "pickRateChange": -0.64,
+    "pickRateChange": -0.65,
     "combos": {
       "god": 0,
       "strong": 3
@@ -8945,9 +8945,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Mordekaiser.png",
-    "pickRate": 7.3,
+    "pickRate": 7.27,
     "pickRateRank": 47,
-    "pickRateChange": -0.78,
+    "pickRateChange": -0.81,
     "combos": {
       "god": 0,
       "strong": 1
@@ -9006,9 +9006,9 @@
       "difficulty": 10
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yasuo.png",
-    "pickRate": 11.51,
+    "pickRate": 11.52,
     "pickRateRank": 13,
-    "pickRateChange": 0.66,
+    "pickRateChange": 0.67,
     "combos": {
       "god": 0,
       "strong": 1
@@ -9068,7 +9068,7 @@
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yuumi.png",
     "pickRate": 2.86,
-    "pickRateRank": 135,
+    "pickRateRank": 136,
     "pickRateChange": 0.13,
     "combos": {
       "god": 0,
@@ -9127,9 +9127,9 @@
       "difficulty": 4
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yunara.png",
-    "pickRate": 6.31,
+    "pickRate": 6.32,
     "pickRateRank": 71,
-    "pickRateChange": -0.46,
+    "pickRateChange": -0.45,
     "combos": {
       "god": 2,
       "strong": 0
@@ -9249,9 +9249,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yorick.png",
-    "pickRate": 1.13,
+    "pickRate": 1.14,
     "pickRateRank": 166,
-    "pickRateChange": 0.24,
+    "pickRateChange": 0.25,
     "combos": {
       "god": 0,
       "strong": 1
@@ -9309,9 +9309,9 @@
       "difficulty": 7
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ryze.png",
-    "pickRate": 12.09,
+    "pickRate": 12.04,
     "pickRateRank": 10,
-    "pickRateChange": 1.02,
+    "pickRateChange": 0.97,
     "combos": {
       "god": 5,
       "strong": 1
@@ -9430,9 +9430,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lux.png",
-    "pickRate": 6.58,
-    "pickRateRank": 65,
-    "pickRateChange": 0.58,
+    "pickRate": 6.59,
+    "pickRateRank": 62,
+    "pickRateChange": 0.59,
     "combos": {
       "god": 0,
       "strong": 1
@@ -9490,9 +9490,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rammus.png",
-    "pickRate": 3.81,
+    "pickRate": 3.79,
     "pickRateRank": 112,
-    "pickRateChange": 1.68,
+    "pickRateChange": 1.66,
     "combos": {
       "god": 0,
       "strong": 1
@@ -9552,7 +9552,7 @@
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rumble.png",
     "pickRate": 6.33,
-    "pickRateRank": 69,
+    "pickRateRank": 70,
     "pickRateChange": 0.62,
     "combos": {
       "god": 1,
@@ -9612,9 +9612,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/LeeSin.png",
-    "pickRate": 6.55,
-    "pickRateRank": 66,
-    "pickRateChange": 0.02,
+    "pickRate": 6.58,
+    "pickRateRank": 65,
+    "pickRateChange": 0.05,
     "combos": {
       "god": 0,
       "strong": 0
@@ -9673,9 +9673,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Riven.png",
-    "pickRate": 3.09,
-    "pickRateRank": 131,
-    "pickRateChange": 0.42,
+    "pickRate": 3.11,
+    "pickRateRank": 132,
+    "pickRateChange": 0.44,
     "combos": {
       "god": 0,
       "strong": 0
@@ -9794,9 +9794,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lillia.png",
-    "pickRate": 8.71,
+    "pickRate": 8.68,
     "pickRateRank": 36,
-    "pickRateChange": -1.08,
+    "pickRateChange": -1.11,
     "combos": {
       "god": 1,
       "strong": 1
@@ -9855,9 +9855,9 @@
       "difficulty": 6
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lucian.png",
-    "pickRate": 12.94,
+    "pickRate": 12.96,
     "pickRateRank": 6,
-    "pickRateChange": 0.14,
+    "pickRateChange": 0.16,
     "combos": {
       "god": 1,
       "strong": 1
@@ -10039,7 +10039,7 @@
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
     "pickRate": 6.08,
-    "pickRateRank": 74,
+    "pickRateRank": 75,
     "pickRateChange": 0.53,
     "combos": {
       "god": 0,
@@ -10282,9 +10282,9 @@
       "difficulty": 0
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rell.png",
-    "pickRate": 4.99,
+    "pickRate": 4.97,
     "pickRateRank": 92,
-    "pickRateChange": -0.52,
+    "pickRateChange": -0.54,
     "combos": {
       "god": 2,
       "strong": 0
@@ -10343,9 +10343,9 @@
       "difficulty": 8
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rengar.png",
-    "pickRate": 6.82,
-    "pickRateRank": 59,
-    "pickRateChange": 0.78,
+    "pickRate": 6.83,
+    "pickRateRank": 58,
+    "pickRateChange": 0.79,
     "combos": {
       "god": 0,
       "strong": 3
@@ -10404,9 +10404,9 @@
       "difficulty": 5
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Locke.png",
-    "pickRate": 3.49,
-    "pickRateRank": 123,
-    "pickRateChange": 0.75,
+    "pickRate": 3.5,
+    "pickRateRank": 122,
+    "pickRateChange": 0.76,
     "combos": {
       "god": 0,
       "strong": 0
@@ -10465,9 +10465,9 @@
       "difficulty": 3
     },
     "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Warwick.png",
-    "pickRate": 2.18,
+    "pickRate": 2.19,
     "pickRateRank": 153,
-    "pickRateChange": 0.03,
+    "pickRateChange": 0.04,
     "combos": {
       "god": 0,
       "strong": 0
