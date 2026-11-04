@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-03T10:41:20.697Z",
-  "gameVersion": "16.21.1",
-  "patch": "26.21",
-  "cdragonVersion": "16.21.8342754+branch.releases-16-21.content.release",
+  "generatedAt": "2026-11-04T20:55:38.622Z",
+  "gameVersion": "16.22.1",
+  "patch": "26.22",
+  "cdragonVersion": "16.22.8348910+branch.releases-16-22.content.release",
   "stats": {
     "patch": "26.21",
-    "statsDate": "2026-11-02",
+    "statsDate": "2026-11-03",
     "attribution": "Data: arammayhem.com",
     "source": "https://arammayhem.com/data/",
     "license": "CC BY 4.0",
