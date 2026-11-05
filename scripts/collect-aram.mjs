@@ -7,6 +7,7 @@
 // <state-dir> holds the raw counts between runs (the aram-data branch in CI):
 //   state.json   patch, match ids already counted and players recently visited (both hashed)
 //   counts.json  per champion: final legendary items + boots -> [games, wins]
+//   previous-counts.json  the same for the patch before
 // Only champion, final items and win/loss are kept, and players are stored only as hashes, so the
 // files can sit in a public repository. The list of players to visit lives in memory per run; the
 // ids of the latest counted matches are kept so the next run can pick up from their players.
@@ -47,9 +48,12 @@ const load = async (p, fallback) => (existsSync(p) ? JSON.parse(await readFile(p
 let state = await load(statePath, null);
 let counts = await load(countsPath, {});
 if (!state || state.gameVersion !== gameVersion) {
-  // New patch: builds change, so start over.
+  // New patch: count it separately, and keep the last patch's counts so builds can include them
+  // until the new patch has enough games.
   console.log(`Starting fresh for ${gameVersion}`);
-  state = { gameVersion, startedAt: new Date().toISOString(), matches: 0, visited: {}, seen: [], recent: [] };
+  const previous = state?.matches ? { gameVersion: state.gameVersion, matches: state.matches } : null;
+  if (previous) await writeFile(path.join(stateDir, 'previous-counts.json'), JSON.stringify(counts) + '\n');
+  state = { gameVersion, startedAt: new Date().toISOString(), matches: 0, visited: {}, seen: [], recent: [], previous };
   counts = {};
 }
 const seen = new Set(state.seen);

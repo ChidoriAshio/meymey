@@ -336,10 +336,14 @@ export function fittingAugments(c: Champion, featured: Set<string> = new Set()):
 type Counted = { id: string; games: number; wins?: number };
 const aramData = aramBuildsJson as {
   gameVersion: string | null;
+  patches?: string[];
   matches: number;
   champions: Record<string, { games: number; builds: { name: string; core: string[]; games: number; wins: number; situational: Counted[] }[]; boots: Counted[] }>;
 };
-export const aramStats = { gameVersion: aramData.gameVersion, matches: aramData.matches };
+// Game versions count seasons from 2011 ("16.21"); patches are named by year ("26.21").
+const patchName = (v: string) => v.replace(/^(\d+)/, (m) => String(Number(m) >= 16 ? Number(m) + 10 : m));
+const aramPatches = (aramData.patches ?? [aramData.gameVersion].filter((v): v is string => !!v)).map(patchName);
+export const aramStats = { gameVersion: aramData.gameVersion, patches: aramPatches.join('〜'), matches: aramData.matches };
 // Win rates on fewer games than this swing too much to show.
 export const MIN_WINRATE_GAMES = 30;
 

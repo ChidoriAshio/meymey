@@ -25,6 +25,21 @@ if (!countsPath || !existsSync(countsPath)) {
 }
 const counts = JSON.parse(await readFile(countsPath, 'utf8'));
 const state = JSON.parse(await readFile(path.join(stateDir, 'state.json'), 'utf8'));
+// The patch before is added in, so builds stay full right after a patch.
+const previousPath = path.join(stateDir, 'previous-counts.json');
+if (state.previous && existsSync(previousPath)) {
+  const previous = JSON.parse(await readFile(previousPath, 'utf8'));
+  for (const [champ, rows] of Object.entries(previous)) {
+    const c = (counts[champ] ??= {});
+    for (const [k, [games, wins]] of Object.entries(rows)) {
+      const row = (c[k] ??= [0, 0]);
+      row[0] += games;
+      row[1] += wins;
+    }
+  }
+}
+const patches = [state.previous?.gameVersion, state.gameVersion].filter(Boolean);
+const totalMatches = state.matches + (state.previous?.matches ?? 0);
 const champions = JSON.parse(await readFile(path.join(ROOT, 'src/data/champions.json'), 'utf8'));
 const items = JSON.parse(await readFile(path.join(ROOT, 'src/data/items.json'), 'utf8'));
 const itemById = new Map(items.map((i) => [i.id, i]));
@@ -131,6 +146,6 @@ for (const [key, rows] of Object.entries(counts)) {
 
 await writeFile(
   OUT,
-  JSON.stringify({ gameVersion: state.gameVersion, startedAt: state.startedAt, matches: state.matches, champions: result }) + '\n',
+  JSON.stringify({ gameVersion: state.gameVersion, patches, startedAt: state.startedAt, matches: totalMatches, champions: result }) + '\n',
 );
-console.log(`Builds for ${Object.keys(result).length} champions from ${state.matches} ARAM matches (${state.gameVersion})`);
+console.log(`Builds for ${Object.keys(result).length} champions from ${totalMatches} ARAM matches (${patches.join(' + ')})`);

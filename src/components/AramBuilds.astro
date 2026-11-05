@@ -15,7 +15,7 @@ const winRate = (games: number, wins = 0) => (games >= MIN_WINRATE_GAMES ? pct(w
 <section class="mb-8" data-tabs>
   <h2 class="text-lg font-bold">おすすめビルド</h2>
   <p class="text-xs text-ink-2 mt-1 mb-3">
-    通常ARAM（ハウリングアビス）の日本サーバーの試合から集計（パッチ {aramStats.gameVersion}、{champion.name} {data.games}試合）。メイヘムではオーグメントで最適なビルドが変わることがあります。勝率は{MIN_WINRATE_GAMES}試合未満だと表示しません。アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。
+    通常ARAM（ハウリングアビス）の日本サーバーの試合から集計（パッチ {aramStats.patches}、{champion.name} {data.games}試合）。メイヘムではオーグメントで最適なビルドが変わることがあります。勝率は{MIN_WINRATE_GAMES}試合未満だと表示しません。アイコンにカーソルを合わせる（スマホはタップ）と効果が見られます。
   </p>
   <div class="flex flex-wrap gap-2 mb-3" role="tablist">
     {
