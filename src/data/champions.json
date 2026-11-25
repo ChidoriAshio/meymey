@@ -9314,7 +9314,7 @@
     "pickRateChange": 0.43,
     "combos": {
       "god": 3,
-      "strong": 1
+      "strong": 0
     },
     "spells": [
       {
